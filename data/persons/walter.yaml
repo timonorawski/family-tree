@@ -9,7 +9,7 @@ dod: '2007-02-14'
 deceased: true
 relationships:
   - type: parent
-    person: eugene-1
+    person: eugene
   - type: parent
     person: genevieve
   - type: partner

@@ -2,7 +2,7 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
 
-import { loadAll, getOne, create, update, remove, search, addRelationship, removeRelationship } from '../src/lib/store.mjs';
+import { loadAll, getOne, create, update, remove, search, rename, addRelationship, removeRelationship } from '../src/lib/store.mjs';
 import {
   getAncestors,
   getDescendants,
@@ -84,7 +84,7 @@ server.tool(
 // 4. update_person — params: { slug, data }
 server.tool(
   "update_person",
-  "Update an existing person. Accepts slug and a JSON string of complete person data.",
+  "Update an existing person. Accepts slug and a JSON string of complete person data. The slug is stable — changing the name does NOT rename the slug. Use rename_person to change a slug.",
   {
     slug: z.string().describe("The person's slug identifier"),
     data: z.string().describe("JSON string of complete person data"),
@@ -115,10 +115,28 @@ server.tool(
   }
 );
 
-// 6. search_persons — params: { query }
+// 6. rename_person — params: { oldSlug, newSlug }
+server.tool(
+  "rename_person",
+  "Rename a person's slug. Updates the filename and all references in other persons. Use this instead of update_person when you need to change a slug.",
+  {
+    oldSlug: z.string().describe("The current slug"),
+    newSlug: z.string().describe("The desired new slug"),
+  },
+  async ({ oldSlug, newSlug }) => {
+    try {
+      const result = rename(oldSlug, newSlug);
+      return ok(result);
+    } catch (e) {
+      return err(e.message);
+    }
+  }
+);
+
+// 7. search_persons — params: { query }
 server.tool(
   "search_persons",
-  "Search persons by query string. Matches against name, profession, interesting_facts, country_of_birth.",
+  "Search persons by query string. Matches against name (given, preferred, given_at_birth, surnames), profession, interesting_facts, country_of_birth.",
   { query: z.string().describe("Search query string") },
   async ({ query }) => {
     try {

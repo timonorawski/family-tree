@@ -1,8 +1,14 @@
 name:
   given: Sonia
+  middles:
+    - Rose
+    - Fine
+  surnames:
+    current: Satov
 gender: female
 dob: '1982-12-06'
 country_of_birth: Canada
+deceased: false
 relationships:
   - type: parent
     person: dawna
@@ -10,3 +16,6 @@ relationships:
     person: howie
   - type: partner
     person: timon
+    start_date: "2007-07-27"
+    locations:
+      - Toronto

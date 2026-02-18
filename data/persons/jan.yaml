@@ -1,6 +1,10 @@
 name:
   given: Jan
+  surnames:
+    current: Cieluch
 gender: male
+deceased: false
+interesting_facts: Potentially Immigrated to Poland from Hungary
 relationships:
   - type: partner
     person: maria

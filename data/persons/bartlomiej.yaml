@@ -1,6 +1,9 @@
 name:
   given: Bartlomiej
-gender: female
+  surnames:
+    current: Duda
+gender: male
+deceased: false
 relationships:
   - type: partner
     person: jozefina

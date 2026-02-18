@@ -1,0 +1,19 @@
+name:
+  given: Mary
+  middles:
+    - Ann
+  surnames:
+    current: Austin
+gender: female
+dob: '1807-01-01'
+dod: '1891-01-01'
+country_of_birth: Ireland
+deceased: true
+interesting_facts: DOB/DOD year only - buried at bond head united church, bondhead ontario
+relationships:
+  - type: partner
+    person: john
+  - type: parent
+    person: david-3
+  - type: parent
+    person: elizabeth-1

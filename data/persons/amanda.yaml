@@ -1,5 +1,7 @@
 name:
   given: Amanda
+  surnames:
+    current: Satov
 gender: female
 deceased: false
 relationships:

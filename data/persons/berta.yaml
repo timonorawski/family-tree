@@ -1,0 +1,25 @@
+name:
+  given: Berta
+  preferred: Bertie
+  middles:
+    - Elizabeth
+    - Selby
+  surnames:
+    current: Thorpe
+gender: female
+dob: '1883-01-21'
+dod: '1916-01-14'
+deceased: true
+interesting_facts: Birth Year Estimated
+relationships:
+  - type: parent
+    person: robert-4
+  - type: parent
+    person: jane
+  - type: partner
+    person: donald-1
+research:
+  - description: Birth year - estimated - from familysearch.org - marriage records for Berta Elizabeth Selby Thorpe 21 Aug 1912 in Midland, Simcoe, Ontario, Canada
+    confidence: 90
+  - description: birth date confirmed from death certificate (found on familysearch.org)
+    confidence: 100

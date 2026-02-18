@@ -1,0 +1,15 @@
+name:
+  given: John
+  surnames:
+    current: Richardson
+gender: male
+dob: '1781-05-22'
+dod: '1877-02-22'
+country_of_birth: Ireland
+deceased: true
+interesting_facts: |-
+  born Armagh, Ireland
+  Buried in Penville, Simcoe, Ontario, Canada
+relationships:
+  - type: partner
+    person: mary

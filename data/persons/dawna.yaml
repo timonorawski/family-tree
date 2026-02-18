@@ -1,10 +1,14 @@
 name:
   given: Dawna
+  surnames:
+    current: Satov
+    birth: Fine
 gender: female
 dob: '1954-04-29'
+deceased: false
 relationships:
   - type: parent
-    person: shirly
+    person: shirley
   - type: parent
     person: irving
   - type: partner

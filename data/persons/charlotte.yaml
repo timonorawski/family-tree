@@ -1,7 +1,10 @@
 name:
   given: Charlotte
+  surnames:
+    current: Mahoney
 gender: female
 dob: '2016-04-11'
+deceased: false
 relationships:
   - type: parent
     person: nadia

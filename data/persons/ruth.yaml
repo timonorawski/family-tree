@@ -1,8 +1,11 @@
 name:
   given: Ruth
+  surnames:
+    current: Orawski
 gender: male
+deceased: false
 relationships:
   - type: parent
-    person: eugene-1
+    person: eugene
   - type: parent
     person: genevieve

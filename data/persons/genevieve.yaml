@@ -1,10 +1,18 @@
 name:
   given: Genevieve
+  surnames:
+    current: Orawski
+    birth: Duda
 gender: female
+dob: '1913-03-12'
+dod: '1998-03-09'
+country_of_birth: Poland
+deceased: true
+interesting_facts: Born Podwilk, Pl
 relationships:
   - type: parent
     person: jozefina
   - type: parent
     person: bartlomiej
   - type: partner
-    person: eugene-1
+    person: eugene

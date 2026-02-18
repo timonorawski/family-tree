@@ -1,0 +1,13 @@
+name:
+  given: David
+  surnames:
+    current: Austin
+gender: male
+dob: '1779-01-01'
+dod: '1861-01-01'
+country_of_birth: Ireland
+deceased: true
+interesting_facts: Died before 1861 -- DOB only year accurate, born in County Armagh, Ireland, buried Tecumseth, simcoe, ontario, canada
+relationships:
+  - type: partner
+    person: elizabeth-1

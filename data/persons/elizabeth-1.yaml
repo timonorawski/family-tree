@@ -1,0 +1,13 @@
+name:
+  given: Elizabeth
+  surnames:
+    current: Patterson
+gender: female
+dob: '1781-01-01'
+dod: '1869-01-01'
+country_of_birth: Ireland
+deceased: true
+interesting_facts: Buried in Tottenham, ON - DOB and DOD year only accurate
+relationships:
+  - type: partner
+    person: david-3

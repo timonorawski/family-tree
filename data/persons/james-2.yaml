@@ -1,0 +1,13 @@
+name:
+  given: James
+  surnames:
+    current: McGeary
+gender: male
+dob: '1824-01-01'
+dod: '1890-01-28'
+country_of_birth: Ireland
+deceased: true
+interesting_facts: DOB - only year known, buried at bond head united church cemetery
+relationships:
+  - type: partner
+    person: sarah-1

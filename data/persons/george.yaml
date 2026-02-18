@@ -1,6 +1,14 @@
 name:
   given: George
+  surnames:
+    current: Thorpe
 gender: male
+dob: '1801-01-01'
+dod: '1871-01-01'
+deceased: true
+interesting_facts: |-
+  Only years of birth and death known so far.
+  Mayo, Leitrim, Ireland
 relationships:
   - type: partner
     person: margaret

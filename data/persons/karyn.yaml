@@ -4,7 +4,7 @@ gender: female
 dob: '1953-04-03'
 relationships:
   - type: parent
-    person: shirly
+    person: shirley
   - type: parent
     person: irving
   - type: partner

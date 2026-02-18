@@ -6,47 +6,83 @@
 
 	let form = $state({});
 	let saving = $state(false);
+	let mode = $state('view');
+
+	function syncFormFromNode() {
+		const node = chartData.find((n) => n.id === person);
+		if (node) {
+			const n = node.data.name || {};
+			form = {
+				given: (typeof n === 'string' ? n : n.given) || '',
+				given_at_birth: n.given_at_birth || '',
+				preferred: n.preferred || '',
+				middles: (n.middles || []).join(', '),
+				surname_current: n.surnames?.current || '',
+				surname_birth: n.surnames?.birth || '',
+				gender: node.data.gender === 'F' ? 'female' : 'male',
+				dob: node.data.dob || '',
+				dod: node.data.dod || '',
+				country_of_birth: node.data.country_of_birth || '',
+				deceased: node.data.deceased || false,
+				profession: node.data.profession || '',
+				interesting_facts: node.data.interesting_facts || '',
+				research: (node.data.research || []).map((r) => ({
+					description: r.description || '',
+					confidence: r.confidence ?? '',
+					sources: r.sources ? [...r.sources] : ['']
+				})),
+				stories: (node.data.stories || []).map((s) => ({
+					name: s.name || '',
+					description: s.description || '',
+					sources: s.sources ? [...s.sources] : [],
+					places: s.places ? [...s.places] : [],
+					dates: s.dates ? [...s.dates] : [],
+					people: s.people ? [...s.people] : []
+				})),
+				titles: (node.data.titles || []).map((t) => ({
+					value: t.value || '',
+					type: t.type || 'civic'
+				})),
+				aliases: node.data.aliases ? [...node.data.aliases] : [],
+				relationships: (node.data.relationships || []).map((r) => ({
+					type: r.type,
+					person: r.person,
+					start_date: r.start_date || '',
+					end_date: r.end_date || '',
+					locations: r.locations ? [...r.locations] : []
+				}))
+			};
+		}
+	}
 
 	// Sync form state when person changes
 	$effect(() => {
 		if (person) {
-			const node = chartData.find((n) => n.id === person);
-			if (node) {
-				const n = node.data.name || {};
-				form = {
-					given: (typeof n === 'string' ? n : n.given) || '',
-					middles: (n.middles || []).join(', '),
-					surname_current: n.surnames?.current || '',
-					surname_birth: n.surnames?.birth || '',
-					gender: node.data.gender === 'F' ? 'female' : 'male',
-					dob: node.data.dob || '',
-					dod: node.data.dod || '',
-					country_of_birth: node.data.country_of_birth || '',
-					deceased: node.data.deceased || false,
-					profession: node.data.profession || '',
-					interesting_facts: node.data.interesting_facts || '',
-					research: (node.data.research || []).map((r) => ({
-						description: r.description || '',
-						confidence: r.confidence ?? '',
-						sources: r.sources ? [...r.sources] : ['']
-					})),
-					stories: (node.data.stories || []).map((s) => ({
-						name: s.name || '',
-						description: s.description || '',
-						sources: s.sources ? [...s.sources] : [],
-						places: s.places ? [...s.places] : [],
-						dates: s.dates ? [...s.dates] : [],
-						people: s.people ? [...s.people] : []
-					})),
-					titles: (node.data.titles || []).map((t) => ({
-						value: t.value || '',
-						type: t.type || 'civic'
-					})),
-					aliases: node.data.aliases ? [...node.data.aliases] : []
-				};
-			}
+			syncFormFromNode();
+			mode = 'view';
 		}
 	});
+
+	function cancel() {
+		syncFormFromNode();
+		mode = 'view';
+	}
+
+	function getRelMeta(slug, type) {
+		const node = currentNode();
+		if (!node?.data.relationships) return null;
+		return node.data.relationships.find(r => r.person === slug && r.type === type) || null;
+	}
+
+	function formatRelMeta(rel) {
+		if (!rel) return '';
+		const parts = [];
+		if (rel.start_date && rel.end_date) parts.push(`${rel.start_date} \u2013 ${rel.end_date}`);
+		else if (rel.start_date) parts.push(rel.start_date);
+		else if (rel.end_date) parts.push(`\u2013 ${rel.end_date}`);
+		if (rel.locations?.length) parts.push(rel.locations.join(', '));
+		return parts.join(' \u00b7 ');
+	}
 
 	function getNode(slug) {
 		return chartData.find((n) => n.id === slug);
@@ -59,6 +95,16 @@
 
 	function currentNode() {
 		return getNode(person);
+	}
+
+	function displayName() {
+		const node = currentNode();
+		if (!node) return 'Unnamed';
+		const n = node.data.name || {};
+		const rawGiven = (typeof n === 'string' ? n : n.given) || '';
+		const givenPart = n.preferred ? `${n.preferred} (${rawGiven})` : rawGiven;
+		const surname = n.surnames?.current || n.surnames?.birth || '';
+		return [givenPart, surname].filter(Boolean).join(' ') || 'Unnamed';
 	}
 
 	function siblings() {
@@ -77,8 +123,10 @@
 	}
 
 	function buildPayload() {
-		const { given, middles, surname_current, surname_birth, research, stories, titles, aliases, ...rest } = form;
+		const { given, given_at_birth, preferred, middles, surname_current, surname_birth, research, stories, titles, aliases, relationships: formRels, ...rest } = form;
 		const name = { given };
+		if (given_at_birth) name.given_at_birth = given_at_birth;
+		if (preferred) name.preferred = preferred;
 		const middlesArr = middles ? middles.split(',').map((s) => s.trim()).filter(Boolean) : [];
 		if (middlesArr.length) name.middles = middlesArr;
 		const surnames = {};
@@ -88,18 +136,16 @@
 
 		const payload = { name, ...rest };
 
-		// Preserve relationships from the chart data (not edited via form)
-		const node = currentNode();
-		if (node) {
-			const relationships = [];
-			for (const s of node.rels.parents) {
-				relationships.push({ type: 'parent', person: s });
-			}
-			for (const s of node.rels.spouses) {
-				relationships.push({ type: 'partner', person: s });
-			}
-			if (relationships.length) payload.relationships = relationships;
-		}
+		// Build relationships array, cleaning empty metadata
+		const relsArr = (formRels || []).map((r) => {
+			const rel = { type: r.type, person: r.person };
+			if (r.start_date) rel.start_date = r.start_date;
+			if (r.end_date) rel.end_date = r.end_date;
+			const locs = (r.locations || []).filter(Boolean);
+			if (locs.length) rel.locations = locs;
+			return rel;
+		});
+		if (relsArr.length) payload.relationships = relsArr;
 
 		// Build research array, filtering out empty entries
 		const researchArr = (research || [])
@@ -192,6 +238,18 @@
 		form.aliases = form.aliases.filter((_, i) => i !== index);
 	}
 
+	function getFormRel(slug, type) {
+		return form.relationships?.find(r => r.person === slug && r.type === type);
+	}
+
+	function addRelLocation(relIndex) {
+		form.relationships[relIndex].locations = [...form.relationships[relIndex].locations, ''];
+	}
+
+	function removeRelLocation(relIndex, locIndex) {
+		form.relationships[relIndex].locations = form.relationships[relIndex].locations.filter((_, i) => i !== locIndex);
+	}
+
 	async function save() {
 		saving = true;
 		try {
@@ -201,12 +259,8 @@
 				body: JSON.stringify(buildPayload())
 			});
 			if (res.ok) {
-				const result = await res.json();
 				await onSaved();
-				// If slug changed due to name edit, navigate to the new slug
-				if (result.slug !== person) {
-					onNavigate(result.slug);
-				}
+				mode = 'view';
 			}
 		} finally {
 			saving = false;
@@ -278,255 +332,418 @@
 {#if person && currentNode()}
 	{@const node = currentNode()}
 	<aside class="sidebar">
-		<header>
-			<h2>{form.given || 'Unnamed'}</h2>
-			<button class="close-btn" onclick={() => onNavigate('')}>&times;</button>
-		</header>
-
-		<form onsubmit={(e) => { e.preventDefault(); save(); }}>
-			<label>
-				Given name
-				<input type="text" bind:value={form.given} />
-			</label>
-
-			<label>
-				Middle names <span class="hint">(comma-separated)</span>
-				<input type="text" bind:value={form.middles} />
-			</label>
-
-			<label>
-				Surname (current)
-				<input type="text" bind:value={form.surname_current} />
-			</label>
-
-			<label>
-				Surname (at birth)
-				<input type="text" bind:value={form.surname_birth} />
-			</label>
-
-			<label>
-				Gender
-				<select bind:value={form.gender}>
-					<option value="male">Male</option>
-					<option value="female">Female</option>
-				</select>
-			</label>
-
-			<label>
-				Date of birth
-				<input type="date" bind:value={form.dob} />
-			</label>
-
-			<label>
-				Country of birth
-				<input type="text" bind:value={form.country_of_birth} />
-			</label>
-
-			<label>
-				Profession
-				<input type="text" bind:value={form.profession} />
-			</label>
-
-			<label>
-				Date of death
-				<input type="date" bind:value={form.dod} />
-			</label>
-
-			<label class="checkbox-label">
-				<input type="checkbox" bind:checked={form.deceased} />
-				Deceased
-			</label>
-
-			<label>
-				Interesting facts
-				<textarea bind:value={form.interesting_facts} rows="3"></textarea>
-			</label>
-
-			<fieldset class="research-section">
-				<legend>Titles</legend>
-				{#each form.titles as title, i}
-					<div class="title-row">
-						<select bind:value={title.type}>
-							<option value="civic">Civic</option>
-							<option value="noble">Noble</option>
-							<option value="military">Military</option>
-							<option value="religious">Religious</option>
-							<option value="academic">Academic</option>
-						</select>
-						<input type="text" bind:value={title.value} placeholder="e.g. Sir, Dr., Earl" />
-						<button type="button" class="remove-btn" onclick={() => removeTitle(i)}>x</button>
-					</div>
-				{/each}
-				<button type="button" class="add-inline-btn" onclick={addTitle}>+ Title</button>
-			</fieldset>
-
-			<fieldset class="research-section">
-				<legend>Aliases</legend>
-				{#each form.aliases as _, i}
-					<div class="source-row">
-						<input type="text" bind:value={form.aliases[i]} placeholder="Informal name or alias" />
-						<button type="button" class="remove-btn" onclick={() => removeAlias(i)}>x</button>
-					</div>
-				{/each}
-				<button type="button" class="add-inline-btn" onclick={addAlias}>+ Alias</button>
-			</fieldset>
-
-			<fieldset class="research-section">
-				<legend>Research</legend>
-				{#each form.research as entry, i}
-					<div class="research-entry">
-						<div class="research-entry-header">
-							<span class="research-entry-num">#{i + 1}</span>
-							<button type="button" class="remove-btn" onclick={() => removeResearchEntry(i)}>x</button>
-						</div>
-						<label>
-							Description
-							<textarea bind:value={entry.description} rows="2"></textarea>
-						</label>
-						<label>
-							Confidence <span class="hint">(0-100)</span>
-							<input type="number" min="0" max="100" bind:value={entry.confidence} />
-						</label>
-						<div class="sources-group">
-							<span class="sources-label">Sources</span>
-							{#each entry.sources as source, j}
-								<div class="source-row">
-									<input type="text" bind:value={entry.sources[j]} placeholder="URL, book, etc." />
-									<button type="button" class="remove-btn" onclick={() => removeSource(i, j)}>x</button>
-								</div>
-							{/each}
-							<button type="button" class="add-inline-btn" onclick={() => addSource(i)}>+ Source</button>
-						</div>
-					</div>
-				{/each}
-				<button type="button" class="add-inline-btn" onclick={addResearchEntry}>+ Research entry</button>
-			</fieldset>
-
-			<fieldset class="research-section">
-				<legend>Stories</legend>
-				{#each form.stories as story, i}
-					<div class="research-entry">
-						<div class="research-entry-header">
-							<span class="research-entry-num">#{i + 1}</span>
-							<button type="button" class="remove-btn" onclick={() => removeStory(i)}>x</button>
-						</div>
-						<label>
-							Name
-							<input type="text" bind:value={story.name} />
-						</label>
-						<label>
-							Description
-							<textarea bind:value={story.description} rows="3"></textarea>
-						</label>
-						<div class="sources-group">
-							<span class="sources-label">Sources</span>
-							{#each story.sources as _, j}
-								<div class="source-row">
-									<input type="text" bind:value={story.sources[j]} placeholder="URL, book, etc." />
-									<button type="button" class="remove-btn" onclick={() => removeStoryListItem(i, 'sources', j)}>x</button>
-								</div>
-							{/each}
-							<button type="button" class="add-inline-btn" onclick={() => addStoryListItem(i, 'sources')}>+ Source</button>
-						</div>
-						<div class="sources-group">
-							<span class="sources-label">People</span>
-							{#each story.people as _, j}
-								<div class="source-row">
-									<input type="text" bind:value={story.people[j]} placeholder="Person slug" />
-									<button type="button" class="remove-btn" onclick={() => removeStoryListItem(i, 'people', j)}>x</button>
-								</div>
-							{/each}
-							<button type="button" class="add-inline-btn" onclick={() => addStoryListItem(i, 'people')}>+ Person</button>
-						</div>
-						<div class="sources-group">
-							<span class="sources-label">Places</span>
-							{#each story.places as _, j}
-								<div class="source-row">
-									<input type="text" bind:value={story.places[j]} placeholder="Location" />
-									<button type="button" class="remove-btn" onclick={() => removeStoryListItem(i, 'places', j)}>x</button>
-								</div>
-							{/each}
-							<button type="button" class="add-inline-btn" onclick={() => addStoryListItem(i, 'places')}>+ Place</button>
-						</div>
-						<div class="sources-group">
-							<span class="sources-label">Dates</span>
-							{#each story.dates as _, j}
-								<div class="source-row">
-									<input type="text" bind:value={story.dates[j]} placeholder="YYYY-MM-DD or description" />
-									<button type="button" class="remove-btn" onclick={() => removeStoryListItem(i, 'dates', j)}>x</button>
-								</div>
-							{/each}
-							<button type="button" class="add-inline-btn" onclick={() => addStoryListItem(i, 'dates')}>+ Date</button>
-						</div>
-					</div>
-				{/each}
-				<button type="button" class="add-inline-btn" onclick={addStory}>+ Story</button>
-			</fieldset>
-
-			<div class="actions">
-				<button type="submit" class="save-btn" disabled={saving}>
-					{saving ? 'Saving...' : 'Save'}
-				</button>
-				<button type="button" class="delete-btn" onclick={deletePerson}>Delete</button>
+		<div class="sidebar-header">
+			<h2>{displayName()}</h2>
+			<div class="header-actions">
+				{#if mode === 'view'}
+					<button class="header-btn edit-btn" onclick={() => mode = 'edit'}>Edit</button>
+					<button class="header-btn close-btn" onclick={() => onNavigate('')}>&times;</button>
+				{:else}
+					<button class="header-btn save-btn" disabled={saving} onclick={save}>
+						{saving ? 'Saving...' : 'Save'}
+					</button>
+					<button class="header-btn delete-btn" onclick={deletePerson}>Delete</button>
+					<button class="header-btn cancel-btn" onclick={cancel}>Cancel</button>
+				{/if}
 			</div>
-		</form>
+		</div>
 
-		<hr />
+		<div class="sidebar-body">
+			{#if mode === 'view'}
+				<div class="view-content">
+					{#if node.data.name?.preferred}
+						<div class="detail-row">
+							<span class="detail-label">Preferred name</span>
+							<span class="detail-value">{node.data.name.preferred}</span>
+						</div>
+					{/if}
 
-		<section class="relations">
-			{#if node.rels.parents.length}
-				<div class="relation-group">
-					<span class="relation-label">Parents</span>
-					<div class="chips">
+					{#if node.data.name?.given_at_birth}
+						<div class="detail-row">
+							<span class="detail-label">Given name at birth</span>
+							<span class="detail-value">{node.data.name.given_at_birth}</span>
+						</div>
+					{/if}
+
+					{#if node.data.dob || node.data.dod || node.data.country_of_birth}
+						<div class="dates-line">
+							{#if node.data.dob}b. {node.data.dob}{/if}{#if node.data.country_of_birth}{node.data.dob ? ', ' : ''}{node.data.country_of_birth}{/if}{#if node.data.dod}{(node.data.dob || node.data.country_of_birth) ? ' \u2014 ' : ''}d. {node.data.dod}{/if}
+						</div>
+					{/if}
+
+					{#if node.data.profession}
+						<div class="detail-row">
+							<span class="detail-label">Profession</span>
+							<span class="detail-value">{node.data.profession}</span>
+						</div>
+					{/if}
+
+					{#if node.data.titles?.length}
+						<div class="detail-row">
+							<span class="detail-label">Titles</span>
+							<div class="tags">
+								{#each node.data.titles as title}
+									<span class="tag"><span class="tag-type">{title.type}</span> {title.value}</span>
+								{/each}
+							</div>
+						</div>
+					{/if}
+
+					{#if node.data.aliases?.length}
+						<div class="detail-row">
+							<span class="detail-label">Aliases</span>
+							<span class="detail-value">{node.data.aliases.join(', ')}</span>
+						</div>
+					{/if}
+
+					{#if node.data.interesting_facts}
+						<div class="detail-row">
+							<span class="detail-label">Interesting facts</span>
+							<p class="detail-text">{node.data.interesting_facts}</p>
+						</div>
+					{/if}
+
+					{#if node.data.research?.length}
+						<div class="detail-row">
+							<span class="detail-label">Research</span>
+							{#each node.data.research as entry}
+								<div class="view-card">
+									{#if entry.description}<p>{entry.description}</p>{/if}
+									{#if entry.confidence != null}<span class="confidence">Confidence: {entry.confidence}%</span>{/if}
+									{#if entry.sources?.length}
+										<div class="view-sources">
+											{#each entry.sources as source}
+												{#if typeof source === 'string' && source.startsWith('http')}
+													<a href={source} target="_blank" rel="noopener">{source}</a>
+												{:else}
+													<span>{source}</span>
+												{/if}
+											{/each}
+										</div>
+									{/if}
+								</div>
+							{/each}
+						</div>
+					{/if}
+
+					{#if node.data.stories?.length}
+						<div class="detail-row">
+							<span class="detail-label">Stories</span>
+							{#each node.data.stories as story}
+								<div class="view-card">
+									{#if story.name}<strong>{story.name}</strong>{/if}
+									{#if story.description}<p>{story.description}</p>{/if}
+									{#if story.places?.length}<div class="sub-items">Places: {story.places.join(', ')}</div>{/if}
+									{#if story.dates?.length}<div class="sub-items">Dates: {story.dates.join(', ')}</div>{/if}
+									{#if story.people?.length}<div class="sub-items">People: {story.people.join(', ')}</div>{/if}
+									{#if story.sources?.length}
+										<div class="view-sources">
+											{#each story.sources as source}
+												{#if typeof source === 'string' && source.startsWith('http')}
+													<a href={source} target="_blank" rel="noopener">{source}</a>
+												{:else}
+													<span>{source}</span>
+												{/if}
+											{/each}
+										</div>
+									{/if}
+								</div>
+							{/each}
+						</div>
+					{/if}
+				</div>
+			{:else}
+				<form onsubmit={(e) => { e.preventDefault(); save(); }}>
+					<label>
+						Given name
+						<input type="text" bind:value={form.given} />
+					</label>
+
+					<label>
+						Given name at birth
+						<input type="text" bind:value={form.given_at_birth} />
+					</label>
+
+					<label>
+						Preferred name
+						<input type="text" bind:value={form.preferred} />
+					</label>
+
+					<label>
+						Middle names <span class="hint">(comma-separated)</span>
+						<input type="text" bind:value={form.middles} />
+					</label>
+
+					<label>
+						Surname (current)
+						<input type="text" bind:value={form.surname_current} />
+					</label>
+
+					<label>
+						Surname (at birth)
+						<input type="text" bind:value={form.surname_birth} />
+					</label>
+
+					<label>
+						Gender
+						<select bind:value={form.gender}>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</label>
+
+					<label>
+						Date of birth
+						<input type="date" bind:value={form.dob} />
+					</label>
+
+					<label>
+						Country of birth
+						<input type="text" bind:value={form.country_of_birth} />
+					</label>
+
+					<label>
+						Profession
+						<input type="text" bind:value={form.profession} />
+					</label>
+
+					<label>
+						Date of death
+						<input type="date" bind:value={form.dod} />
+					</label>
+
+					<label class="checkbox-label">
+						<input type="checkbox" bind:checked={form.deceased} />
+						Deceased
+					</label>
+
+					<label>
+						Interesting facts
+						<textarea bind:value={form.interesting_facts} rows="3"></textarea>
+					</label>
+
+					<fieldset class="research-section">
+						<legend>Titles</legend>
+						{#each form.titles as title, i}
+							<div class="title-row">
+								<select bind:value={title.type}>
+									<option value="civic">Civic</option>
+									<option value="noble">Noble</option>
+									<option value="military">Military</option>
+									<option value="religious">Religious</option>
+									<option value="academic">Academic</option>
+								</select>
+								<input type="text" bind:value={title.value} placeholder="e.g. Sir, Dr., Earl" />
+								<button type="button" class="remove-btn" onclick={() => removeTitle(i)}>x</button>
+							</div>
+						{/each}
+						<button type="button" class="add-inline-btn" onclick={addTitle}>+ Title</button>
+					</fieldset>
+
+					<fieldset class="research-section">
+						<legend>Aliases</legend>
+						{#each form.aliases as _, i}
+							<div class="source-row">
+								<input type="text" bind:value={form.aliases[i]} placeholder="Informal name or alias" />
+								<button type="button" class="remove-btn" onclick={() => removeAlias(i)}>x</button>
+							</div>
+						{/each}
+						<button type="button" class="add-inline-btn" onclick={addAlias}>+ Alias</button>
+					</fieldset>
+
+					<fieldset class="research-section">
+						<legend>Research</legend>
+						{#each form.research as entry, i}
+							<div class="research-entry">
+								<div class="research-entry-header">
+									<span class="research-entry-num">#{i + 1}</span>
+									<button type="button" class="remove-btn" onclick={() => removeResearchEntry(i)}>x</button>
+								</div>
+								<label>
+									Description
+									<textarea bind:value={entry.description} rows="2"></textarea>
+								</label>
+								<label>
+									Confidence <span class="hint">(0-100)</span>
+									<input type="number" min="0" max="100" bind:value={entry.confidence} />
+								</label>
+								<div class="sources-group">
+									<span class="sources-label">Sources</span>
+									{#each entry.sources as source, j}
+										<div class="source-row">
+											<input type="text" bind:value={entry.sources[j]} placeholder="URL, book, etc." />
+											<button type="button" class="remove-btn" onclick={() => removeSource(i, j)}>x</button>
+										</div>
+									{/each}
+									<button type="button" class="add-inline-btn" onclick={() => addSource(i)}>+ Source</button>
+								</div>
+							</div>
+						{/each}
+						<button type="button" class="add-inline-btn" onclick={addResearchEntry}>+ Research entry</button>
+					</fieldset>
+
+					<fieldset class="research-section">
+						<legend>Stories</legend>
+						{#each form.stories as story, i}
+							<div class="research-entry">
+								<div class="research-entry-header">
+									<span class="research-entry-num">#{i + 1}</span>
+									<button type="button" class="remove-btn" onclick={() => removeStory(i)}>x</button>
+								</div>
+								<label>
+									Name
+									<input type="text" bind:value={story.name} />
+								</label>
+								<label>
+									Description
+									<textarea bind:value={story.description} rows="3"></textarea>
+								</label>
+								<div class="sources-group">
+									<span class="sources-label">Sources</span>
+									{#each story.sources as _, j}
+										<div class="source-row">
+											<input type="text" bind:value={story.sources[j]} placeholder="URL, book, etc." />
+											<button type="button" class="remove-btn" onclick={() => removeStoryListItem(i, 'sources', j)}>x</button>
+										</div>
+									{/each}
+									<button type="button" class="add-inline-btn" onclick={() => addStoryListItem(i, 'sources')}>+ Source</button>
+								</div>
+								<div class="sources-group">
+									<span class="sources-label">People</span>
+									{#each story.people as _, j}
+										<div class="source-row">
+											<input type="text" bind:value={story.people[j]} placeholder="Person slug" />
+											<button type="button" class="remove-btn" onclick={() => removeStoryListItem(i, 'people', j)}>x</button>
+										</div>
+									{/each}
+									<button type="button" class="add-inline-btn" onclick={() => addStoryListItem(i, 'people')}>+ Person</button>
+								</div>
+								<div class="sources-group">
+									<span class="sources-label">Places</span>
+									{#each story.places as _, j}
+										<div class="source-row">
+											<input type="text" bind:value={story.places[j]} placeholder="Location" />
+											<button type="button" class="remove-btn" onclick={() => removeStoryListItem(i, 'places', j)}>x</button>
+										</div>
+									{/each}
+									<button type="button" class="add-inline-btn" onclick={() => addStoryListItem(i, 'places')}>+ Place</button>
+								</div>
+								<div class="sources-group">
+									<span class="sources-label">Dates</span>
+									{#each story.dates as _, j}
+										<div class="source-row">
+											<input type="text" bind:value={story.dates[j]} placeholder="YYYY-MM-DD or description" />
+											<button type="button" class="remove-btn" onclick={() => removeStoryListItem(i, 'dates', j)}>x</button>
+										</div>
+									{/each}
+									<button type="button" class="add-inline-btn" onclick={() => addStoryListItem(i, 'dates')}>+ Date</button>
+								</div>
+							</div>
+						{/each}
+						<button type="button" class="add-inline-btn" onclick={addStory}>+ Story</button>
+					</fieldset>
+				</form>
+			{/if}
+
+			<hr />
+
+			<section class="relations">
+				{#if node.rels.parents.length}
+					<div class="relation-group">
+						<span class="relation-label">Parents</span>
 						{#each node.rels.parents as slug}
-							<button class="chip" onclick={() => onNavigate(slug)}>{getName(slug)}</button>
+							{@const rel = mode === 'edit' ? getFormRel(slug, 'parent') : null}
+							<div class="rel-entry">
+								<button class="chip" onclick={() => onNavigate(slug)}>{getName(slug)}</button>
+								{#if mode === 'view' && formatRelMeta(getRelMeta(slug, 'parent'))}
+									<span class="rel-meta">{formatRelMeta(getRelMeta(slug, 'parent'))}</span>
+								{/if}
+							</div>
+							{#if rel}
+								{@const ri = form.relationships.indexOf(rel)}
+								<div class="rel-edit">
+									<label>Start <input type="date" bind:value={rel.start_date} /></label>
+									<label>End <input type="date" bind:value={rel.end_date} /></label>
+									<div class="sources-group">
+										<span class="sources-label">Locations</span>
+										{#each rel.locations as _, li}
+											<div class="source-row">
+												<input type="text" bind:value={rel.locations[li]} placeholder="Location" />
+												<button type="button" class="remove-btn" onclick={() => removeRelLocation(ri, li)}>x</button>
+											</div>
+										{/each}
+										<button type="button" class="add-inline-btn" onclick={() => addRelLocation(ri)}>+ Location</button>
+									</div>
+								</div>
+							{/if}
 						{/each}
 					</div>
-				</div>
-			{/if}
+				{/if}
 
-			{#if siblings().length}
-				<div class="relation-group">
-					<span class="relation-label">Siblings</span>
-					<div class="chips">
-						{#each siblings() as slug}
-							<button class="chip" onclick={() => onNavigate(slug)}>{getName(slug)}</button>
-						{/each}
+				{#if siblings().length}
+					<div class="relation-group">
+						<span class="relation-label">Siblings</span>
+						<div class="chips">
+							{#each siblings() as slug}
+								<button class="chip" onclick={() => onNavigate(slug)}>{getName(slug)}</button>
+							{/each}
+						</div>
 					</div>
-				</div>
-			{/if}
+				{/if}
 
-			{#if node.rels.spouses.length}
-				<div class="relation-group">
-					<span class="relation-label">Partners</span>
-					<div class="chips">
+				{#if node.rels.spouses.length}
+					<div class="relation-group">
+						<span class="relation-label">Partners</span>
 						{#each node.rels.spouses as slug}
-							<button class="chip" onclick={() => onNavigate(slug)}>{getName(slug)}</button>
+							{@const rel = mode === 'edit' ? getFormRel(slug, 'partner') : null}
+							<div class="rel-entry">
+								<button class="chip" onclick={() => onNavigate(slug)}>{getName(slug)}</button>
+								{#if mode === 'view' && formatRelMeta(getRelMeta(slug, 'partner'))}
+									<span class="rel-meta">{formatRelMeta(getRelMeta(slug, 'partner'))}</span>
+								{/if}
+							</div>
+							{#if rel}
+								{@const ri = form.relationships.indexOf(rel)}
+								<div class="rel-edit">
+									<label>Start <input type="date" bind:value={rel.start_date} /></label>
+									<label>End <input type="date" bind:value={rel.end_date} /></label>
+									<div class="sources-group">
+										<span class="sources-label">Locations</span>
+										{#each rel.locations as _, li}
+											<div class="source-row">
+												<input type="text" bind:value={rel.locations[li]} placeholder="Location" />
+												<button type="button" class="remove-btn" onclick={() => removeRelLocation(ri, li)}>x</button>
+											</div>
+										{/each}
+										<button type="button" class="add-inline-btn" onclick={() => addRelLocation(ri)}>+ Location</button>
+									</div>
+								</div>
+							{/if}
 						{/each}
 					</div>
-				</div>
-			{/if}
+				{/if}
 
-			{#if node.rels.children.length}
-				<div class="relation-group">
-					<span class="relation-label">Children</span>
-					<div class="chips">
-						{#each node.rels.children as slug}
-							<button class="chip" onclick={() => onNavigate(slug)}>{getName(slug)}</button>
-						{/each}
+				{#if node.rels.children.length}
+					<div class="relation-group">
+						<span class="relation-label">Children</span>
+						<div class="chips">
+							{#each node.rels.children as slug}
+								<button class="chip" onclick={() => onNavigate(slug)}>{getName(slug)}</button>
+							{/each}
+						</div>
 					</div>
-				</div>
-			{/if}
-		</section>
+				{/if}
+			</section>
 
-		<hr />
+			<hr />
 
-		<section class="add-relatives">
-			<button onclick={() => addRelative('parent')}>+ Parent</button>
-			<button onclick={() => addRelative('sibling')}>+ Sibling</button>
-			<button onclick={() => addRelative('partner')}>+ Partner</button>
-			<button onclick={() => addRelative('child')}>+ Child</button>
-		</section>
+			<section class="add-relatives">
+				<button onclick={() => addRelative('parent')}>+ Parent</button>
+				<button onclick={() => addRelative('sibling')}>+ Sibling</button>
+				<button onclick={() => addRelative('partner')}>+ Partner</button>
+				<button onclick={() => addRelative('child')}>+ Child</button>
+			</section>
+		</div>
 	</aside>
 {/if}
 
@@ -535,41 +752,190 @@
 		width: 360px;
 		min-width: 360px;
 		height: 100vh;
-		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
 		background: #1a1a2e;
 		color: #e0e0e0;
-		padding: 16px;
 		box-sizing: border-box;
 		font-family: system-ui, sans-serif;
 		font-size: 14px;
 		border-left: 1px solid #333;
 	}
 
-	header {
+	.sidebar-header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 12px;
+		padding: 12px 16px;
+		border-bottom: 1px solid #333;
+		flex-shrink: 0;
 	}
 
-	header h2 {
+	.sidebar-header h2 {
 		margin: 0;
 		font-size: 18px;
 		font-weight: 600;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		min-width: 0;
 	}
 
-	.close-btn {
-		background: none;
-		border: none;
-		color: #888;
-		font-size: 22px;
-		cursor: pointer;
-		padding: 0 4px;
+	.header-actions {
+		display: flex;
+		gap: 6px;
+		flex-shrink: 0;
 	}
-	.close-btn:hover {
+
+	.header-btn {
+		padding: 4px 10px;
+		border: 1px solid #444;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 12px;
+		background: #16213e;
+		color: #e0e0e0;
+	}
+	.header-btn:hover {
+		border-color: #5e60ce;
 		color: #fff;
 	}
 
+	.header-btn.save-btn {
+		background: #5e60ce;
+		border-color: #5e60ce;
+		color: #fff;
+	}
+	.header-btn.save-btn:hover {
+		background: #7b7fd4;
+	}
+	.header-btn.save-btn:disabled {
+		opacity: 0.5;
+		cursor: default;
+	}
+
+	.header-btn.delete-btn {
+		background: #c0392b;
+		border-color: #c0392b;
+		color: #fff;
+	}
+	.header-btn.delete-btn:hover {
+		background: #e74c3c;
+	}
+
+	.header-btn.close-btn {
+		font-size: 16px;
+		line-height: 1;
+	}
+
+	.sidebar-body {
+		flex: 1;
+		overflow-y: auto;
+		padding: 16px;
+	}
+
+	/* View mode */
+	.view-content {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.dates-line {
+		color: #aaa;
+		font-size: 13px;
+	}
+
+	.detail-row {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+	}
+
+	.detail-label {
+		font-size: 11px;
+		text-transform: uppercase;
+		color: #888;
+		letter-spacing: 0.05em;
+	}
+
+	.detail-value {
+		color: #e0e0e0;
+	}
+
+	.detail-text {
+		margin: 0;
+		color: #e0e0e0;
+		white-space: pre-wrap;
+	}
+
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+	}
+
+	.tag {
+		background: #16213e;
+		border: 1px solid #444;
+		padding: 2px 8px;
+		border-radius: 10px;
+		font-size: 12px;
+		color: #e0e0e0;
+	}
+
+	.tag-type {
+		color: #888;
+		font-size: 10px;
+		text-transform: uppercase;
+		margin-right: 4px;
+	}
+
+	.view-card {
+		background: #16213e;
+		border-radius: 4px;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	.view-card p {
+		margin: 0;
+		font-size: 13px;
+	}
+
+	.view-card strong {
+		font-size: 14px;
+	}
+
+	.confidence {
+		font-size: 12px;
+		color: #aaa;
+	}
+
+	.sub-items {
+		font-size: 12px;
+		color: #aaa;
+	}
+
+	.view-sources {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		font-size: 12px;
+	}
+
+	.view-sources a {
+		color: #5e60ce;
+		text-decoration: none;
+		word-break: break-all;
+	}
+	.view-sources a:hover {
+		text-decoration: underline;
+	}
+
+	/* Edit mode / form */
 	form {
 		display: flex;
 		flex-direction: column;
@@ -616,42 +982,6 @@
 		color: #e0e0e0;
 	}
 
-	.actions {
-		display: flex;
-		gap: 8px;
-		margin-top: 4px;
-	}
-
-	.save-btn {
-		flex: 1;
-		padding: 8px;
-		background: #5e60ce;
-		color: #fff;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-		font-size: 14px;
-	}
-	.save-btn:hover {
-		background: #7b7fd4;
-	}
-	.save-btn:disabled {
-		opacity: 0.5;
-	}
-
-	.delete-btn {
-		padding: 8px 12px;
-		background: #c0392b;
-		color: #fff;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-		font-size: 14px;
-	}
-	.delete-btn:hover {
-		background: #e74c3c;
-	}
-
 	hr {
 		border: none;
 		border-top: 1px solid #333;
@@ -695,6 +1025,41 @@
 	.chip:hover {
 		background: #5e60ce;
 		border-color: #5e60ce;
+	}
+
+	.rel-entry {
+		display: flex;
+		align-items: baseline;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+
+	.rel-meta {
+		font-size: 11px;
+		color: #888;
+	}
+
+	.rel-edit {
+		background: #16213e;
+		border-radius: 4px;
+		padding: 8px;
+		margin-bottom: 4px;
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	.rel-edit label {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 6px;
+		font-size: 12px;
+		color: #aaa;
+	}
+
+	.rel-edit input[type='date'] {
+		flex: 1;
 	}
 
 	.add-relatives {

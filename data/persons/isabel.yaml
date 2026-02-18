@@ -1,0 +1,9 @@
+name:
+  given: Isabel
+  surnames:
+    current: McKay
+gender: female
+deceased: false
+relationships:
+  - type: partner
+    person: james-1

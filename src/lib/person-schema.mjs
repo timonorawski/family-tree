@@ -11,6 +11,8 @@ const personSchema = {
       additionalProperties: false,
       properties: {
         given: { type: 'string', minLength: 1 },
+        given_at_birth: { type: 'string' },
+        preferred: { type: 'string' },
         middles: { type: 'array', items: { type: 'string' } },
         surnames: {
           type: 'object',
@@ -53,7 +55,10 @@ const personSchema = {
         additionalProperties: false,
         properties: {
           type: { type: 'string', enum: ['parent', 'partner'] },
-          person: { type: 'string' }
+          person: { type: 'string' },
+          start_date: { type: 'string' },
+          end_date: { type: 'string' },
+          locations: { type: 'array', items: { type: 'string' } }
         }
       }
     },

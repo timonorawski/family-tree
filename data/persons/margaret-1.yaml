@@ -1,6 +1,7 @@
 name:
-  given: Margret
+  given: Margaret
 gender: female
+deceased: false
 relationships:
   - type: partner
     person: robert-2

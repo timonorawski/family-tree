@@ -1,5 +1,8 @@
 name:
   given: Jack
+  surnames:
+    current: Satov
+    birth: Youngberg
 gender: male
 deceased: false
 relationships:

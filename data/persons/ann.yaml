@@ -1,0 +1,13 @@
+name:
+  given: Ann
+  surnames:
+    current: McGeary
+gender: female
+dob: '1931-11-10'
+country_of_birth: United States
+interesting_facts: Born in Boston, Massachusetts. Half-sister of Donald S. McGeary (different mothers). As of 1939, living at 815 Webster St., Needham, Massachusetts.
+relationships:
+  - type: parent
+    person: donald-1
+  - type: parent
+    person: harriet

@@ -1,0 +1,14 @@
+name:
+  given: Hugh
+  middles:
+    - Gordon
+  surnames:
+    current: McGeary
+gender: male
+deceased: false
+interesting_facts: born 1951
+relationships:
+  - type: parent
+    person: margaret-2
+  - type: parent
+    person: donald

@@ -1,6 +1,12 @@
 name:
   given: Jane
+  preferred: Jennie
+  middles:
+    - Adelaide
+  surnames:
+    current: Rennie
 gender: female
+deceased: false
 relationships:
   - type: partner
-    person: robert-1
+    person: robert-4

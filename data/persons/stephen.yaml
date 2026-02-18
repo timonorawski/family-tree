@@ -1,6 +1,9 @@
 name:
   given: Stephen
+  surnames:
+    current: Mahoney
 gender: male
+deceased: false
 relationships:
   - type: partner
     person: nadia

@@ -1,6 +1,9 @@
 name:
   given: Maria
+  surnames:
+    current: Skiciak
 gender: female
+deceased: false
 relationships:
   - type: partner
     person: jan

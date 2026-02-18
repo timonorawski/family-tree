@@ -3,6 +3,6 @@ name:
 gender: female
 relationships:
   - type: parent
-    person: eugene-1
+    person: eugene
   - type: parent
     person: genevieve

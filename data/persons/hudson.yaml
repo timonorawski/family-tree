@@ -1,6 +1,9 @@
 name:
   given: Hudson
+  surnames:
+    current: Satov
 gender: male
+deceased: false
 relationships:
   - type: parent
     person: jack

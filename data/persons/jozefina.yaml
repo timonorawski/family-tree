@@ -1,6 +1,9 @@
 name:
   given: Jozefina
-gender: male
+  surnames:
+    current: Zmora
+gender: female
+deceased: false
 relationships:
   - type: partner
     person: bartlomiej

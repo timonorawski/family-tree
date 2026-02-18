@@ -11,6 +11,6 @@ relationships:
   - type: parent
     person: robert-2
   - type: parent
-    person: margret-2
+    person: margaret-1
   - type: partner
     person: cecil

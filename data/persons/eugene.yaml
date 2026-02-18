@@ -1,6 +1,13 @@
 name:
   given: Eugene
+  given_at_birth: Eugeniusz
+  surnames:
+    current: Orawski
+    birth: Cieluch
 gender: male
+dob: '1910-07-16'
+dod: '1980-04-24'
+deceased: true
 relationships:
   - type: parent
     person: jan

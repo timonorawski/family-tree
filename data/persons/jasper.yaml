@@ -1,5 +1,7 @@
 name:
   given: Jasper
+  surnames:
+    current: Satov
 gender: male
 deceased: false
 relationships:

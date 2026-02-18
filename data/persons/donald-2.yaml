@@ -1,6 +1,0 @@
-name:
-  given: Donald
-gender: male
-relationships:
-  - type: partner
-    person: bertha

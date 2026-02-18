@@ -90,26 +90,24 @@ export function update(slug, data) {
   const result = validate(cleaned);
   if (!result.valid) throw new Error(`Validation failed: ${result.errors.join(', ')}`);
 
-  // Check if slug needs to change
-  let newSlug = slug;
-  const given = cleaned.name?.given;
-  if (given && slugify(given) !== slug) {
-    newSlug = slugify(given);
-    let candidate = newSlug;
-    let counter = 1;
-    while (fs.existsSync(path.join(PERSONS_DIR, `${candidate}.yaml`))) {
-      candidate = `${newSlug}-${counter++}`;
-    }
-    newSlug = candidate;
-    const newPath = path.join(PERSONS_DIR, `${newSlug}.yaml`);
-    fs.renameSync(fp, newPath);
-    rewriteReferences(slug, newSlug);
-    fs.writeFileSync(newPath, yaml.dump(cleaned, { lineWidth: -1 }), 'utf-8');
-  } else {
-    fs.writeFileSync(fp, yaml.dump(cleaned, { lineWidth: -1 }), 'utf-8');
-  }
+  fs.writeFileSync(fp, yaml.dump(cleaned, { lineWidth: -1 }), 'utf-8');
+  return { slug, ...cleaned };
+}
 
-  return { slug: newSlug, ...cleaned };
+/**
+ * Rename a person's slug. Updates the filename and all references in other persons.
+ * Returns { oldSlug, newSlug }.
+ * Throws on not found or if newSlug already exists.
+ */
+export function rename(oldSlug, newSlug) {
+  const fp = path.join(PERSONS_DIR, `${oldSlug}.yaml`);
+  if (!fs.existsSync(fp)) throw new Error(`Person not found: ${oldSlug}`);
+  const newPath = path.join(PERSONS_DIR, `${newSlug}.yaml`);
+  if (fs.existsSync(newPath)) throw new Error(`Slug already exists: ${newSlug}`);
+
+  fs.renameSync(fp, newPath);
+  rewriteReferences(oldSlug, newSlug);
+  return { oldSlug, newSlug };
 }
 
 /**
@@ -215,6 +213,7 @@ export function search(query) {
       const given = (typeof p.name === 'object' ? p.name.given : p.name) || '';
       const searchable = [
         slug, given,
+        p.name?.given_at_birth, p.name?.preferred,
         p.name?.surnames?.current, p.name?.surnames?.birth,
         p.profession, p.interesting_facts, p.country_of_birth
       ].filter(Boolean).join(' ').toLowerCase();

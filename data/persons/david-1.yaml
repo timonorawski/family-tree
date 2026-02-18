@@ -4,7 +4,7 @@ gender: male
 dob: '1960-09-13'
 relationships:
   - type: parent
-    person: shirly
+    person: shirley
   - type: parent
     person: irving
   - type: partner

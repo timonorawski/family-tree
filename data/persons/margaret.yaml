@@ -1,6 +1,12 @@
 name:
   given: Margaret
+  surnames:
+    current: Selby
 gender: female
+dob: '1814-01-01'
+dod: '0899-01-01'
+deceased: true
+interesting_facts: Only years of birth and death known
 relationships:
   - type: partner
     person: george
