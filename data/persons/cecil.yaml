@@ -1,9 +1,16 @@
 name:
   given: Cecil
+  surnames:
+    current: Turnour
 gender: male
+dob: '1880-01-01'
+dod: '1953-01-01'
+deceased: true
+country_of_birth: Canada
+interesting_facts: Of London, Ontario, Canada.
 relationships:
   - type: parent
-    person: charles-1
+    person: charles-2
   - type: parent
     person: elizabeth
   - type: partner

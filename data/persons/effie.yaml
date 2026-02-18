@@ -1,6 +1,12 @@
 name:
   given: Effie
+  middles:
+    - Annie
+  surnames:
+    birth: McMillan
 gender: female
+dod: '1956-01-01'
+deceased: true
 relationships:
   - type: parent
     person: robert-2

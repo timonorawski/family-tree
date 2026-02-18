@@ -1,0 +1,31 @@
+name:
+  given: Donald
+  middles:
+    - S.
+  surnames:
+    current: McGeary
+gender: male
+deceased: true
+profession: Chief Meteorologist, Royal Canadian Navy
+interesting_facts: Served as Chief Meteorologist on HMCS Bonaventure, Canada's aircraft carrier (1957-1970). His meteorological observations and orchestration of pilot observation gathering were reportedly instrumental in convincing the Germans that Canada had operational radar capability during WWII.
+country_of_birth: Canada
+relationships:
+  - type: parent
+    person: donald-2
+  - type: parent
+    person: bertha
+  - type: partner
+    person: margaret-2
+stories:
+  - name: HMCS Bonaventure Service
+    description: Donald served as Chief Meteorologist on HMCS Bonaventure, Canada's aircraft carrier. The Bonaventure (purchased from Britain and completed to Canadian specifications) was the only aircraft carrier truly owned by the Royal Canadian Navy, as the previous carriers Warrior and Magnificent had been on loan from the Royal Navy.
+    places:
+      - HMCS Bonaventure
+    dates:
+      - 1957-1970
+  - name: WWII Radar Deception
+    description: According to family accounts, Donald's meteorological observations and his orchestration of pilot observation gathering were instrumental in convincing the Germans that Canada had operational radar capability when it did not. This activity during World War II, prior to his service on the Bonaventure, speaks to the broader pattern of Allied deception operations that were critical to the war effort.
+    dates:
+      - 1939-1945
+    sources:
+      - Family accounts

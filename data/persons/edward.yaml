@@ -1,11 +1,43 @@
 name:
   given: Edward
+  surnames:
+    current: Garth-Turnour
 gender: male
-interesting_facts: 1st Earl of Wintorton
+dob: '1734-01-01'
+dod: '1788-01-01'
+deceased: true
+profession: 1st Earl Winterton, MP for Bramber, Fellow of the Royal Society
+interesting_facts: 'Born Edward Garth. On inheriting the Turnour estates from his mother in 1744, assumed by Royal Licence the surname Turnour in lieu of Garth. Created Baron Winterton 1761, Viscount Turnour and Earl Winterton 1766 (all Irish peerage). Elected Fellow of the Royal Society 1767. MP for Bramber 1761-69. Family seat: Shillinglee Park, Sussex.'
+country_of_birth: England
 relationships:
   - type: parent
-    person: sarah-1
+    person: sarah
   - type: parent
     person: sir-edward
   - type: partner
     person: anne
+stories:
+  - name: Shillinglee Park
+    description: Shillinglee is an 18th-century house and estate in West Sussex, near the Surrey border. Built in 1735, a 2,000-acre landscaped park was laid out in the 1770s with fishponds and tree planting in the style of Capability Brown. In 1766 there were 26 gardeners on staff. The house was the seat of the Earls Winterton from the creation of the title until WWII. During WWII, the house was occupied by Canadian forces who accidentally burnt it down in approximately January 1943. The irony of Canadian soldiers destroying the ancestral home of a family whose title would pass to a Canadian branch two decades later has not been lost on the family. The house was later partially rebuilt and is now a Grade II* listed building.
+    places:
+      - Shillinglee Park, West Sussex
+    dates:
+      - '1735'
+      - 1770s
+      - '1943'
+  - name: The Name Inheritance
+    description: The Turnour name passed through two successive female lines before being restored. Sir Edward Turnor the Speaker (d.1676) had a grandson Charles whose line died out in the male line. The name survived through Charles's sister Sarah Turnour, who married Francis Gee, whose daughter Sarah Gee married Joseph Garth. Their son Edward Garth then assumed the Turnour name by Royal Licence in 1744.
+    people:
+      - sir-edward
+      - sarah
+  - name: Family Motto and Arms
+    description: 'Arms: Ermines, on a Cross quarter pierced Argent, four Fers-de-Moulin Sable. Motto: Esse Quam Videri — ''To be, rather than seem to be''.'
+research:
+  - description: The Turnour family traces its origins to a legal family of Suffolk origin that acquired property in Essex toward the end of the 16th century. Through six centuries, the family produced a Speaker of the House of Commons, an Earl who was a Fellow of the Royal Society, a politician who served alongside Lawrence of Arabia, and eventually migrated to Canada where the title now resides.
+    confidence: 90
+    sources:
+      - cracroftspeerage.co.uk
+      - thepeerage.com
+      - historyofparliamentonline.org
+      - Wikipedia
+      - Burke's Peerage 2003, vol. 3, pp. 4225-4226

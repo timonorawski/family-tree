@@ -1,0 +1,16 @@
+name:
+  given: Robert
+  middles:
+    - Charles
+  surnames:
+    current: Turnour
+gender: male
+dob: '1950-01-01'
+deceased: false
+interesting_facts: Heir presumptive to the Earldom of Winterton. Married (1) 1974 Sheila Stocking (div. 1976); (2) 1983 Patricia Ann Avery.
+country_of_birth: Canada
+relationships:
+  - type: parent
+    person: cecil-1
+  - type: parent
+    person: evelyn

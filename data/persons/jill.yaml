@@ -1,0 +1,12 @@
+name:
+  given: Jill
+  middles:
+    - Pauline
+  surnames:
+    birth: Esplen
+gender: female
+deceased: false
+country_of_birth: Canada
+relationships:
+  - type: partner
+    person: david

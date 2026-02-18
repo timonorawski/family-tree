@@ -1,11 +1,14 @@
 name:
   given: Wendy
+  surnames:
+    current: McGeary
 gender: female
 dob: '1948-11-12'
+deceased: false
 relationships:
   - type: parent
-    person: margaret-1
+    person: margaret-2
   - type: parent
-    person: donald-1
+    person: donald
   - type: partner
     person: walter

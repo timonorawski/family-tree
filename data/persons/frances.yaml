@@ -1,11 +1,11 @@
 name:
-  given: Elizabeth
+  given: Frances
   middles:
-    - Ethel
+    - Louisa
   surnames:
-    birth: Downer
+    birth: Master
 gender: female
 deceased: true
 relationships:
   - type: partner
-    person: charles-2
+    person: charles

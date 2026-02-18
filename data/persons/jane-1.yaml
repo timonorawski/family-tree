@@ -1,0 +1,12 @@
+name:
+  given: Jane
+  surnames:
+    birth: Chapman
+gender: female
+dod: '1792-01-01'
+deceased: true
+interesting_facts: Daughter of Richard Chapman of London. First wife of the 2nd Earl Winterton. Mother of Rev. Adolphus Augustus Turnour.
+country_of_birth: England
+relationships:
+  - type: partner
+    person: edward-1

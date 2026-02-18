@@ -1,0 +1,20 @@
+name:
+  given: Cecil
+  middles:
+    - Noel
+  surnames:
+    current: Turnour
+gender: male
+dob: '1919-01-01'
+dod: '1987-01-01'
+deceased: true
+profession: F/Lt RCAF
+interesting_facts: F/Lt Cecil Noel Turnour DFM CD RD RCAF. Father of the 8th Earl Winterton.
+country_of_birth: Canada
+relationships:
+  - type: parent
+    person: cecil
+  - type: parent
+    person: effie
+  - type: partner
+    person: evelyn

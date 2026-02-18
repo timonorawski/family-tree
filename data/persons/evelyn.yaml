@@ -1,11 +1,12 @@
 name:
-  given: Elizabeth
+  given: Evelyn
   middles:
-    - Ethel
+    - Isobel
   surnames:
-    birth: Downer
+    birth: Oulton
 gender: female
 deceased: true
+country_of_birth: Canada
 relationships:
   - type: partner
-    person: charles-2
+    person: cecil-1

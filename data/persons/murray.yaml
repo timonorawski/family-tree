@@ -1,0 +1,19 @@
+name:
+  given: Murray
+  middles:
+    - John
+  surnames:
+    current: Turnour
+gender: male
+dob: '1961-01-01'
+deceased: false
+profession: Doctor
+interesting_facts: Dr. Murray John Turnour. Next in line to the Earldom after Robert Charles.
+country_of_birth: Canada
+relationships:
+  - type: parent
+    person: cecil-1
+  - type: parent
+    person: evelyn
+  - type: partner
+    person: brenda

@@ -1,0 +1,20 @@
+name:
+  given: Adolphus
+  middles:
+    - Augustus
+  surnames:
+    current: Turnour
+gender: male
+dob: '1789-01-01'
+dod: '1857-01-01'
+deceased: true
+profession: Rector of Tatterset, Vicar of Beesthorpe, Norfolk
+interesting_facts: Rev. and Hon. Younger son of the 2nd Earl Winterton. Cadet branch through which the earldom eventually passed to the Canadian line and from which the McGeary family descends.
+country_of_birth: England
+relationships:
+  - type: partner
+    person: jessie
+  - type: parent
+    person: edward-1
+  - type: parent
+    person: jane-1

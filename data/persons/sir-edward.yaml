@@ -1,8 +1,31 @@
 name:
   given: Sir Edward
   surnames:
-    current: Turnour
+    current: Turnor
 gender: male
+dob: '1617-01-01'
+dod: '1676-01-01'
+deceased: true
+profession: Speaker of the House of Commons, Lord Chief Baron of the Exchequer
+interesting_facts: Speaker of the House of Commons 1661-1671. Lord Chief Baron of the Exchequer 1671-1676. Knighted 1660. Attorney-General to the Duke of York. Served as judge under the Fire of London Disputes Act 1666. Died on circuit in Bedford.
+country_of_birth: England
 relationships:
   - type: partner
-    person: sarah-1
+    person: sarah
+stories:
+  - name: Fire of London Disputes
+    description: Sir Edward served as one of the judges under the Fire of London Disputes Act 1666, dealing with property disputes after the Great Fire of London. He also served as Attorney-General to the Duke of York before becoming Speaker of the House of Commons.
+    places:
+      - London
+      - Bedford
+    dates:
+      - '1660'
+      - 1661-1671
+      - '1666'
+      - 1671-1676
+research:
+  - description: Earliest documented ancestor in the direct Turnour line traceable to the McGeary family. The family traces its origins to a legal family of Suffolk origin that acquired property in Essex toward the end of the 16th century. His father was Arthur Turnour (c.1588-1651) of Little Parndon and the Middle Temple, MP for Derby in the Addled Parliament of 1614, Serjeant-at-Law in 1637.
+    confidence: 85
+    sources:
+      - historyofparliamentonline.org
+      - Wikipedia

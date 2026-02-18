@@ -1,7 +1,12 @@
 name:
   given: Walter
+  surnames:
+    current: Orawski
+    birth: Cieluch
 gender: male
 dob: '1934-08-11'
+dod: '2007-02-14'
+deceased: true
 relationships:
   - type: parent
     person: eugene-1

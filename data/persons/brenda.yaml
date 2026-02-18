@@ -1,0 +1,12 @@
+name:
+  given: Brenda
+  middles:
+    - Jill
+  surnames:
+    birth: Behan
+gender: female
+deceased: false
+country_of_birth: Canada
+relationships:
+  - type: partner
+    person: murray

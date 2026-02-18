@@ -1,0 +1,23 @@
+name:
+  given: Margaret
+  middles:
+    - Ethel
+  surnames:
+    current: McGeary
+    birth: Turnour
+gender: female
+dob: '1917-01-01'
+deceased: false
+relationships:
+  - type: parent
+    person: cecil
+  - type: parent
+    person: effie
+  - type: partner
+    person: donald
+research:
+  - description: Margaret Ethel Turnour married Donald S. McGeary in 1939 in Aurora, Ontario. She is a sister of Robert Chad Turnour (7th Earl Winterton) and F/Lt Cecil Noel Turnour. The McGeary branch descends through a female line and is not in the line of succession for the Earldom, but is fully part of the same bloodline.
+    confidence: 95
+    sources:
+      - turnour_family_tree.docx
+      - Family accounts

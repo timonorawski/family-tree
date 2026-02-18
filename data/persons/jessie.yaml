@@ -1,0 +1,9 @@
+name:
+  given: Jessie
+  surnames:
+    birth: Dewar
+gender: female
+deceased: true
+relationships:
+  - type: partner
+    person: adolphus

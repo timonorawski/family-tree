@@ -3,6 +3,6 @@ name:
 gender: male
 relationships:
   - type: parent
-    person: margaret-1
+    person: margaret-2
   - type: parent
-    person: donald-1
+    person: donald

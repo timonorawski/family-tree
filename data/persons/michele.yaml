@@ -1,0 +1,15 @@
+name:
+  given: Michele
+  middles:
+    - Susan
+  surnames:
+    current: Turnour
+gender: female
+dob: '1973-01-01'
+deceased: false
+country_of_birth: Canada
+relationships:
+  - type: parent
+    person: david
+  - type: parent
+    person: jill
