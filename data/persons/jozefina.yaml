@@ -1,0 +1,6 @@
+name:
+  given: Jozefina
+gender: male
+relationships:
+  - type: partner
+    person: bartlomiej

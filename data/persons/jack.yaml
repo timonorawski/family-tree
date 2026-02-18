@@ -1,0 +1,7 @@
+name:
+  given: Jack
+gender: male
+deceased: false
+relationships:
+  - type: partner
+    person: amanda

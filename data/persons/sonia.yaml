@@ -1,0 +1,12 @@
+name:
+  given: Sonia
+gender: female
+dob: '1982-12-06'
+country_of_birth: Canada
+relationships:
+  - type: parent
+    person: dawna
+  - type: parent
+    person: howie
+  - type: partner
+    person: timon

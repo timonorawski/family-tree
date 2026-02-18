@@ -1,0 +1,11 @@
+name:
+  given: Margaret
+gender: female
+deceased: false
+relationships:
+  - type: parent
+    person: cecil
+  - type: parent
+    person: effie
+  - type: partner
+    person: donald-1

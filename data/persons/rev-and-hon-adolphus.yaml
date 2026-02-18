@@ -1,0 +1,10 @@
+name:
+  given: Rev. and Hon. Adolphus
+gender: male
+relationships:
+  - type: parent
+    person: edward
+  - type: parent
+    person: anne
+  - type: partner
+    person: unknown-1

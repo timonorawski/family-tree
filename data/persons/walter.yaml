@@ -1,0 +1,11 @@
+name:
+  given: Walter
+gender: male
+dob: '1934-08-11'
+relationships:
+  - type: parent
+    person: eugene-1
+  - type: parent
+    person: genevieve
+  - type: partner
+    person: wendy

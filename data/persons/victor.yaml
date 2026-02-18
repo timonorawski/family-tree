@@ -1,0 +1,10 @@
+name:
+  given: Victor
+gender: male
+relationships:
+  - type: parent
+    person: sarah-2
+  - type: parent
+    person: lou
+  - type: partner
+    person: laurel

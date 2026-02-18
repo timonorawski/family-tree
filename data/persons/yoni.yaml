@@ -1,0 +1,8 @@
+name:
+  given: Yoni
+gender: male
+relationships:
+  - type: parent
+    person: norry
+  - type: parent
+    person: mazel

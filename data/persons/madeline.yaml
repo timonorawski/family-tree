@@ -1,0 +1,8 @@
+name:
+  given: Madeline
+gender: male
+relationships:
+  - type: parent
+    person: mitch
+  - type: parent
+    person: michelle

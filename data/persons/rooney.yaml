@@ -1,0 +1,8 @@
+name:
+  given: Rooney
+gender: male
+relationships:
+  - type: parent
+    person: clare
+  - type: parent
+    person: celia

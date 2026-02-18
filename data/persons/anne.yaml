@@ -1,0 +1,6 @@
+name:
+  given: Anne
+gender: female
+relationships:
+  - type: partner
+    person: edward

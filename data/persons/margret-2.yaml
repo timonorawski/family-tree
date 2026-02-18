@@ -1,0 +1,6 @@
+name:
+  given: Margret
+gender: female
+relationships:
+  - type: partner
+    person: robert-2

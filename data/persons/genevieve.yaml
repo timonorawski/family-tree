@@ -1,0 +1,10 @@
+name:
+  given: Genevieve
+gender: female
+relationships:
+  - type: parent
+    person: jozefina
+  - type: parent
+    person: bartlomiej
+  - type: partner
+    person: eugene-1

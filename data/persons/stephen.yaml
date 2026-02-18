@@ -1,0 +1,6 @@
+name:
+  given: Stephen
+gender: male
+relationships:
+  - type: partner
+    person: nadia

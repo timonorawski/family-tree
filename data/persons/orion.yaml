@@ -1,0 +1,10 @@
+name:
+  given: Orion
+gender: male
+dob: '1994-07-04'
+country_of_birth: Canada
+relationships:
+  - type: parent
+    person: timon
+  - type: parent
+    person: sonia

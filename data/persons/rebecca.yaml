@@ -1,0 +1,7 @@
+name:
+  given: Rebecca
+gender: female
+dob: '1988-04-11'
+relationships:
+  - type: partner
+    person: jake

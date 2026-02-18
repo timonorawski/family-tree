@@ -1,0 +1,8 @@
+name:
+  given: Charlotte
+gender: female
+relationships:
+  - type: parent
+    person: eugene-1
+  - type: parent
+    person: genevieve

@@ -1,0 +1,11 @@
+name:
+  given: Nadia
+gender: female
+dob: '1978-11-29'
+relationships:
+  - type: parent
+    person: wendy
+  - type: parent
+    person: walter
+  - type: partner
+    person: stephen

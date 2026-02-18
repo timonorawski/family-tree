@@ -1,0 +1,11 @@
+name:
+  given: Celia
+gender: female
+dob: '1988-10-14'
+relationships:
+  - type: parent
+    person: dawna
+  - type: parent
+    person: howie
+  - type: partner
+    person: clare

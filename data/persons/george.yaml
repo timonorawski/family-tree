@@ -1,0 +1,6 @@
+name:
+  given: George
+gender: male
+relationships:
+  - type: partner
+    person: margaret

@@ -1,0 +1,10 @@
+name:
+  given: Effie
+gender: female
+relationships:
+  - type: parent
+    person: robert-2
+  - type: parent
+    person: margret-2
+  - type: partner
+    person: cecil

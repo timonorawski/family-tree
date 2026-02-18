@@ -1,0 +1,7 @@
+name:
+  given: Sarah
+gender: female
+dob: '1927-07-14'
+relationships:
+  - type: partner
+    person: lou

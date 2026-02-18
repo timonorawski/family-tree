@@ -1,0 +1,7 @@
+name:
+  given: Sara
+gender: female
+dob: '1987-04-04'
+relationships:
+  - type: partner
+    person: max

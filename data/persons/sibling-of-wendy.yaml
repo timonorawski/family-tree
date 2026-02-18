@@ -1,0 +1,8 @@
+name:
+  given: Sibling of Wendy
+gender: male
+relationships:
+  - type: parent
+    person: margaret-1
+  - type: parent
+    person: donald-1

@@ -1,0 +1,8 @@
+name:
+  given: Jordan
+gender: male
+relationships:
+  - type: parent
+    person: norry
+  - type: parent
+    person: joyce

@@ -1,0 +1,6 @@
+name:
+  given: David
+gender: female
+relationships:
+  - type: partner
+    person: karyn

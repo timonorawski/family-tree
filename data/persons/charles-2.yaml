@@ -1,0 +1,10 @@
+name:
+  given: Charles
+gender: male
+relationships:
+  - type: parent
+    person: unknown-1
+  - type: parent
+    person: rev-and-hon-adolphus
+  - type: partner
+    person: unknown-2

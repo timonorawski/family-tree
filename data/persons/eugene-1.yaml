@@ -1,0 +1,10 @@
+name:
+  given: Eugene
+gender: male
+relationships:
+  - type: parent
+    person: jan
+  - type: parent
+    person: maria
+  - type: partner
+    person: genevieve

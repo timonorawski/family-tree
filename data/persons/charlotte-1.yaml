@@ -1,0 +1,9 @@
+name:
+  given: Charlotte
+gender: female
+dob: '2016-04-11'
+relationships:
+  - type: parent
+    person: nadia
+  - type: parent
+    person: stephen

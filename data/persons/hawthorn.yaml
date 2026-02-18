@@ -1,0 +1,9 @@
+name:
+  given: Hawthorn
+gender: male
+dob: '2109-12-03'
+relationships:
+  - type: parent
+    person: timon
+  - type: parent
+    person: sonia

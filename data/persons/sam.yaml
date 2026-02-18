@@ -1,0 +1,8 @@
+name:
+  given: Sam
+gender: male
+relationships:
+  - type: parent
+    person: eugene-1
+  - type: parent
+    person: genevieve

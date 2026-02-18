@@ -1,0 +1,11 @@
+name:
+  given: Edward
+gender: male
+interesting_facts: 1st Earl of Wintorton
+relationships:
+  - type: parent
+    person: sarah-1
+  - type: parent
+    person: sir-edward
+  - type: partner
+    person: anne

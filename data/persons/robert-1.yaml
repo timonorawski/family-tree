@@ -1,0 +1,10 @@
+name:
+  given: Robert
+gender: male
+relationships:
+  - type: parent
+    person: george
+  - type: parent
+    person: margaret
+  - type: partner
+    person: jane

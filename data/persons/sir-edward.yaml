@@ -1,0 +1,8 @@
+name:
+  given: Sir Edward
+  surnames:
+    current: Turnour
+gender: male
+relationships:
+  - type: partner
+    person: sarah-1

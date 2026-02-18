@@ -1,0 +1,8 @@
+name:
+  given: Carolyn
+gender: male
+relationships:
+  - type: parent
+    person: victor
+  - type: parent
+    person: laurel

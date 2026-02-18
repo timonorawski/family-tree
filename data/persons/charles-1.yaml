@@ -1,0 +1,10 @@
+name:
+  given: Charles
+gender: male
+relationships:
+  - type: parent
+    person: charles-2
+  - type: parent
+    person: unknown-2
+  - type: partner
+    person: elizabeth

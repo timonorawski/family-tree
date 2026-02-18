@@ -1,0 +1,6 @@
+name:
+  given: Bartlomiej
+gender: female
+relationships:
+  - type: partner
+    person: jozefina

@@ -1,0 +1,8 @@
+name:
+  given: Baby
+gender: male
+relationships:
+  - type: parent
+    person: jack
+  - type: parent
+    person: amanda

@@ -1,0 +1,11 @@
+name:
+  given: David
+gender: male
+dob: '1960-09-13'
+relationships:
+  - type: parent
+    person: shirly
+  - type: parent
+    person: irving
+  - type: partner
+    person: alison

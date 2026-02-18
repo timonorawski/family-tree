@@ -1,0 +1,6 @@
+name:
+  given: Jane
+gender: female
+relationships:
+  - type: partner
+    person: robert-1

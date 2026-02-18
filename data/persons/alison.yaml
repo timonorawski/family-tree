@@ -1,0 +1,7 @@
+name:
+  given: Alison
+gender: female
+dob: '1958-04-03'
+relationships:
+  - type: partner
+    person: david-1

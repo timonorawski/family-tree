@@ -1,0 +1,8 @@
+name:
+  given: Talia
+gender: female
+relationships:
+  - type: parent
+    person: norry
+  - type: parent
+    person: mazel

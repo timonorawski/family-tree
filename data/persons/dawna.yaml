@@ -1,0 +1,11 @@
+name:
+  given: Dawna
+gender: female
+dob: '1954-04-29'
+relationships:
+  - type: parent
+    person: shirly
+  - type: parent
+    person: irving
+  - type: partner
+    person: howie

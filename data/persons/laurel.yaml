@@ -1,0 +1,6 @@
+name:
+  given: Laurel
+gender: female
+relationships:
+  - type: partner
+    person: victor

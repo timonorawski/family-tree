@@ -1,0 +1,6 @@
+name:
+  given: Maria
+gender: female
+relationships:
+  - type: partner
+    person: jan

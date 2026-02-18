@@ -1,0 +1,10 @@
+name:
+  given: Mitch
+gender: male
+relationships:
+  - type: parent
+    person: sarah-2
+  - type: parent
+    person: lou
+  - type: partner
+    person: michelle

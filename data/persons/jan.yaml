@@ -1,0 +1,6 @@
+name:
+  given: Jan
+gender: male
+relationships:
+  - type: partner
+    person: maria

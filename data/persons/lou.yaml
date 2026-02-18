@@ -1,0 +1,7 @@
+name:
+  given: Lou
+gender: male
+dob: '1922-01-15'
+relationships:
+  - type: partner
+    person: sarah-2

@@ -1,0 +1,6 @@
+name:
+  given: Margaret
+gender: female
+relationships:
+  - type: partner
+    person: george

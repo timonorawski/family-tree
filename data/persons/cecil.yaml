@@ -1,0 +1,10 @@
+name:
+  given: Cecil
+gender: male
+relationships:
+  - type: parent
+    person: charles-1
+  - type: parent
+    person: elizabeth
+  - type: partner
+    person: effie

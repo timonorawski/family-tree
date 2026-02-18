@@ -1,0 +1,9 @@
+name:
+  given: Ray
+gender: male
+dob: '2024-01-07'
+relationships:
+  - type: parent
+    person: max
+  - type: parent
+    person: sara

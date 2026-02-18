@@ -1,0 +1,7 @@
+name:
+  given: Irving
+gender: male
+dob: '1928-09-17'
+relationships:
+  - type: partner
+    person: shirly

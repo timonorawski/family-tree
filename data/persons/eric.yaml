@@ -1,0 +1,8 @@
+name:
+  given: Eric
+gender: male
+relationships:
+  - type: parent
+    person: victor
+  - type: parent
+    person: laurel

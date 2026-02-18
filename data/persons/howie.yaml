@@ -1,0 +1,11 @@
+name:
+  given: Howie
+gender: male
+dob: '1952-12-05'
+relationships:
+  - type: parent
+    person: sarah-2
+  - type: parent
+    person: lou
+  - type: partner
+    person: dawna

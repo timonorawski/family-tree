@@ -1,0 +1,8 @@
+name:
+  given: Allison
+gender: male
+relationships:
+  - type: parent
+    person: victor
+  - type: parent
+    person: laurel

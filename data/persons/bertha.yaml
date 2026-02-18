@@ -1,0 +1,10 @@
+name:
+  given: Bertha
+gender: female
+relationships:
+  - type: parent
+    person: robert-1
+  - type: parent
+    person: jane
+  - type: partner
+    person: donald-2

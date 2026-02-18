@@ -1,0 +1,9 @@
+name:
+  given: Lara
+gender: female
+dob: '1986-07-09'
+relationships:
+  - type: parent
+    person: wendy
+  - type: parent
+    person: walter
