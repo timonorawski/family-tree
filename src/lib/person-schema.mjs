@@ -29,6 +29,22 @@ const personSchema = {
     deceased: { type: 'boolean' },
     profession: { type: 'string' },
     interesting_facts: { type: 'string' },
+    titles: {
+      type: 'array',
+      items: {
+        type: 'object',
+        required: ['value', 'type'],
+        additionalProperties: false,
+        properties: {
+          value: { type: 'string' },
+          type: { type: 'string', enum: ['noble', 'military', 'religious', 'academic', 'civic'] }
+        }
+      }
+    },
+    aliases: {
+      type: 'array',
+      items: { type: 'string' }
+    },
     relationships: {
       type: 'array',
       items: {

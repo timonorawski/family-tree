@@ -8,7 +8,9 @@ gender: male
 dob: '1915-01-01'
 dod: '1991-01-01'
 deceased: true
-profession: 7th Earl Winterton
+titles:
+  - value: 7th Earl Winterton
+    type: noble
 interesting_facts: Succeeded as 7th Earl Winterton when the 6th Earl (his fourth cousin once removed) died childless in 1962. The Irish earldom passed to the Canadian branch. Married (1) 1941 Kathleen Ella Whyte; (2) 1971 Marion Eleanor Phillips. Died without issue; succeeded by his nephew David.
 country_of_birth: Canada
 relationships:

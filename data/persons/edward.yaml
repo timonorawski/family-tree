@@ -6,7 +6,10 @@ gender: male
 dob: '1734-01-01'
 dod: '1788-01-01'
 deceased: true
-profession: 1st Earl Winterton, MP for Bramber, Fellow of the Royal Society
+profession: MP for Bramber, Fellow of the Royal Society
+titles:
+  - value: 1st Earl Winterton
+    type: noble
 interesting_facts: 'Born Edward Garth. On inheriting the Turnour estates from his mother in 1744, assumed by Royal Licence the surname Turnour in lieu of Garth. Created Baron Winterton 1761, Viscount Turnour and Earl Winterton 1766 (all Irish peerage). Elected Fellow of the Royal Society 1767. MP for Bramber 1761-69. Family seat: Shillinglee Park, Sussex.'
 country_of_birth: England
 relationships:

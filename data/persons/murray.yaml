@@ -8,7 +8,10 @@ gender: male
 dob: '1961-01-01'
 deceased: false
 profession: Doctor
-interesting_facts: Dr. Murray John Turnour. Next in line to the Earldom after Robert Charles.
+interesting_facts: Next in line to the Earldom after Robert Charles.
+titles:
+  - value: Dr.
+    type: academic
 country_of_birth: Canada
 relationships:
   - type: parent

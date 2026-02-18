@@ -37,7 +37,12 @@
 						places: s.places ? [...s.places] : [],
 						dates: s.dates ? [...s.dates] : [],
 						people: s.people ? [...s.people] : []
-					}))
+					})),
+					titles: (node.data.titles || []).map((t) => ({
+						value: t.value || '',
+						type: t.type || 'civic'
+					})),
+					aliases: node.data.aliases ? [...node.data.aliases] : []
 				};
 			}
 		}
@@ -72,7 +77,7 @@
 	}
 
 	function buildPayload() {
-		const { given, middles, surname_current, surname_birth, research, stories, ...rest } = form;
+		const { given, middles, surname_current, surname_birth, research, stories, titles, aliases, ...rest } = form;
 		const name = { given };
 		const middlesArr = middles ? middles.split(',').map((s) => s.trim()).filter(Boolean) : [];
 		if (middlesArr.length) name.middles = middlesArr;
@@ -128,6 +133,14 @@
 			.filter((s) => s.name || s.description);
 		if (storiesArr.length) payload.stories = storiesArr;
 
+		// Build titles array, filtering out empty entries
+		const titlesArr = (titles || []).filter((t) => t.value);
+		if (titlesArr.length) payload.titles = titlesArr;
+
+		// Build aliases array, filtering out empty entries
+		const aliasesArr = (aliases || []).filter(Boolean);
+		if (aliasesArr.length) payload.aliases = aliasesArr;
+
 		return payload;
 	}
 
@@ -161,6 +174,22 @@
 
 	function removeStoryListItem(storyIndex, field, itemIndex) {
 		form.stories[storyIndex][field] = form.stories[storyIndex][field].filter((_, i) => i !== itemIndex);
+	}
+
+	function addTitle() {
+		form.titles = [...form.titles, { value: '', type: 'civic' }];
+	}
+
+	function removeTitle(index) {
+		form.titles = form.titles.filter((_, i) => i !== index);
+	}
+
+	function addAlias() {
+		form.aliases = [...form.aliases, ''];
+	}
+
+	function removeAlias(index) {
+		form.aliases = form.aliases.filter((_, i) => i !== index);
 	}
 
 	async function save() {
@@ -312,6 +341,35 @@
 				Interesting facts
 				<textarea bind:value={form.interesting_facts} rows="3"></textarea>
 			</label>
+
+			<fieldset class="research-section">
+				<legend>Titles</legend>
+				{#each form.titles as title, i}
+					<div class="title-row">
+						<select bind:value={title.type}>
+							<option value="civic">Civic</option>
+							<option value="noble">Noble</option>
+							<option value="military">Military</option>
+							<option value="religious">Religious</option>
+							<option value="academic">Academic</option>
+						</select>
+						<input type="text" bind:value={title.value} placeholder="e.g. Sir, Dr., Earl" />
+						<button type="button" class="remove-btn" onclick={() => removeTitle(i)}>x</button>
+					</div>
+				{/each}
+				<button type="button" class="add-inline-btn" onclick={addTitle}>+ Title</button>
+			</fieldset>
+
+			<fieldset class="research-section">
+				<legend>Aliases</legend>
+				{#each form.aliases as _, i}
+					<div class="source-row">
+						<input type="text" bind:value={form.aliases[i]} placeholder="Informal name or alias" />
+						<button type="button" class="remove-btn" onclick={() => removeAlias(i)}>x</button>
+					</div>
+				{/each}
+				<button type="button" class="add-inline-btn" onclick={addAlias}>+ Alias</button>
+			</fieldset>
 
 			<fieldset class="research-section">
 				<legend>Research</legend>
@@ -743,6 +801,18 @@
 		align-items: center;
 	}
 	.source-row input {
+		flex: 1;
+	}
+
+	.title-row {
+		display: flex;
+		gap: 4px;
+		align-items: center;
+	}
+	.title-row select {
+		width: 100px;
+	}
+	.title-row input {
 		flex: 1;
 	}
 

@@ -1,12 +1,19 @@
 /** Build a display name from the structured name object */
-export function displayName(name) {
+export function displayName(name, titles) {
 	if (!name) return '';
 	if (typeof name === 'string') return name;
 	const parts = [name.given];
 	if (name.middles) parts.push(...name.middles);
 	if (name.surnames?.current) parts.push(name.surnames.current);
 	else if (name.surnames?.birth) parts.push(name.surnames.birth);
-	return parts.filter(Boolean).join(' ');
+	let display = parts.filter(Boolean).join(' ');
+	if (titles?.length) {
+		const prefix = titles
+			.filter((t) => ['civic', 'religious', 'academic'].includes(t.type))
+			.map((t) => t.value);
+		if (prefix.length) display = prefix.join(' ') + ' ' + display;
+	}
+	return display;
 }
 
 /**
@@ -40,7 +47,7 @@ export function toFamilyChartData(persons) {
 			id: slug,
 			data: {
 				gender: gender === 'female' ? 'F' : 'M',
-				'first name': displayName(name),
+				'first name': displayName(name, p.titles),
 				name,
 				birthday: p.dob || '',
 				...extra

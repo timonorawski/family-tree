@@ -8,8 +8,19 @@ gender: male
 dob: '1919-01-01'
 dod: '1987-01-01'
 deceased: true
-profession: F/Lt RCAF
-interesting_facts: F/Lt Cecil Noel Turnour DFM CD RD RCAF. Father of the 8th Earl Winterton.
+profession: RCAF
+interesting_facts: Father of the 8th Earl Winterton.
+titles:
+  - value: F/Lt
+    type: military
+  - value: DFM
+    type: military
+  - value: CD
+    type: military
+  - value: RD
+    type: military
+aliases:
+  - Cecil Noel
 country_of_birth: Canada
 relationships:
   - type: parent
