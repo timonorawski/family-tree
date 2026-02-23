@@ -3,8 +3,9 @@ name:
   surnames:
     current: Cieluch
 gender: male
-deceased: false
-interesting_facts: Potentially Immigrated to Poland from Hungary
+deceased: true
+interesting_facts: Origin confirmed in Hungary via citizenship validation records. Likely from the Hungarian-administered Orava (Árva County) region before the 1920 border changes.
+country_of_birth: Hungary
 relationships:
   - type: partner
     person: maria
