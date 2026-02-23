@@ -1,13 +1,26 @@
 name:
   given: James
+  middles:
+    - Thomas
   surnames:
     current: McGeary
 gender: male
-dob: '1824-01-01'
-dod: '1890-01-28'
-country_of_birth: Ireland
+dob: '1857-11-01'
+dod: '1937-06-12'
+country_of_birth: Canada
 deceased: true
-interesting_facts: DOB - only year known, buried at bond head united church cemetery
+interesting_facts: 'Born 1 November 1857 in the Bondhead area, West Gwillimbury Township, Simcoe County, Ontario. Son of James McGeary (wagon maker, b. ~1826, Ireland) and Sarah Richardson (b. ~1824, Ireland). Married Isabel McKay. Resided at 37 Sheldrake Boulevard, Toronto, Ontario. Died 12 June 1937, age 79, in York, Ontario. Note: Ancestry.ca death record shows death date as June 12, 1937 (not May 12 as previously recorded) and age 79 -- consistent with November 1857 birth.'
 relationships:
   - type: partner
-    person: sarah-1
+    person: isabel
+  - type: parent
+    person: james-4
+  - type: parent
+    person: sarah-5
+research:
+  - description: Ancestry.ca death record confirms James Thomas McGeary died June 12, 1937, age 79, in York, Ontario. The birth year of 1858 (per Ancestry) or 1857 (per family records) is consistent with age 79 at death in June 1937. Previous tree had death date of May 12, 1937 -- Ancestry indicates June 12, 1937. He resided at 37 Sheldrake Boulevard, Toronto -- this is in the Yonge-Eglinton area of Toronto, a well-established middle-class neighborhood.
+    confidence: 85
+    sources:
+      - 'Ancestry.ca: Ontario death records for James Thomas McGeary'
+      - https://www.ancestry.ca/genealogy/death-records/James-McGeary.html
+      - Family tree records

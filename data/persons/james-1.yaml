@@ -1,18 +1,22 @@
 name:
   given: James
   middles:
-    - Thomas
+    - Edward
   surnames:
     current: McGeary
 gender: male
-dob: '1857-11-01'
-dod: '1937-05-12'
+dod: '1904-01-01'
+country_of_birth: Canada
 deceased: true
-interesting_facts: 'address: 37 sheldrake blvd, toronto'
+interesting_facts: Died in 1904 in Grey County, Ontario. Only year of death known. Possibly a son of James McGeary (b. ~1826, Ireland, wagon maker of Bond Head) and Sarah Richardson (b. ~1824, Ireland). Grey County is adjacent to Simcoe County, which would be consistent with a McGeary from the Bondhead area. Further research needed to confirm parentage.
 relationships:
-  - type: partner
-    person: isabel
   - type: parent
-    person: james-2
+    person: james-4
   - type: parent
-    person: sarah-1
+    person: sarah-5
+research:
+  - description: Ancestry.ca death records list a James Edward McGeary who died in 1904 in Grey County, Ontario. Grey County borders Simcoe County to the west, which is consistent with a McGeary from the Bondhead area of Simcoe County. However, the parentage is not confirmed -- he could be from a different McGeary family entirely. The proximity to Simcoe County and the McGeary surname make him a probable relative, but confirmation requires access to the full death record which would name his parents.
+    confidence: 45
+    sources:
+      - 'Ancestry.ca: Ontario death records for James Edward McGeary (d. 1904, Grey, Ontario)'
+      - https://www.ancestry.ca/genealogy/death-records/James-McGeary.html

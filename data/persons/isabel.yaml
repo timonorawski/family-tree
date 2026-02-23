@@ -1,9 +1,18 @@
 name:
   given: Isabel
   surnames:
-    current: McKay
+    birth: McKay
+    current: McGeary
 gender: female
-deceased: false
+country_of_birth: Canada
+deceased: true
+interesting_facts: Married James Thomas McGeary (b. 1857, Bondhead, Ontario). They resided at 37 Sheldrake Boulevard, Toronto, Ontario. The McKay surname is of Scottish/Highland origin (Mac Aoidh, 'son of fire'), common in both Scotland and Ontario. No birth or death dates currently known. Further research needed -- Ontario marriage records (1826-1943) on Ancestry.ca and FamilySearch may yield the marriage record and her parents' names.
 relationships:
   - type: partner
-    person: james-1
+    person: james-2
+research:
+  - description: 'Isabel McKay married James Thomas McGeary. No birth or death dates have been found yet. The McKay surname is of Scottish Highland origin. Ontario marriage records from the 1880s have significant gaps, which may explain the difficulty in locating the marriage record. Suggested research: search Ontario marriage records (1826-1943) on Ancestry.ca; check Toronto church records for the 1880s; search 1891 and 1901 Canadian census records for the McGeary household in Toronto.'
+    confidence: 50
+    sources:
+      - Family tree records
+      - 'ancestry.ca: Ontario, Canada, Marriages, 1826-1943'

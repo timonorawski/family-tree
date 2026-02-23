@@ -1,0 +1,45 @@
+name:
+  given: James
+  surnames:
+    current: McGeary
+gender: male
+dob: '1826-01-01'
+dod: '1891-02-28'
+country_of_birth: Ireland
+deceased: true
+profession: Wagon Maker
+interesting_facts: Born circa 1826 in Ireland, likely County Tyrone or County Armagh (Ulster). The McGeary surname derives from the Gaelic 'Mac Gadhra' meaning 'son of the hound/mastiff', originating in Ulster. Emigrated to Upper Canada (Ontario) likely in the 1840s-1850s during or shortly after the Great Famine. Settled in the Bondhead area, West Gwillimbury Township, Simcoe County, Ontario. Listed as a wagon maker in Bond Head in the 1872-73 Ontario directory. Buried at Bond Head United Church Cemetery (also known as First Canada Presbyterian Church Cemetery / West Gwillimbury Cemetery), Bond Head, Simcoe County, Ontario.
+relationships:
+  - type: partner
+    person: sarah-5
+stories:
+  - name: The Ulster Irish of Simcoe County
+    description: James McGeary was part of a major wave of Irish immigration to Simcoe County, Ontario in the mid-1800s. By 1881, the southern half of Simcoe County was 60% Irish -- the highest proportion of Irish settlers of any county in Ontario. Many Irish canal workers who had built the Erie Canal (completed 1826) headed north into Upper Canada to take up farming. Others came during and after the Great Famine (1845-1852), when approximately 100,000 Irish emigrated in 1847 alone. Bond Head, where James settled, sits on the townline between Tecumseth and West Gwillimbury Townships. The community provided services including blacksmiths, harness makers, wagon makers (James's trade), stores, inns, mills, and churches. James's wife Sarah Richardson was the daughter of fellow Irish immigrants -- her father John Richardson came from Armagh and her maternal grandparents, the Austins, came from County Armagh as well. The Thorpe family, who would later marry into the McGeary line, came from Mayo/Leitrim in western Ireland -- a different part of Ireland from the Ulster origins of the McGeary, Richardson, and Austin families.
+    places:
+      - Bondhead, West Gwillimbury Township, Simcoe County, Ontario
+      - County Tyrone, Ireland
+      - County Armagh, Ireland
+    dates:
+      - 1840s-1850s
+      - 1872-73
+    sources:
+      - bondhead.com
+      - irishtocanada.com
+      - pier21.ca
+research:
+  - description: Death record from Ancestry.ca shows James McGeary died February 28, 1891, age 65, in Simcoe, Ontario. This gives a birth year of circa 1826, not 1824 as previously estimated. Previous tree had death date of January 28, 1890 -- the Ancestry record indicates February 28, 1891 instead. The age-at-death of 65 is consistent with an 1826 birth year.
+    confidence: 85
+    sources:
+      - 'Ancestry.ca: Ontario death records for James McGeary'
+      - https://www.ancestry.ca/genealogy/death-records/James-McGeary.html
+  - description: Listed as a wagon maker in Bond Head in the 1872-73 Ontario business directory. Bond Head is located on the townline between Tecumseth and West Gwillimbury Townships in Simcoe County. By 1881, Simcoe County's southern half was 60% Irish, the highest proportion in Ontario.
+    confidence: 80
+    sources:
+      - 'bondhead.com: The sons of Bond Head: A history remembered'
+      - 'irishtocanada.com: How and why the Irish came to Ontario'
+  - description: The McGeary surname originates from the Gaelic 'Mac Gadhra' meaning 'son of the hound/mastiff'. The name is associated with Counties Tyrone, Armagh, Donegal, and Sligo in Ireland (primarily Ulster). Variant spellings include McGary, McGarry, MacGarry, Geary, and Garry. The Tyrone-Armagh border area is a particularly strong association for this surname.
+    confidence: 75
+    sources:
+      - igenea.com/en/surnames/m/mcgeary
+      - johngrenham.com/findasurname.php?surname=McGeary
+      - houseofnames.com/mcgeary-family-crest

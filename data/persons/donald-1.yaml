@@ -23,6 +23,6 @@ relationships:
   - type: partner
     person: harriet
   - type: parent
-    person: james-1
+    person: james-2
   - type: parent
     person: isabel

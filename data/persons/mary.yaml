@@ -3,17 +3,24 @@ name:
   middles:
     - Ann
   surnames:
-    current: Austin
+    birth: Austin
+    current: Richardson
 gender: female
 dob: '1807-01-01'
 dod: '1891-01-01'
 country_of_birth: Ireland
 deceased: true
-interesting_facts: DOB/DOD year only - buried at bond head united church, bondhead ontario
+interesting_facts: Born circa 1807 in Ireland (likely County Armagh, as her father David Austin was from there). Daughter of David Austin and Elizabeth Patterson, both Irish immigrants from County Armagh. Married John Richardson (b. 1781, Armagh, Ireland). They settled in the Penville/Bondhead area, Tecumseth/West Gwillimbury Townships, Simcoe County, Ontario. Buried at Bond Head United Church Cemetery, Bondhead, Ontario. DOB/DOD year only known.
 relationships:
   - type: partner
     person: john
   - type: parent
-    person: david-3
+    person: david-4
   - type: parent
     person: elizabeth-1
+research:
+  - description: Mary Ann Austin was born circa 1807 in Ireland, daughter of David Austin (b. ~1779, County Armagh, Ireland) and Elizabeth Patterson (b. ~1781, Ireland). She married John Richardson (b. 1781, Armagh, Ireland) and they had at least one daughter, Sarah Richardson, who married James McGeary of Bond Head. The Austin and Richardson families were both from County Armagh and both settled in the Tecumseth/West Gwillimbury area of Simcoe County. Mary Ann is buried at Bond Head United Church Cemetery.
+    confidence: 75
+    sources:
+      - Family tree records
+      - Bond Head United Church Cemetery records

@@ -7,9 +7,14 @@ dob: '1781-05-22'
 dod: '1877-02-22'
 country_of_birth: Ireland
 deceased: true
-interesting_facts: |-
-  born Armagh, Ireland
-  Buried in Penville, Simcoe, Ontario, Canada
+interesting_facts: 'Born 22 May 1781 in Armagh, Ireland (County Armagh, Ulster). Emigrated to Upper Canada (Ontario) in the early 1800s, settling in the Penville area, Tecumseth Township, Simcoe County. Married Mary Ann Austin (daughter of David Austin and Elizabeth Patterson, also from County Armagh). Buried in Penville, Simcoe, Ontario, Canada. Note: A Hugh Richardson (1776-1863) from County Wicklow also farmed near Penville in the same period -- likely a neighbor but from a different Irish county.'
 relationships:
   - type: partner
     person: mary
+research:
+  - description: John Richardson was born in Armagh, Ireland and settled in the Penville area of Tecumseth Township, Simcoe County, Ontario. He married Mary Ann Austin, daughter of David Austin (b. ~1779, County Armagh) and Elizabeth Patterson (b. ~1781, Ireland). They had at least one known daughter, Sarah Richardson, who married James McGeary of Bond Head. Penville was a small settlement in Tecumseth Township with a Wesleyan Methodist cemetery. A Hugh Richardson Jr. (1819-1881, from County Wicklow) also farmed near Penville, suggesting the area attracted multiple Irish families.
+    confidence: 75
+    sources:
+      - Family tree records
+      - findagrave.com memorial 97417237 (Hugh Richardson of Penville)
+      - 'FamilySearch: Simcoe County, Ontario, Canada Genealogy'

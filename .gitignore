@@ -1,6 +1,6 @@
 node_modules/
 .svelte-kit/
 build/
-.claude/
+.claude/settings.local.json
 .env
 *.docx

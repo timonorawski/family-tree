@@ -4,9 +4,19 @@ name:
   middles:
     - Adelaide
   surnames:
-    current: Rennie
+    birth: Rennie
+    current: Thorpe
 gender: female
-deceased: false
+country_of_birth: Canada
+deceased: true
+interesting_facts: Born in Ontario, Canada. Married Robert James Thorpe. They had at least one daughter, Berta 'Bertie' Elizabeth Selby Thorpe (b. 21 Jan 1883, d. 14 Jan 1916). The Rennie family was established in the Simcoe County area. Jane was also known as Jennie. The Grice-Rennie family (Elizabeth Grice Rennie, 1813-1878) is documented in the Gwillimbury area on Geni.com -- Jane may belong to this family.
 relationships:
   - type: partner
-    person: robert-4
+    person: robert-8
+research:
+  - description: 'Jane ''Jennie'' Adelaide Rennie married Robert James Thorpe and they had at least one daughter, Berta Elizabeth Selby Thorpe. The Rennie family was present in the Simcoe County area. A Geni.com profile for Elizabeth Grice Rennie (1813-1878) of the Gwillimbury area may be connected to Jane''s family -- further research needed to confirm. No birth or death dates currently known. Suggested research: search Ontario vital records, Simcoe County census, and the Grice-Rennie family tree on Geni.com.'
+    confidence: 50
+    sources:
+      - Family tree records
+      - 'geni.com: Elizabeth Grice Rennie (1813-1878)'
+      - 'FamilySearch: Simcoe County, Ontario, Canada Genealogy'
