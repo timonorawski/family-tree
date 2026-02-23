@@ -1,0 +1,18 @@
+name:
+  given: Andrew
+  surnames:
+    current: Gray
+gender: male
+dob: '1446-01-01'
+dod: '1514-02-01'
+deceased: true
+titles:
+  - value: 2nd Lord Gray
+    type: noble
+  - value: Hereditary Sheriff of Forfar
+    type: civic
+  - value: Justiciary General
+    type: civic
+interesting_facts: 'Succeeded his grandfather as 2nd Lord Gray c.1469 (his father Patrick having predeceased). Hereditary Sheriff of Forfar 1488. Took part in the rebellion by James IV against his father James III. Justiciary General North of Forth 1489, then South of Forth 1506. Privy Councillor. Four marriages: (1) Janet Keith, daughter of Robert Keith, Master of Marischal, c.1464; (2) Lady Elizabeth Stewart, daughter of John Stewart, 1st Earl of Atholl, before 1483; (3) Margaret Houston, after 1497; (4) Lady Elizabeth Hay, daughter of William Hay, 1st Earl of Erroll, after 1501. Numerous children across all marriages, including daughters Janet and Margaret who married into the Keith family of Inverugie. Died February 1514.'
+country_of_birth: Scotland
+relationships: []

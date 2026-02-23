@@ -1,0 +1,18 @@
+name:
+  given: William
+  surnames:
+    current: Keith
+gender: male
+dob: '1530-01-01'
+dod: '1580-08-10'
+deceased: true
+titles:
+  - value: Master of Marischal
+    type: noble
+interesting_facts: Eldest son of William Keith, 4th Earl Marischal. Known as the 'Master of Marischal' — predeceased his father, so never held the earldom. His younger brother was killed by Spanish bandits during their continental travels. His son George succeeded as 5th Earl on the death of the 4th Earl in 1581.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: william-3
+  - type: partner
+    person: elizabeth-2

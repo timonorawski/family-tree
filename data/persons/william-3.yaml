@@ -1,0 +1,17 @@
+name:
+  given: William
+  surnames:
+    current: Keith
+gender: male
+dob: '1510-01-01'
+dod: '1581-10-07'
+deceased: true
+profession: Extraordinary Lord of Session, Privy Councillor to Queen Mary
+titles:
+  - value: 4th Earl Marischal
+    type: noble
+interesting_facts: 'Succeeded his grandfather the 3rd Earl c.1530 (his father having been killed at Flodden 1513). Accompanied James V to France for his marriage to Madeleine of Valois at Notre Dame, Paris, 1 Jan 1537. Fought at the Battle of Pinkie 1547 (English victory in the War of the Rough Wooing). Member of Queen Mary''s Privy Council 1561. Adherent of the Reformation while avoiding extreme partisanship. Known locally as ''William of the Tower'' after retiring to Dunnottar Castle. Married Margaret Keith, daughter of Sir William Keith of Inverugie. Thirteen children including two sons and eleven daughters. Chief residence: Dunnottar Castle, Aberdeenshire.'
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: robert-1

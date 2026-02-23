@@ -1,0 +1,17 @@
+name:
+  given: Edward
+  surnames:
+    current: Keith
+gender: male
+dod: '1351-01-01'
+deceased: true
+titles:
+  - value: Sir
+    type: civic
+  - value: Great Marischal of Scotland
+    type: noble
+interesting_facts: Brother of Sir Robert Keith (d.1332), the Bannockburn cavalry commander. Both sons of William de Keith (d.1293). Received charter of lands of Kelly from Robert the Bruce 1328, witnessed by his brother Robert. Neither he nor Robert were at the Battle of Halidon Hill 1333, though his son William was captured there. Inherited the hereditary sheriffdom of Selkirk through his first wife Isabella de Synton. Succeeded as Great Marischal when his great-nephew Robert III Keith was killed at Battle of Neville's Cross 1346. Married (1) Isabella de Synton, daughter of Alexander de Synton. Married (2) Christian Menteith, daughter of Sir John Menteith and Elyne of Mar. Through his eldest son Sir William, all subsequent Earls Marischal descend.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: william-8

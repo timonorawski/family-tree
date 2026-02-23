@@ -1,0 +1,14 @@
+name:
+  given: Margaret
+  surnames:
+    birth: Home
+    current: Keith
+gender: female
+dob: '1565-01-01'
+dod: '1598-05-01'
+deceased: true
+interesting_facts: Daughter of Alexander Home, 5th Lord Home and Margaret Ker (daughter of Sir Walter Ker of Cessford). First wife of George Keith, 5th Earl Marischal. Married at Home Castle, Berwickshire, 4 Feb 1581. Mother of William Keith, 6th Earl Marischal.
+country_of_birth: Scotland
+relationships:
+  - type: partner
+    person: george-1

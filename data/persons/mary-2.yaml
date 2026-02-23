@@ -1,0 +1,16 @@
+name:
+  given: Mary
+  surnames:
+    birth: Erskine
+    current: Keith
+gender: female
+dod: '1648-01-01'
+deceased: true
+titles:
+  - value: Lady
+    type: noble
+interesting_facts: Daughter of John Erskine, Earl of Mar, and his second wife Lady Mary Stewart. Contracted to marry William Keith, 6th Earl Marischal, 12 Oct 1609.
+country_of_birth: Scotland
+relationships:
+  - type: partner
+    person: william-1

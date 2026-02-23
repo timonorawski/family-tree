@@ -1,0 +1,16 @@
+name:
+  given: William
+  surnames:
+    current: Keith
+gender: male
+dob: '1426-01-01'
+dod: '1483-01-01'
+deceased: true
+titles:
+  - value: 2nd Earl Marischal
+    type: noble
+interesting_facts: Son of William Keith, 1st Earl Marischal. Married Muriella Erskine, daughter of Thomas Erskine, 2nd Lord Erskine. Succeeded his father c.1463-64.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: william-6

@@ -6,7 +6,7 @@ name:
 gender: female
 dod: '1690-01-01'
 deceased: true
-interesting_facts: Daughter of William Keith, 6th Earl Marischal of Scotland. Married Sir Edward Turnor 27 June 1667.
+interesting_facts: Daughter of William Keith, 7th Earl Marischal (1614-1671) and his first wife Elizabeth Seton (1621-1650), daughter of George Seton, 3rd Earl of Winton. Married Sir Edward Turnor 27 June 1667. Her father was the hereditary custodian of the Scottish Crown Jewels (Honours of Scotland) at Dunnottar Castle — during his imprisonment in the Tower of London (1651-1660), the Honours were famously smuggled out of Dunnottar during Cromwell's siege. Her father's nephew George Keith, 10th Earl Marischal, was a leading Jacobite who fought at Sheriffmuir in 1715 and had the title forfeited — making her children first cousins once removed of the Jacobite Earl.
 titles:
   - value: Lady
     type: noble
@@ -14,3 +14,36 @@ country_of_birth: Scotland
 relationships:
   - type: partner
     person: edward-3
+  - type: parent
+    person: william
+stories:
+  - name: The Keith Earls Marischal
+    description: The Keiths held the hereditary office of Great Marischal of Scotland — custodians of the royal regalia and protectors of the king's person in parliament — from the 12th century. Isabel's father William, 7th Earl Marischal, was a Covenanter who seized Aberdeen twice (1639-40), then switched to the Royalist cause, entertained Charles II at Dunnottar Castle (1650), and was imprisoned in the Tower of London for a decade. After the Restoration, Charles II appointed him Lord Privy Seal of Scotland. He died at Inverugie in 1671 without surviving male issue. The earldom passed through his brother George to his nephew and then grand-nephew George, 10th Earl Marischal, who forfeited the title by joining the Jacobite Rising of 1715.
+    people:
+      - edward-3
+    places:
+      - Dunnottar Castle, Aberdeenshire
+      - Tower of London
+    dates:
+      - '1639'
+      - '1650'
+      - 1651-1660
+      - '1671'
+      - '1715'
+  - name: The Honours of Scotland
+    description: During the 7th Earl Marischal's imprisonment in the Tower of London, Cromwell's forces besieged Dunnottar Castle (1651-52) to seize the Scottish Crown Jewels (the Honours of Scotland — crown, sceptre, and sword of state). The Honours were smuggled out by the wife of the minister of Kinneff, hidden under her skirts or in bundles of flax, and buried under the floor of Kinneff Old Church. They remained hidden until the Restoration. Isabel's father was Earl Marischal throughout this episode.
+    places:
+      - Dunnottar Castle
+      - Kinneff Old Church
+    dates:
+      - 1651-1652
+research:
+  - description: 'Some sources number Isabel''s father as the 6th Earl Marischal rather than the 7th, depending on whether an earlier William Keith is counted as the 1st Earl. The Oxford Dictionary of National Biography uses ''6th Earl'' while Cracroft''s and WikiTree use ''7th Earl''. The person is the same: William Keith (1614-1671).'
+    confidence: 90
+    sources:
+      - 'WikiTree: Keith-571'
+      - 'Geni.com: William Keith, Earl Marischal'
+      - 'Cracroft''s Peerage: Marischal, Earl (S, 1458)'
+      - Oxford Dictionary of National Biography
+      - Scots Peerage v.6 pp. 57-60
+      - Burke's Peerage 2003, vol. 3, p. 4225

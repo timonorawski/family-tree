@@ -1,0 +1,21 @@
+name:
+  given: George
+  surnames:
+    current: Keith
+gender: male
+dob: '1553-01-01'
+dod: '1623-04-05'
+deceased: true
+profession: Lord High Commissioner to the Parliament of Scotland, Ambassador to Denmark
+titles:
+  - value: 5th Earl Marischal
+    type: noble
+interesting_facts: One of the most powerful men in Scotland in his era. Succeeded his grandfather as 5th Earl Marischal 1581 (his father having predeceased). Educated at King's College Aberdeen and in Calvinist Geneva. Sent as ambassador to Denmark 1589 to negotiate the marriage of James VI to Anne of Denmark — accompanied Tycho Brahe at Uraniborg with the King. Founded Marischal College, Aberdeen 1593 (giving Aberdeen as many universities as the whole of England). Lord High Commissioner to Parliament 1609. Rebuilt Dunnottar Castle and Keith Marischal. Said to have been able to travel from Berwick to John o' Groats without ever leaving his own lands. Married (1) Margaret Home (c.1565-1598), daughter of Alexander Home, 5th Lord Home. Married (2) Margaret Ogilvy, daughter of James Ogilvy, 5th Lord Ogilvy of Airlie. Buried at Dunnottar Kirkyard.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: william-2
+  - type: parent
+    person: elizabeth-2
+  - type: partner
+    person: margaret-4

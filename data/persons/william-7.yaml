@@ -1,0 +1,17 @@
+name:
+  given: William
+  surnames:
+    current: Keith
+gender: male
+dod: '1410-01-01'
+deceased: true
+titles:
+  - value: Sir
+    type: civic
+  - value: Great Marischal of Scotland
+    type: noble
+interesting_facts: Great Marischal of Scotland. Son of Sir Edward Keith (d.1351). Succeeded his father c.1350. Fought at Battle of Halidon Hill 1333 where he was captured. Active in negotiations for the ransom of David II 1357. Was in great favour with David II — their closeness provoked Thomas, Earl of Mar, into a public protest, leading to a duel between Keith and Mar at Edinburgh. Went abroad 1358 to seek renown in foreign wars. Negotiated truce with England at London 1369. Built Dunnottar Castle into the great fortress it became. Married Margaret Fraser, daughter of Sir John Fraser of Cowie, before 3 May 1351. Through his son Sir Robert Keith, ancestor of all Earls Marischal. Died c.1407-1413.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: edward-4

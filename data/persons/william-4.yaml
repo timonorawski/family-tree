@@ -1,0 +1,16 @@
+name:
+  given: William
+  surnames:
+    current: Keith
+gender: male
+dob: '1444-01-01'
+dod: '1527-01-01'
+deceased: true
+titles:
+  - value: 3rd Earl Marischal
+    type: noble
+interesting_facts: Succeeded his father as 3rd Earl c.1483. Supported James III against insurgent barons 1488. After the King's death at Sauchieburn, remained faithful to the late King's party. Defeated at the Battle of Talla Moss 1489. Married Lady Elizabeth Gordon (contract 11 Jan 1482), daughter of George Gordon, 2nd Earl of Huntly and Annabella Stewart — making Elizabeth a granddaughter of James I of Scotland. Both of his sons Robert and William were killed at the Battle of Flodden 1513.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: william-5

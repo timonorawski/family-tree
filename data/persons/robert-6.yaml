@@ -1,0 +1,30 @@
+name:
+  given: Robert
+  surnames:
+    current: Keith
+gender: male
+dod: '1332-08-11'
+deceased: true
+titles:
+  - value: Sir
+    type: civic
+  - value: Great Marischal of Scotland
+    type: noble
+interesting_facts: Hereditary Great Marischal of Scotland. Son of William de Keith (d. c.1293) and Barbara Seton. First described as Marischal in a charter of John Balliol 1294. Initially served the English — appointed warden of Selkirk Forest 1299, captured 1300, submitted to Edward I 1303, served with the Prince of Wales, appointed Sheriff of Aberdeen 1304. Changed allegiance to Robert the Bruce at Christmas 1308. COMMANDED THE SCOTTISH CAVALRY AT THE BATTLE OF BANNOCKBURN, 24 June 1314 — his charge against the English bowmen in flank was decisive in routing them and securing Bruce's victory. Signatory of the DECLARATION OF ARBROATH 1320, asserting Scottish independence. Granted lands forfeited by the Comyns. Appointed Justiciar of Scotland from the Forth to the Orkneys. Part of diplomatic missions to the papal court at Avignon and the French court to negotiate the Treaty of Corbeil 1325-26. Confirmed in the office of Great Marischal by Robert the Bruce c.1324. Died 11 August 1332.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: william-8
+stories:
+  - name: The Battle of Bannockburn
+    description: On 24 June 1314, Sir Robert Keith commanded the Scottish cavalry at the Battle of Bannockburn. His reconnaissance with James Douglas identified the English approach, and his decisive cavalry charge against the English longbowmen in flank routed them completely, removing the greatest threat to the Scottish schiltrons and materially aiding Robert the Bruce's victory. This was one of the most significant battles in Scottish history, securing Bruce's position as King and Scotland's de facto independence from England.
+    places:
+      - Bannockburn, Stirlingshire
+    dates:
+      - '1314-06-24'
+  - name: The Declaration of Arbroath
+    description: 'Sir Robert Keith was one of the signatories of the Declaration of Arbroath on 6 April 1320, a letter to Pope John XXII asserting Scotland''s independence and the right of the Scots to choose their own king. It contains the famous passage: ''It is in truth not for glory, nor riches, nor honours that we are fighting, but for freedom — for that alone, which no honest man gives up but with life itself.'' This document is considered one of the most important in Scottish history.'
+    places:
+      - Arbroath Abbey
+    dates:
+      - '1320-04-06'

@@ -1,0 +1,18 @@
+name:
+  given: William
+  surnames:
+    current: Keith
+gender: male
+dob: '1400-01-01'
+dod: '1463-01-01'
+deceased: true
+titles:
+  - value: 1st Earl Marischal
+    type: noble
+  - value: 1st Lord Keith
+    type: noble
+interesting_facts: Great Marischal of Scotland. Son of Sir Robert Keith (d.1430). Created 1st Lord Keith c.1430-39. Created 1st Earl Marischal by James II between 5 Nov 1457 and 4 Jul 1458 (numbering per pre-1927 convention; Innes revised this so that his son becomes the 1st Earl). In 1442 granted all his lands to his eldest son Robert, but when Robert died in 1446, the lands passed to his second son William (who became 2nd Earl). Married Mary Hamilton, daughter of Sir James Hamilton of Cadzow. His daughter married Robert Duke of Albany, brother of Robert III. Dunnottar Castle was the family seat. Died before March 1463/64.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: robert-7

@@ -1,0 +1,13 @@
+name:
+  given: William
+  surnames:
+    current: Keith
+gender: male
+dod: '1521-01-01'
+deceased: true
+titles:
+  - value: Sir
+    type: civic
+interesting_facts: Sir William Keith of Inverugie. Head of the Inverugie branch of the Keith family — a cadet line descended from John Keith (son of Sir Edward Keith, Great Marischal d.1351), who married Mariota Cheyne, daughter of Sir Reginald Cheyne of Inverugie, and obtained the Inverugie lands and barony. Father of William Keith, Younger of Inverugie. Died after 24 May 1521.
+country_of_birth: Scotland
+relationships: []

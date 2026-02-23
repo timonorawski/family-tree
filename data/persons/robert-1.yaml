@@ -1,0 +1,15 @@
+name:
+  given: Robert
+  surnames:
+    current: Keith
+gender: male
+dod: '1513-09-09'
+deceased: true
+titles:
+  - value: Master of Marischal
+    type: noble
+interesting_facts: Eldest son of William Keith, 3rd Earl Marischal. Known as 'Master of Marischal'. Married Lady Elizabeth Douglas, daughter of John Douglas, 2nd Earl of Morton. Killed at the Battle of Flodden, 9 September 1513 — the catastrophic Scottish defeat where James IV and much of the Scottish nobility perished. His father the 3rd Earl outlived him; the earldom passed to Robert's son William as 4th Earl.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: william-4

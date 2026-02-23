@@ -1,0 +1,15 @@
+name:
+  given: Robert
+  surnames:
+    current: Keith
+gender: male
+dod: '1346-10-17'
+deceased: true
+titles:
+  - value: Sir
+    type: civic
+  - value: Great Marischal of Scotland
+    type: noble
+interesting_facts: Great Marischal of Scotland. Grandson of Sir Robert Keith of Bannockburn (d.1332) — son of John Keith, Master of Marischal, who predeceased his father. Succeeded his grandfather as Marischal. Fought for David II against Edward Balliol and the English. Sheriff of Aberdeen. Accompanied David II into exile in France (Château Gaillard), acting as the king's tutor in arms. Besieged and captured Perth from Macduff, Earl of Fife. Killed at the Battle of Neville's Cross, 17 October 1346, fighting alongside David II when the King invaded England. Married Margaret Hay, daughter of Gilbert de la Hay, Constable of Scotland. Succeeded by his great-uncle Sir Edward Keith (brother of the Bannockburn Robert).
+country_of_birth: Scotland
+relationships: []

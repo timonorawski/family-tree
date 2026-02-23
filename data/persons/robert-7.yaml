@@ -1,0 +1,17 @@
+name:
+  given: Robert
+  surnames:
+    current: Keith
+gender: male
+dod: '1430-01-01'
+deceased: true
+titles:
+  - value: Sir
+    type: civic
+  - value: Great Marischal of Scotland
+    type: noble
+interesting_facts: Great Marischal of Scotland. Son of Sir William Keith (d.1410). Succeeded his father as Marischal. Father of William Keith, Marischal of Scotland (d.1463), who was the father of the 1st Earl Marischal. Died before 20 July 1430.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: william-7
