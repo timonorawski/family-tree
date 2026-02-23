@@ -1,8 +1,12 @@
 services:
+  # Readonly static site
   web:
-    build: .
+    build:
+      context: .
+      target: static
     restart: unless-stopped
 
+  # Public tunnel for readonly site
   tunnel:
     image: cloudflare/cloudflared:latest
     restart: unless-stopped
@@ -11,3 +15,26 @@ services:
       - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
     depends_on:
       - web
+
+  # Editable Node server (optional, enable with --profile edit)
+  edit:
+    build:
+      context: .
+      target: editable
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+    profiles:
+      - edit
+
+  # Zero Trust tunnel for editable site (optional, enable with --profile edit)
+  tunnel-edit:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN_EDIT}
+    depends_on:
+      - edit
+    profiles:
+      - edit
