@@ -16,3 +16,5 @@ relationships:
     person: william-3
   - type: partner
     person: elizabeth-2
+  - type: parent
+    person: margaret-5

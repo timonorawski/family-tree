@@ -9,4 +9,10 @@ dod: '1563-01-01'
 deceased: true
 interesting_facts: Daughter and co-heiress (with her sister Elizabeth) of William Keith, Younger of Inverugie, and Janet Gray (daughter of Andrew Gray, 2nd Lord Gray). Married William Keith, 4th Earl Marischal before 30 June 1538 — the marriage brought great wealth, nearly doubling the Marischal estates across seven shires. Mother of thirteen children including William Keith, Master of Marischal (father of George, 5th Earl); Agnes Keith, Countess of Moray (wife of the Regent Moray, half-brother of Mary Queen of Scots — making Agnes the most powerful woman in Scotland 1567-1570); and Robert Keith, 1st Lord Altrie.
 country_of_birth: Scotland
-relationships: []
+relationships:
+  - type: parent
+    person: william-10
+  - type: parent
+    person: janet
+  - type: partner
+    person: william-3

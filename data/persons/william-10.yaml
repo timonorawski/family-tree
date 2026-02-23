@@ -10,4 +10,8 @@ titles:
     type: noble
 interesting_facts: William Keith, Younger of Inverugie. Son of Sir William Keith of Inverugie. Married Janet Gray (d.1539), daughter of Andrew Gray, 2nd Lord Gray. Predeceased his father, dying between 1513 and 1518. Father of Margaret Keith (who married William Keith, 4th Earl Marischal, before 1538) and Elizabeth Keith (who married Lord Forbes). Margaret was co-heiress with her sister to the Inverugie estates, which nearly doubled the Marischal lands.
 country_of_birth: Scotland
-relationships: []
+relationships:
+  - type: partner
+    person: janet
+  - type: parent
+    person: william-9

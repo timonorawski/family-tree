@@ -10,4 +10,6 @@ titles:
     type: noble
 interesting_facts: Eldest son and heir of Andrew Gray, 1st Lord Gray. Styled 'Master of Gray'. Gentleman of the Bedchamber to James II and a great favourite of the King. Married (1) Margaret Fleming, daughter of Sir Malcolm Fleming of Biggar and Cumbernauld — no issue. Married (2) Annabella Forbes, daughter of Alexander Forbes, 1st Lord Forbes — by whom he had son Andrew (who became 2nd Lord Gray) and daughters. Predeceased his father, dying between 23 Aug 1463 and Sept 1464.
 country_of_birth: Scotland
-relationships: []
+relationships:
+  - type: parent
+    person: andrew-1

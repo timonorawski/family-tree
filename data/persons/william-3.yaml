@@ -10,8 +10,24 @@ profession: Extraordinary Lord of Session, Privy Councillor to Queen Mary
 titles:
   - value: 4th Earl Marischal
     type: noble
-interesting_facts: 'Succeeded his grandfather the 3rd Earl c.1530 (his father having been killed at Flodden 1513). Accompanied James V to France for his marriage to Madeleine of Valois at Notre Dame, Paris, 1 Jan 1537. Fought at the Battle of Pinkie 1547 (English victory in the War of the Rough Wooing). Member of Queen Mary''s Privy Council 1561. Adherent of the Reformation while avoiding extreme partisanship. Known locally as ''William of the Tower'' after retiring to Dunnottar Castle. Married Margaret Keith, daughter of Sir William Keith of Inverugie. Thirteen children including two sons and eleven daughters. Chief residence: Dunnottar Castle, Aberdeenshire.'
+interesting_facts: 'Succeeded his grandfather the 3rd Earl c.1530 (his father having been killed at Flodden 1513). Accompanied James V to France for his marriage to Madeleine of Valois at Notre Dame, Paris, 1 Jan 1537. Fought at the Battle of Pinkie 1547 (English victory in the War of the Rough Wooing). Member of Queen Mary''s Privy Council 1561. Adherent of the Reformation while avoiding extreme partisanship. Known locally as ''William of the Tower'' after retiring to Dunnottar Castle. Married Margaret Keith of Inverugie (daughter of William Keith, Younger of Inverugie, and Janet Gray, daughter of Andrew Gray, 2nd Lord Gray). The marriage nearly doubled the Marischal estates across seven shires — he was reputed to be the wealthiest man in Scotland and could travel from Berwick to John o'' Groats sleeping every night on his own land. Thirteen children including Agnes Keith (who married the Regent Moray, half-brother of Mary Queen of Scots). Chief residence: Dunnottar Castle, Aberdeenshire.'
 country_of_birth: Scotland
 relationships:
   - type: parent
     person: robert-1
+  - type: partner
+    person: margaret-5
+stories:
+  - name: The Keith Sisters and the Court of Mary Queen of Scots
+    description: The 4th Earl's thirteen children made the Keith family central to the politics of Mary Queen of Scots' reign. His eldest daughter Agnes married James Stewart, 1st Earl of Moray — the illegitimate half-brother of Queen Mary and Regent of Scotland. As Regent's wife, Agnes Keith was the most powerful woman in Scotland from 1567 until Moray's assassination in 1570. She was entrusted with Mary's personal jewels and famously refused to hand them over to the government. Agnes later married Colin Campbell, 6th Earl of Argyll, and was described as 'an intelligent and frightening politician' who her husband was 'overmuch ledd by'. Her son Archibald became 7th Earl of Argyll, and his son became the 1st Marquess of Argyll — the great Covenanter leader executed by Charles II. The 4th Earl's other daughters married into the Abernethy (Lords Saltoun), Campbell (of Calder), Allardice, Crichton (of Frendraught), Kennedy, Irvine (of Drum), and Strachan families.
+    people:
+      - agnes
+      - margaret-5
+      - william-2
+    places:
+      - Dunnottar Castle
+    dates:
+      - '1562'
+      - '1567'
+      - '1570'
+      - '1581'
