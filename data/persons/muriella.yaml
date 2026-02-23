@@ -1,0 +1,24 @@
+name:
+  given: Muriella
+  preferred: Mariot Muriella
+  surnames:
+    birth: Erskine
+    current: Keith
+gender: female
+dod: '1482-01-01'
+deceased: true
+country_of_birth: Scotland
+titles:
+  - value: Countess of Marischal
+    type: noble
+interesting_facts: Daughter of Thomas Erskine, 2nd Lord Erskine, and Janet Douglas. Wife of William Keith, 2nd Earl Marischal (d.1483). Also known as Mariot or Mariota Erskine. Died 1482 at Dunnottar Castle, Kincardineshire. Mother of William Keith, 3rd Earl Marischal, and several other sons. Her brother Alexander Erskine became 3rd Lord Erskine.
+research:
+  - description: Muriella (Mariot/Mariota) Erskine is consistently documented as the wife of William Keith, 2nd Earl Marischal, and daughter of Thomas Erskine, 2nd Lord Erskine, and Janet Douglas. WikiTree (Erskine-106) gives her birth as before 1440 in Selkirkshire and death as 1482 at Dunnottar Castle. Ancestry.com dates her as 1435-1491. She was Countess of Marischal through her marriage.
+    confidence: 85
+    sources:
+      - https://www.wikitree.com/wiki/Erskine-106
+      - https://www.geni.com/people/William-Keith-2nd-Earl-Marischal/6000000006444214972
+      - https://www.genealogieonline.nl/en/genealogie-spaak/I1362.php
+relationships:
+  - type: partner
+    person: william-5

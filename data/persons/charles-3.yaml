@@ -10,6 +10,10 @@ country_of_birth: England
 relationships:
   - type: parent
     person: george-5
+  - type: partner
+    person: ann-2
+  - type: parent
+    person: margaret-10
 research:
   - description: Charles Seton's existence as son of the 5th Earl is the single most disputed link in the ET Seton genealogy. The claim rests on family tradition and a pedigree chart, not on parish registers or legal documentation. The 5th Earl was a convicted traitor living in exile — any children might have been kept hidden for safety. But equally, the claim may have been fabricated or embellished over generations.
     confidence: 30

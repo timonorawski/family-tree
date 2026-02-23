@@ -10,6 +10,8 @@ country_of_birth: England
 relationships:
   - type: parent
     person: charles-3
+  - type: parent
+    person: ann-2
 research:
   - description: 'Ann Seton''s connection to the Earls of Winton is documented in Joseph Logan Thompson''s 1901 statement but lacks parish register proof. Thompson wrote: ''I have no legal evidence, at hand, of my descent from Ann Seton, but the Parish Registers of S''Hilda''s Church, So. Shields will prove my birth.'''
     confidence: 45

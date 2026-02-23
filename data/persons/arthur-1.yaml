@@ -12,3 +12,5 @@ relationships:
     person: sir-edward
   - type: parent
     person: sarah
+  - type: partner
+    person: elizabeth-11

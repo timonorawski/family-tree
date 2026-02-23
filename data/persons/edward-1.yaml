@@ -18,3 +18,5 @@ relationships:
     person: anne
   - type: partner
     person: jane-1
+  - type: partner
+    person: harriet-1

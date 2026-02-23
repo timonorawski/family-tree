@@ -15,3 +15,7 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: edward-4
+  - type: partner
+    person: margaret-8
+  - type: parent
+    person: isabella

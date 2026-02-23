@@ -13,3 +13,9 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: andrew-1
+  - type: parent
+    person: elizabeth-5
+  - type: partner
+    person: margaret-7
+  - type: partner
+    person: annabella

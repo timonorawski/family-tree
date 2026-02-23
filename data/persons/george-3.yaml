@@ -14,3 +14,5 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: george-2
+  - type: parent
+    person: anne-3

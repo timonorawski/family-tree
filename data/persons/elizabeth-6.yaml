@@ -1,0 +1,26 @@
+name:
+  given: Elizabeth
+  surnames:
+    birth: Gordon
+    current: Keith
+gender: female
+dob: '1462-01-01'
+dod: '1525-04-22'
+deceased: true
+country_of_birth: Scotland
+titles:
+  - value: Lady
+    type: noble
+  - value: Countess of Marischal
+    type: noble
+interesting_facts: Daughter of George Gordon, 2nd Earl of Huntly, and Annabella Stewart (a daughter of King James I of Scotland). Wife of William Keith, 3rd Earl Marischal (d.1527), married 11 January 1482 by contract. Mother of Robert Keith, Master of Marischal (killed at Flodden or d. c.1524-25), Elizabeth Keith, Gilbert Keith of Troup, Janet Keith, Alexander Keith of Pittendrum, Agnes Keith, and Christian Keith. Through her mother Annabella Stewart, she was a granddaughter of King James I.
+research:
+  - description: Lady Elizabeth Gordon is well-documented as the wife of William Keith, 3rd Earl Marischal. WikiTree (Gordon-720) gives her birth c.1462 at Huntly Castle and death c.22 April 1525. She was the daughter of George Gordon, 2nd Earl of Huntly and Annabella Stewart. The marriage contract was dated 11 January 1482. Geni.com records 10 children from the marriage.
+    confidence: 85
+    sources:
+      - https://www.wikitree.com/wiki/Gordon-720
+      - https://www.geni.com/people/Elizabeth-Gordon/6000000001013067237
+      - https://en.wikipedia.org/wiki/George_Gordon,_2nd_Earl_of_Huntly
+relationships:
+  - type: partner
+    person: william-4

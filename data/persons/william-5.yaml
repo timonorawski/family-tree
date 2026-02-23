@@ -14,3 +14,7 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: william-6
+  - type: partner
+    person: muriella
+  - type: parent
+    person: mary-3

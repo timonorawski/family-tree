@@ -15,3 +15,5 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: william-7
+  - type: parent
+    person: margaret-8

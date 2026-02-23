@@ -1,0 +1,20 @@
+name:
+  given: Mary
+  surnames:
+    birth: Hamilton
+    current: Keith
+gender: female
+dod: '1442-01-01'
+deceased: true
+country_of_birth: Scotland
+interesting_facts: 'Daughter of Sir James Hamilton of Cadzow. Wife of William Keith, 1st Earl Marischal (d.1463), married c.1414. Mother of William Keith, 2nd Earl Marischal. Note: Some sources identify the 1st Earl''s wife as Marjorie Fraser, daughter of Alexander Fraser of Kinnell and Lovat, rather than Mary Hamilton — there is historical uncertainty about this identification. The Keith Clan website identifies her as Margaret, daughter of James, 1st Lord Hamilton.'
+research:
+  - description: 'Mary (or Marjory) Hamilton is identified by Geni.com and WikiTree as the wife of William Keith, 1st Earl Marischal, and daughter of Sir James Hamilton of Cadzow. Geni.com gives her death as c.1442. However, there is scholarly disagreement: some sources identify the 1st Earl''s wife as Marjorie Fraser rather than Mary Hamilton, and the Keith Clan website calls her Margaret, daughter of James, 1st Lord Hamilton. The identification should be treated with some caution.'
+    confidence: 60
+    sources:
+      - https://www.geni.com/people/Mary-Keith/6000000032639773127
+      - https://www.wikitree.com/wiki/Keith-313
+      - https://keithclan.net/information-references/succession-of-the-keiths-as-great-marischals-of-scotland/
+relationships:
+  - type: partner
+    person: william-6

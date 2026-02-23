@@ -15,6 +15,8 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: william-8
+  - type: parent
+    person: barbara
 stories:
   - name: The Battle of Bannockburn
     description: On 24 June 1314, Sir Robert Keith commanded the Scottish cavalry at the Battle of Bannockburn. His reconnaissance with James Douglas identified the English approach, and his decisive cavalry charge against the English longbowmen in flank routed them completely, removing the greatest threat to the Scottish schiltrons and materially aiding Robert the Bruce's victory. This was one of the most significant battles in Scottish history, securing Bruce's position as King and Scotland's de facto independence from England.

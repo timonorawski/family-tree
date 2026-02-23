@@ -1,0 +1,21 @@
+name:
+  given: Christian
+  surnames:
+    birth: Menteith
+    current: Keith
+gender: female
+dob: '1321-01-01'
+dod: '1387-01-01'
+deceased: true
+country_of_birth: Scotland
+interesting_facts: Daughter of Sir John Menteith, Lord of Arran and Knapdale, and Helen (Elyne) of Mar. Second wife of Sir Edward Keith (d.1351), Great Marischal of Scotland. After Edward's death, married secondly Sir Robert Erskine c.1352. Mother of Janet de Keith, who married Sir Thomas Erskine of Erskine — Janet was the critical link between the ancient and modern Earls of Mar. Through Janet's son Robert Erskine, 1st Lord Erskine, the Erskine family claimed the Earldom of Mar.
+research:
+  - description: Christian Menteith is documented as the second wife of Sir Edward Keith and daughter of Sir John Menteith and Helen of Mar. WikiTree (Menteith-4) gives her dates as c.1321-c.1387 and records her death at Synton, Selkirkshire. After Edward Keith's death, she married Sir Robert Erskine c.1352. Her daughter Janet de Keith married Sir Thomas Erskine, creating the link to the modern Earls of Mar.
+    confidence: 80
+    sources:
+      - https://www.wikitree.com/wiki/Menteith-4
+      - https://www.geni.com/people/Christian-Menteith-of-Arran/6000000003827855243
+      - https://en.wikipedia.org/wiki/Edward_Keith
+relationships:
+  - type: partner
+    person: edward-4

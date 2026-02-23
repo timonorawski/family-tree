@@ -15,6 +15,10 @@ country_of_birth: England
 relationships:
   - type: parent
     person: joseph-logan
+  - type: partner
+    person: grace
+  - type: partner
+    person: julia
 research:
   - description: ET Seton's claimed descent from the Earls of Winton was never legally established. His father's 1901 statement provides the family narrative but acknowledges 'I have no legal evidence, at hand, of my descent from Ann Seton.' Monsignor Robert Seton concluded the title was extinct. The connection to George Seton, 3rd Earl of Winton (the documented common ancestor with the Keith/Turnour line) depends on the legitimacy of the 5th Earl's alleged son Charles Seton (b.1711). If the Thompson/Seton genealogy is accurate, then ET Seton and the Turnour family share the 3rd Earl of Winton as a common ancestor — making them distant cousins through the Seton Earls.
     confidence: 35

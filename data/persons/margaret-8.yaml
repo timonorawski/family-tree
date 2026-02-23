@@ -1,0 +1,21 @@
+name:
+  given: Margaret
+  surnames:
+    birth: Fraser
+    current: Keith
+gender: female
+dob: '1335-01-01'
+dod: '1410-09-03'
+deceased: true
+country_of_birth: Scotland
+interesting_facts: Only child and heiress of Sir John Fraser of Cowie (and granddaughter of Sir Alexander Fraser, High Chamberlain of Scotland). Wife of Sir William Keith, Great Marischal of Scotland (d.1410), married on or before 3 May 1351. Through her, William obtained the forest of Cowie, Strachan, Fetteresso and Aboyne. Also known as Margaret Fraser of Touchfraser. Died 3 September 1410 at Dunnottar Castle, Stonehaven, Aberdeenshire. Mother of numerous children including Sir Robert Keith (who succeeded as Marischal), Muriel Keith (who married Robert, Duke of Albany, Regent of Scotland), and Elizabeth Keith (who married Sir Adam Gordon of Huntly).
+research:
+  - description: Margaret Fraser is well-documented as the wife of Sir William Keith, Great Marischal, and daughter/heiress of Sir John Fraser of Cowie. Find a Grave (memorial 82550132) records her death as 3 September 1410 at Dunnottar Castle. Geni.com gives her birth c.1335 and describes her as heiress of Touchfraser. Multiple sources confirm the marriage brought the Keith family the lands of Cowie, Strachan, Fetteresso and Aboyne.
+    confidence: 85
+    sources:
+      - https://www.findagrave.com/memorial/82550132/margaret-keith
+      - https://www.geni.com/people/Margaret-Fraser-of-Touchfraser-heiress-of-Touchfraser/6000000006444102906
+      - https://www.wikitree.com/wiki/Fraser-71
+relationships:
+  - type: partner
+    person: william-7

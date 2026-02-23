@@ -1,0 +1,22 @@
+name:
+  given: Elizabeth
+  surnames:
+    birth: Stewart
+    current: Gray
+gender: female
+dob: '1460-01-01'
+deceased: true
+country_of_birth: Scotland
+titles:
+  - value: Lady
+    type: noble
+interesting_facts: Daughter of John Stewart, 1st Earl of Atholl and Lady Eleanor Sinclair (though some sources suggest Margaret Douglas as her mother). Second wife of Andrew Gray, 2nd Lord Gray; married before 1483. Mother of Janet Gray (d. October 1539), Gilbert Gray (d. before 1541), Isobel Gray (d. after 27 April 1529), and Marjorie Gray. Her father John Stewart, 1st Earl of Atholl was a half-brother of King James II of Scotland.
+research:
+  - description: thepeerage.com (p1966) confirms Lady Elizabeth Stewart as daughter of John Stewart, 1st Earl of Atholl and Lady Eleanor Sinclair, married Andrew Gray 2nd Lord Gray before 1483. WikiTree (Stewart-1611) corroborates. Wikipedia article on John Stewart, 1st Earl of Atholl lists Elizabeth among his children.
+    sources:
+      - https://www.thepeerage.com/p1966.htm
+      - https://www.wikitree.com/wiki/Stewart-1611
+      - https://en.wikipedia.org/wiki/John_Stewart,_1st_Earl_of_Atholl
+relationships:
+  - type: partner
+    person: andrew-2

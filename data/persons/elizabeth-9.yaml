@@ -1,0 +1,24 @@
+name:
+  given: Elizabeth
+  surnames:
+    birth: Douglas
+    current: Keith
+gender: female
+dob: '1488-01-01'
+dod: '1527-05-02'
+deceased: true
+country_of_birth: Scotland
+titles:
+  - value: Lady
+    type: noble
+interesting_facts: Eldest daughter of John Douglas, 2nd Earl of Morton, and Janet Crichton. Wife of Robert Keith, Master of Marischal, married 8 January 1506 at Morton, Dumfriesshire. Mother of William Keith, 4th Earl Marischal. Also mother of Robert Keith (Abbot of Deer), Elizabeth Keith (who married George Gordon, 4th Earl of Huntly), Christian Keith, Beatrice Keith, and Janet Keith (who married John Lyon, 7th Lord Glamis). Received a crown grant on 2 May 1527, establishing she survived until at least that date. Died at Dunnottar Castle, Kincardineshire.
+research:
+  - description: 'Lady Elizabeth Douglas is well-documented as the wife of Robert Keith, Master of Marischal, and eldest daughter of John Douglas, 2nd Earl of Morton, and Janet Crichton. WikiTree (Douglas-1682) gives her birth c.1488 at Morton, Dumfriesshire, marriage 8 January 1506, and death after 2 May 1527 at Dunnottar. Geni.com and Familypedia confirm the same details. Her husband Robert''s date of death is disputed: some say Flodden 1513, but Scots Peerage places him alive after 5 April 1514, with death between 24 August 1524 and 22 April 1525.'
+    confidence: 85
+    sources:
+      - https://www.wikitree.com/wiki/Douglas-1682
+      - https://www.geni.com/people/Lady-Elizabeth-Douglas/6000000002032127301
+      - https://familypedia.fandom.com/wiki/Elizabeth_Douglas_(c1488-1527)
+relationships:
+  - type: partner
+    person: robert-1

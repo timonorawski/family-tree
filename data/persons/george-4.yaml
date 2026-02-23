@@ -16,3 +16,7 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: george-3
+  - type: partner
+    person: mary-4
+  - type: partner
+    person: christian-1

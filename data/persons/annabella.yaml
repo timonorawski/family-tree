@@ -1,0 +1,19 @@
+name:
+  given: Annabella
+  surnames:
+    birth: Forbes
+    current: Gray
+gender: female
+dob: '1423-01-01'
+dod: '1514-01-01'
+deceased: true
+country_of_birth: Scotland
+interesting_facts: Daughter of Alexander Forbes, 1st Lord Forbes and Lady Elizabeth Douglas. Second wife of Patrick Gray, Master of Gray; married before 1445. Mother of Andrew Gray, 2nd Lord Gray and daughters including Janet Gray. After Patrick's death (c.1463), she long survived him — living until c.1514. One of five children of the 1st Lord Forbes; her siblings included James, 2nd Lord Forbes, and William Forbes (Provost of St Giles, Edinburgh).
+research:
+  - description: WikiTree profile (Forbes-115) gives birth 1423 in Forbes, Aberdeenshire, death c.1514, parents Alexander Forbes 1st Lord Forbes and Elizabeth Douglas. Married Patrick Gray before 1445. thepeerage.com (p2823) confirms parentage and marriage.
+    sources:
+      - https://www.wikitree.com/wiki/Forbes-115
+      - https://www.thepeerage.com/p2823.htm
+relationships:
+  - type: partner
+    person: patrick

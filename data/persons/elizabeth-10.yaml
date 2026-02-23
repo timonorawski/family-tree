@@ -1,0 +1,22 @@
+name:
+  given: Elizabeth
+  surnames:
+    birth: Hay
+    current: Gray
+gender: female
+dob: '1450-01-01'
+deceased: true
+country_of_birth: Scotland
+titles:
+  - value: Lady
+    type: noble
+interesting_facts: Daughter of William Hay, 1st Earl of Erroll and Lady Beatrix Douglas. Fourth and final wife of Andrew Gray, 2nd Lord Gray; married after 8 June 1501 at Perth, Perthshire. Previously married to George Gordon, 2nd Earl of Huntly (married August 1471), so she was a widow (and former Countess of Huntly) when she married Lord Gray. Living in 1526.
+research:
+  - description: thepeerage.com (p1966) lists Lady Elizabeth Hay as fourth wife of Andrew Gray 2nd Lord Gray. Geni profiles confirm her parentage (William Hay, 1st Earl of Erroll and Lady Beatrix Douglas) and previous marriage to George Gordon, 2nd Earl of Huntly. WikiTree (Gray-2070) gives birth c.1450 at Huntly, Aberdeenshire.
+    sources:
+      - https://www.thepeerage.com/p1966.htm
+      - https://www.wikitree.com/wiki/Gray-2070
+      - https://www.geni.com/people/Andrew-Gray-2nd-Lord-Gray/6000000000405723040
+relationships:
+  - type: partner
+    person: andrew-2

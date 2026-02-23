@@ -14,3 +14,7 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: andrew
+  - type: parent
+    person: janet-1
+  - type: partner
+    person: elizabeth-5

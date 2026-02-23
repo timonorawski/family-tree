@@ -14,3 +14,5 @@ relationships:
     person: george-2
   - type: partner
     person: william
+  - type: parent
+    person: anne-3

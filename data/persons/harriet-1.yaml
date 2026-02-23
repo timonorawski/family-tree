@@ -1,0 +1,19 @@
+name:
+  given: Harriet
+  surnames:
+    birth: Board
+    current: Turnour
+gender: female
+dod: '1831-04-25'
+deceased: true
+country_of_birth: England
+interesting_facts: Born c.1754, eldest daughter of William Board of Pax Hill Park, Lindfield, Sussex (d.1790), by his wife Harriot nee Crawfurd. Her sisters were Louisa and Fanny Board. She first married Rev. John Bodicote of Westerham, Kent, and was widowed. She then married, as his second wife, Edward Turnour, 2nd Earl Winterton, on 30 May 1795. There was no issue from the second marriage. She died 25 April 1831.
+research:
+  - description: 'Cracroft''s Peerage records the 2nd Earl Winterton''s second marriage: ''He m. 2ndly, 30 May 1795, Harriet Bodicote (b. c.1754; widow of Rev John Bodicote, of Westerham, co. Kent), 1st dau. of William Board, of Pax Hill Park, co. Sussex, and d. 25 April 1831.'' ThePeerage.com confirms: ''He married, secondly, Harriet Board, daughter of William Board, in 1795.'' Lindfield Life confirms William Board (d.1790) as last male heir of the Board family at Paxhill, leaving widow Harriot nee Crawfurd and three daughters: Louisa, Harriot, and Fanny.'
+    sources:
+      - http://www.cracroftspeerage.co.uk/winterton1766.htm
+      - http://www.thepeerage.com/p21364.htm
+      - https://www.lindfieldlife.co.uk/lindfield-history-articles/paxhill-house
+relationships:
+  - type: partner
+    person: edward-1

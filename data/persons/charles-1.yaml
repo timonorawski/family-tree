@@ -12,3 +12,5 @@ relationships:
     person: edward-3
   - type: parent
     person: isabel-1
+  - type: partner
+    person: dorothy

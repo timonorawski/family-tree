@@ -1,0 +1,18 @@
+name:
+  given: Janet
+  surnames:
+    birth: Mortimer
+    current: Gray
+gender: female
+dob: '1358-01-01'
+dod: '1397-01-01'
+deceased: true
+country_of_birth: Scotland
+interesting_facts: Daughter and heiress of Roger de Mortimer of Easter Foulis (Perthshire) and Margaret Menteith. Her father Sir Roger resigned the lands of Foulis in favour of Janet, her husband Sir Andrew Gray, and their heirs — confirmed by charter of King Robert II at Dundee, 20 June 1377. Through this marriage the Gray family acquired Fowlis Castle, which remained their seat for centuries. First wife of Sir Andrew Gray of Fowlis; married 1377. Mother of at least ten children including Andrew Gray, 1st Lord Gray.
+research:
+  - description: WikiTree profile for Janet Mortimer (Mortimer-817) provides birth c.1358, death c.1397, parentage (Roger de Mortimer and Margaret Menteith), marriage 1377 to Sir Andrew Gray, charter confirmation by Robert II 20 June 1377.
+    sources:
+      - https://www.wikitree.com/wiki/Mortimer-817
+relationships:
+  - type: partner
+    person: andrew

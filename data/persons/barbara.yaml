@@ -1,0 +1,19 @@
+name:
+  given: Barbara
+  surnames:
+    birth: Seton
+    current: de Keith
+gender: female
+deceased: true
+country_of_birth: Scotland
+interesting_facts: 'Daughter of Seher (or Adam) de Seton. Wife of William de Keith (d.1293), Marischal of Scotland. Mother of Sir Robert Keith (d.1332), the Bannockburn cavalry commander, and Sir Edward Keith (d.1351), Great Marischal. This is the critical Keith-Seton connection: the Seton family, Premier Barons of Scotland, intermarried with the hereditary Marischals centuries before Elizabeth Seton married the 7th Earl Marischal in 1637. Note: Some scholars, including the Scots Peerage, question whether this marriage is documented — there is no contemporary authority for Barbara Seton as William''s wife, though the tradition is widely repeated in genealogical sources.'
+research:
+  - description: Barbara Seton (or de Seaton) is traditionally identified as the wife of William de Keith, Marischal of Scotland (d.1293), and daughter of Seher/Adam de Seton. WikiTree (Seton-7) and Geni.com both record this marriage. However, the Scots Peerage notes there is no contemporary authority for this identification, and the Foundation for Medieval Genealogy (Cawley) leaves William's wife unnamed. The marriage is widely repeated but should be treated with caution.
+    confidence: 50
+    sources:
+      - https://www.wikitree.com/wiki/Seton-7
+      - https://www.geni.com/people/Barbara-Seton/6000000005965498005
+      - https://www.wikitree.com/wiki/Keith-394
+relationships:
+  - type: partner
+    person: william-8

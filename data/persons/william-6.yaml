@@ -16,3 +16,5 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: robert-7
+  - type: partner
+    person: mary-3

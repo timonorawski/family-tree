@@ -1,0 +1,26 @@
+name:
+  given: Elizabeth
+  surnames:
+    birth: Maxwell
+    current: Seton
+gender: female
+dob: '1600-01-01'
+dod: '1664-03-18'
+deceased: true
+titles:
+  - value: Countess of Winton
+    type: noble
+country_of_birth: Scotland
+interesting_facts: 'Only daughter of John Maxwell, 6th Lord Herries of Terregles, and Elizabeth Maxwell. Second wife of George Seton, 3rd Earl of Winton, married before 1628 (after the death of his first wife Lady Anne Hay). Mother of six sons and six daughters. CRITICAL FIGURE: Elizabeth Maxwell is the documented common ancestor connecting the Keith/Turnour and Thompson/Seton lines through her husband the 3rd Earl. Two of her sons, Christopher and William Seton, drowned together off the coast of Holland in 1648 while travelling abroad. A portrait of Lady Elizabeth Maxwell with her two sons exists in public collections.'
+research:
+  - description: Elizabeth Maxwell, Countess of Winton, is documented as the only daughter of John Maxwell, 6th Lord Herries of Terregles, and his wife Elizabeth Maxwell. Born c.1600, she married George Seton, 3rd Earl of Winton before 1628 as his second wife (after the death of Lady Anne Hay c.1625-1628). She bore him six sons and six daughters. Geni.com gives her dates as c.1600-1664. WikiTree (Maxwell-2346) records her as 'abt.1608-aft.1641'. The Peerage confirms her parentage and marriage. She died after 18 March 1664.
+    confidence: 85
+    sources:
+      - https://www.geni.com/people/Elizabeth-Maxwell/6000000013113247907
+      - https://www.wikitree.com/wiki/Maxwell-2346
+      - https://www.thepeerage.com/p2146.htm
+      - https://www.thepeerage.com/p2148.htm
+      - https://www.twentytrees.co.uk/History/Scotland/Person/Elizabeth-Maxwell-Countess-Winton-1664.html
+relationships:
+  - type: partner
+    person: george-2

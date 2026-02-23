@@ -17,6 +17,8 @@ relationships:
     person: robert-1
   - type: partner
     person: margaret-5
+  - type: parent
+    person: elizabeth-9
 stories:
   - name: The Keith Sisters and the Court of Mary Queen of Scots
     description: The 4th Earl's thirteen children made the Keith family central to the politics of Mary Queen of Scots' reign. His eldest daughter Agnes married James Stewart, 1st Earl of Moray — the illegitimate half-brother of Queen Mary and Regent of Scotland. As Regent's wife, Agnes Keith was the most powerful woman in Scotland from 1567 until Moray's assassination in 1570. She was entrusted with Mary's personal jewels and famously refused to hand them over to the government. Agnes later married Colin Campbell, 6th Earl of Argyll, and was described as 'an intelligent and frightening politician' who her husband was 'overmuch ledd by'. Her son Archibald became 7th Earl of Argyll, and his son became the 1st Marquess of Argyll — the great Covenanter leader executed by Charles II. The 4th Earl's other daughters married into the Abernethy (Lords Saltoun), Campbell (of Calder), Allardice, Crichton (of Frendraught), Kennedy, Irvine (of Drum), and Strachan families.

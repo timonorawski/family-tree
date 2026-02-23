@@ -13,3 +13,7 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: william-4
+  - type: partner
+    person: elizabeth-9
+  - type: parent
+    person: elizabeth-6

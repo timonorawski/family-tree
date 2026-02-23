@@ -1,0 +1,17 @@
+name:
+  given: Elizabeth
+  surnames:
+    birth: Urling
+    current: Turnor
+gender: female
+deceased: true
+country_of_birth: England
+interesting_facts: Daughter of John Urling of Eton, Stoke Poges, Buckinghamshire. Married Arthur Turnor (d.1724), younger son of Sir Edward Turnor, the Speaker. They resided at Shillinglee Park, Sussex, and had a son Edward who died without issue in 1736.
+research:
+  - description: 'The DNB entry for Sir Edward Turnor (Speaker) records: ''the younger [son], Arthur, resided at Shillinglee Park, married Elizabeth, daughter of John Urling of Eton, Stoke-Pogis, Buckinghamshire, and had issue a son Edward, who died without issue in 1736.'' Also confirmed by Stirnet Turnour pedigree.'
+    sources:
+      - https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Turnor,_Edward
+      - https://www.stirnet.com/genie/data/british/tt/turnour1.php
+relationships:
+  - type: partner
+    person: arthur-1

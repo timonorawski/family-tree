@@ -15,3 +15,9 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: william-8
+  - type: partner
+    person: isabella
+  - type: partner
+    person: christian
+  - type: parent
+    person: barbara

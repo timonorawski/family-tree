@@ -18,3 +18,13 @@ country_of_birth: Scotland
 relationships:
   - type: parent
     person: patrick
+  - type: parent
+    person: annabella
+  - type: partner
+    person: janet-2
+  - type: partner
+    person: elizabeth-8
+  - type: partner
+    person: margaret-9
+  - type: partner
+    person: elizabeth-10
