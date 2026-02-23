@@ -1,0 +1,9 @@
+name:
+  given: Anne
+  surnames:
+    current: Morice
+gender: female
+deceased: false
+relationships:
+  - type: partner
+    person: edward-2

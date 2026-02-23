@@ -1,7 +1,11 @@
 name:
-  given: Lou
+  given: Louis
+  preferred: Lou
+  surnames:
+    current: Satov
 gender: male
 dob: '1922-01-15'
+deceased: false
 relationships:
   - type: partner
     person: sarah-2

@@ -1,12 +1,14 @@
 <script>
 	/**
-	 * @type {{ person: any, persons: Record<string, any>, chartData: any[], onNavigate: (slug: string) => void, onSaved: () => void }}
+	 * @type {{ person: any, persons: Record<string, any>, chartData: any[], onNavigate: (slug: string) => void, onSaved: () => void, readonly?: boolean }}
 	 */
-	let { person, persons, chartData, onNavigate, onSaved } = $props();
+	let { person, persons, chartData, onNavigate, onSaved, readonly = false } = $props();
 
 	let form = $state({});
 	let saving = $state(false);
 	let mode = $state('view');
+	let addingRelType = $state(null);
+	let addSearch = $state('');
 
 	function syncFormFromNode() {
 		const node = chartData.find((n) => n.id === person);
@@ -60,6 +62,8 @@
 		if (person) {
 			syncFormFromNode();
 			mode = 'view';
+			addingRelType = null;
+			addSearch = '';
 		}
 	});
 
@@ -322,6 +326,66 @@
 		onSaved();
 	}
 
+	let filteredPersons = $derived.by(() => {
+		if (!addingRelType) return [];
+		const node = currentNode();
+		if (!node) return [];
+
+		const excludeSlugs = new Set([person]);
+		if (addingRelType === 'parent') node.rels.parents.forEach(s => excludeSlugs.add(s));
+		else if (addingRelType === 'partner') node.rels.spouses.forEach(s => excludeSlugs.add(s));
+		else if (addingRelType === 'child') node.rels.children.forEach(s => excludeSlugs.add(s));
+		else if (addingRelType === 'sibling') siblings().forEach(s => excludeSlugs.add(s));
+
+		const query = addSearch.toLowerCase().trim();
+		return chartData
+			.filter(n => {
+				if (excludeSlugs.has(n.id)) return false;
+				if (!query) return true;
+				const name = (n.data['first name'] || '').toLowerCase();
+				const given = (typeof n.data.name === 'object' ? n.data.name?.given || '' : '').toLowerCase();
+				const preferred = (typeof n.data.name === 'object' ? n.data.name?.preferred || '' : '').toLowerCase();
+				const surname = (typeof n.data.name === 'object' ? (n.data.name?.surnames?.current || n.data.name?.surnames?.birth || '') : '').toLowerCase();
+				return name.includes(query) || given.includes(query) || preferred.includes(query) || surname.includes(query);
+			})
+			.sort((a, b) => (a.data['first name'] || '').localeCompare(b.data['first name'] || ''))
+			.slice(0, 20);
+	});
+
+	async function linkExisting(existingSlug) {
+		if (addingRelType === 'parent') {
+			await fetch('/api/persons/relationship', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ slug: person, targetSlug: existingSlug, type: 'parent' })
+			});
+		} else if (addingRelType === 'partner') {
+			await fetch('/api/persons/relationship', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ slug: person, targetSlug: existingSlug, type: 'partner' })
+			});
+		} else if (addingRelType === 'sibling') {
+			const node = currentNode();
+			for (const parentSlug of node.rels.parents) {
+				await fetch('/api/persons/relationship', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({ slug: existingSlug, targetSlug: parentSlug, type: 'parent' })
+				});
+			}
+		} else if (addingRelType === 'child') {
+			await fetch('/api/persons/relationship', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ slug: existingSlug, targetSlug: person, type: 'parent' })
+			});
+		}
+		addingRelType = null;
+		addSearch = '';
+		onSaved();
+	}
+
 	async function deletePerson() {
 		if (!confirm(`Delete ${form.given}?`)) return;
 		const res = await fetch(`/api/persons/${person}`, { method: 'DELETE' });
@@ -335,7 +399,9 @@
 		<div class="sidebar-header">
 			<h2>{displayName()}</h2>
 			<div class="header-actions">
-				{#if mode === 'view'}
+				{#if readonly}
+					<button class="header-btn close-btn" onclick={() => onNavigate('')}>&times;</button>
+				{:else if mode === 'view'}
 					<button class="header-btn edit-btn" onclick={() => mode = 'edit'}>Edit</button>
 					<button class="header-btn close-btn" onclick={() => onNavigate('')}>&times;</button>
 				{:else}
@@ -735,14 +801,46 @@
 				{/if}
 			</section>
 
+			{#if !readonly}
 			<hr />
 
 			<section class="add-relatives">
-				<button onclick={() => addRelative('parent')}>+ Parent</button>
-				<button onclick={() => addRelative('sibling')}>+ Sibling</button>
-				<button onclick={() => addRelative('partner')}>+ Partner</button>
-				<button onclick={() => addRelative('child')}>+ Child</button>
+				{#if addingRelType}
+					<div class="add-panel">
+						<div class="add-panel-header">
+							<span class="add-panel-title">Add {addingRelType}</span>
+							<button class="header-btn cancel-btn" onclick={() => { addingRelType = null; addSearch = ''; }}>Cancel</button>
+						</div>
+						<input
+							class="add-search"
+							type="text"
+							placeholder="Search people..."
+							bind:value={addSearch}
+							autofocus
+						/>
+						{#if filteredPersons.length}
+							<div class="add-results">
+								{#each filteredPersons as node}
+									<button class="add-result" onclick={() => linkExisting(node.id)}>
+										{node.data['first name'] || node.id}
+									</button>
+								{/each}
+							</div>
+						{:else}
+							<div class="add-no-results">No matches</div>
+						{/if}
+						<button class="add-create-btn" onclick={() => { const rel = addingRelType; addingRelType = null; addSearch = ''; addRelative(rel); }}>
+							+ Create new person
+						</button>
+					</div>
+				{:else}
+					<button onclick={() => addingRelType = 'parent'}>+ Parent</button>
+					<button onclick={() => addingRelType = 'sibling'}>+ Sibling</button>
+					<button onclick={() => addingRelType = 'partner'}>+ Partner</button>
+					<button onclick={() => addingRelType = 'child'}>+ Child</button>
+				{/if}
 			</section>
+			{/if}
 		</div>
 	</aside>
 {/if}
@@ -1192,6 +1290,90 @@
 		align-self: flex-start;
 	}
 	.add-inline-btn:hover {
+		border-color: #5e60ce;
+		color: #fff;
+	}
+
+	.add-panel {
+		width: 100%;
+		background: #16213e;
+		border: 1px solid #444;
+		border-radius: 6px;
+		padding: 12px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.add-panel-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.add-panel-title {
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: capitalize;
+	}
+
+	.add-search {
+		width: 100%;
+		background: #1a1a2e;
+		border: 1px solid #333;
+		color: #e0e0e0;
+		padding: 6px 8px;
+		border-radius: 4px;
+		font-size: 14px;
+		font-family: inherit;
+		box-sizing: border-box;
+	}
+	.add-search:focus {
+		outline: none;
+		border-color: #5e60ce;
+	}
+
+	.add-results {
+		max-height: 200px;
+		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+	}
+
+	.add-result {
+		display: block;
+		width: 100%;
+		text-align: left;
+		background: none;
+		border: 1px solid transparent;
+		color: #e0e0e0;
+		padding: 6px 8px;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 13px;
+	}
+	.add-result:hover {
+		background: #5e60ce;
+		border-color: #5e60ce;
+	}
+
+	.add-no-results {
+		font-size: 12px;
+		color: #666;
+		padding: 4px 0;
+	}
+
+	.add-create-btn {
+		background: none;
+		border: 1px dashed #555;
+		color: #aaa;
+		padding: 6px 8px;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 13px;
+	}
+	.add-create-btn:hover {
 		border-color: #5e60ce;
 		color: #fff;
 	}

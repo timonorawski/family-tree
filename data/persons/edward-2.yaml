@@ -1,0 +1,9 @@
+name:
+  given: Edward
+  surnames:
+    current: Turnour
+gender: male
+deceased: false
+relationships:
+  - type: partner
+    person: anne-2

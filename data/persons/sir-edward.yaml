@@ -15,6 +15,10 @@ country_of_birth: England
 relationships:
   - type: partner
     person: sarah
+  - type: parent
+    person: arthur
+  - type: parent
+    person: anne-1
 stories:
   - name: Fire of London Disputes
     description: Sir Edward served as one of the judges under the Fire of London Disputes Act 1666, dealing with property disputes after the Great Fire of London. He also served as Attorney-General to the Duke of York before becoming Speaker of the House of Commons.

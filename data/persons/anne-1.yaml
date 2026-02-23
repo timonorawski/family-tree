@@ -1,0 +1,11 @@
+name:
+  given: Anne
+  surnames:
+    current: Jermy
+gender: female
+deceased: false
+relationships:
+  - type: partner
+    person: arthur
+  - type: parent
+    person: john-1

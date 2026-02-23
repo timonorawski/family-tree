@@ -1,0 +1,14 @@
+name:
+  given: Arthur
+  surnames:
+    current: Turnour
+gender: male
+deceased: false
+interesting_facts: Arthur Turnour (c.1588–1651) of Little Parndon and the Middle Temple. He sat as MP for Derby in the Addled Parliament of 1614 and became Serjeant-at-Law in 1637. He married Anne Jermy, daughter of John Jermy of Gunton, Norfolk
+relationships:
+  - type: partner
+    person: anne-1
+  - type: parent
+    person: edward-2
+  - type: parent
+    person: anne-2
