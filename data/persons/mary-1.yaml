@@ -1,0 +1,13 @@
+name:
+  given: Mary
+  surnames:
+    current: Turnor
+gender: female
+deceased: true
+interesting_facts: Daughter of Sir Edward Turnor and Lady Isabel Keith. Sister of Charles and Sarah. Designated as sole heir in her father's 1717 will as the daughter who 'has never disobeyed me nor in any material matter disobliged me'. Inherited only the Little Parndon estate (the rest consumed by debts). Died unmarried and without issue; the property then passed to her great-nephew Edward Garth-Turnour, the 1st Earl Winterton — Sarah's grandson.
+country_of_birth: England
+relationships:
+  - type: parent
+    person: edward-3
+  - type: parent
+    person: isabel-1

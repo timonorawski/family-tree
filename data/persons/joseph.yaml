@@ -1,0 +1,11 @@
+name:
+  given: Joseph
+  surnames:
+    current: Garth
+gender: male
+deceased: true
+interesting_facts: Of Shillinglee Park, Sussex. Married Sarah Gee, heiress to the Turnour estates. Father of Edward Garth who became Edward Garth-Turnour, 1st Earl Winterton.
+country_of_birth: England
+relationships:
+  - type: partner
+    person: sarah-4

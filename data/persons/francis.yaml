@@ -1,0 +1,11 @@
+name:
+  given: Francis
+  surnames:
+    current: Gee
+gender: male
+deceased: true
+interesting_facts: Of Shillinglee Park, Sussex. Married Sarah Turnor, daughter of Sir Edward Turnor. Father of Sarah Gee who married Joseph Garth.
+country_of_birth: England
+relationships:
+  - type: partner
+    person: sarah-3

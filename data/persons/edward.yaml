@@ -4,21 +4,21 @@ name:
     current: Garth-Turnour
 gender: male
 dob: '1734-01-01'
-dod: '1788-01-01'
+dod: '1788-08-10'
 deceased: true
 profession: MP for Bramber, Fellow of the Royal Society
 titles:
   - value: 1st Earl Winterton
     type: noble
-interesting_facts: 'Born Edward Garth. On inheriting the Turnour estates from his mother in 1744, assumed by Royal Licence the surname Turnour in lieu of Garth. Created Baron Winterton 1761, Viscount Turnour and Earl Winterton 1766 (all Irish peerage). Elected Fellow of the Royal Society 1767. MP for Bramber 1761-69. Family seat: Shillinglee Park, Sussex.'
+interesting_facts: Born Edward Garth, only son of Joseph Garth and Sarah Gee. Great-great-grandson of Sir Edward Turnor the Speaker through a double female-line descent (Sarah Turnor → Sarah Gee). On his mother's death 22 Sept 1744, inherited the Turnour estates including Shillinglee Park and assumed by Royal Licence the surname Turnour. Educated Trinity College, Oxford (1752). Created Baron Winterton 1761, Viscount Turnour and Earl Winterton 1766 (all Irish peerage). Elected Fellow of the Royal Society 1767. MP for Bramber 1761-69. Married (1) 13 Mar 1756 Anne Archer (d. 20 June 1775), daughter of Thomas 1st Lord Archer — 6 sons, 8 daughters. Married (2) 18 Feb 1778 Elizabeth Armstrong of Godalming — 2 sons, 2 daughters. Died 10 Aug 1788.
 country_of_birth: England
 relationships:
-  - type: parent
-    person: sarah
-  - type: parent
-    person: sir-edward
   - type: partner
     person: anne
+  - type: parent
+    person: joseph
+  - type: parent
+    person: sarah-4
 stories:
   - name: Shillinglee Park
     description: Shillinglee is an 18th-century house and estate in West Sussex, near the Surrey border. Built in 1735, a 2,000-acre landscaped park was laid out in the 1770s with fishponds and tree planting in the style of Capability Brown. In 1766 there were 26 gardeners on staff. The house was the seat of the Earls Winterton from the creation of the title until WWII. During WWII, the house was occupied by Canadian forces who accidentally burnt it down in approximately January 1943. The irony of Canadian soldiers destroying the ancestral home of a family whose title would pass to a Canadian branch two decades later has not been lost on the family. The house was later partially rebuilt and is now a Grade II* listed building.
@@ -29,10 +29,23 @@ stories:
       - 1770s
       - '1943'
   - name: The Name Inheritance
-    description: The Turnour name passed through two successive female lines before being restored. Sir Edward Turnor the Speaker (d.1676) had a grandson Charles whose line died out in the male line. The name survived through Charles's sister Sarah Turnour, who married Francis Gee, whose daughter Sarah Gee married Joseph Garth. Their son Edward Garth then assumed the Turnour name by Royal Licence in 1744.
+    description: 'The Turnour name passed through two successive female lines before being restored. Sir Edward Turnor the Speaker (d.1676) had two sons: Edward (elder) and Arthur (younger). Arthur lived at Shillinglee but his line died out. The elder Edward''s son Charles died without male issue in 1726. The name survived through Charles''s sister Sarah Turnor, who married Francis Gee. Their daughter Sarah Gee inherited as sole heiress and married Joseph Garth. Their son Edward Garth then assumed the Turnour name by Royal Licence in 1744 on his mother''s death, reuniting name and estates.'
     people:
       - sir-edward
-      - sarah
+      - edward-3
+      - arthur-1
+      - charles-1
+      - sarah-3
+      - francis
+      - sarah-4
+      - joseph
+  - name: The Disinherited Daughter
+    description: 'Sir Edward Turnor (d.1721) had at least three children: Charles, Sarah, and Mary. In his will (1717), he designated the unmarried Mary as sole heir, describing her as one ''who has never disobeyed me nor in any material matter disobliged me'' — a pointed contrast implying Sarah had done exactly that. However, Mary inherited only the Little Parndon estate (the rest consumed by debts) and died without issue. The property then passed to Sarah''s grandson Edward — the very line the father had tried to cut out.'
+    people:
+      - edward-3
+      - charles-1
+      - sarah-3
+      - mary-1
   - name: Family Motto and Arms
     description: 'Arms: Ermines, on a Cross quarter pierced Argent, four Fers-de-Moulin Sable. Motto: Esse Quam Videri — ''To be, rather than seem to be''.'
 research:
@@ -44,3 +57,4 @@ research:
       - historyofparliamentonline.org
       - Wikipedia
       - Burke's Peerage 2003, vol. 3, pp. 4225-4226
+      - Dictionary of National Biography (Turnor, Edward)

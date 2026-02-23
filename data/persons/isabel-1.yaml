@@ -1,0 +1,16 @@
+name:
+  given: Isabel
+  surnames:
+    birth: Keith
+    current: Turnor
+gender: female
+dod: '1690-01-01'
+deceased: true
+interesting_facts: Daughter of William Keith, 6th Earl Marischal of Scotland. Married Sir Edward Turnor 27 June 1667.
+titles:
+  - value: Lady
+    type: noble
+country_of_birth: Scotland
+relationships:
+  - type: partner
+    person: edward-3

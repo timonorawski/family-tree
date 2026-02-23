@@ -1,0 +1,16 @@
+name:
+  given: Sarah
+  surnames:
+    birth: Turnor
+    current: Gee
+gender: female
+deceased: true
+interesting_facts: Daughter of Sir Edward Turnor and Lady Isabel Keith. Sister of Charles Turnor. Described in her father's will as having 'disobeyed' and 'disobliged' him — he designated her sister Mary as heir instead. Nevertheless, the Turnour estates eventually passed through Sarah's line when Mary died without issue. Married Francis Gee.
+country_of_birth: England
+relationships:
+  - type: parent
+    person: edward-3
+  - type: parent
+    person: isabel-1
+  - type: partner
+    person: francis

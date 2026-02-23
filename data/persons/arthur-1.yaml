@@ -1,0 +1,14 @@
+name:
+  given: Arthur
+  surnames:
+    current: Turnor
+gender: male
+dod: '1724-04-04'
+deceased: true
+interesting_facts: Younger son of Sir Edward Turnor the Speaker. Resided at Shillinglee Park, Sussex. Married Elizabeth Urling, daughter of John Urling of Eton, Stoke Poges, Buckinghamshire. His son Edward died without issue in 1736. Dead-end branch — the Shillinglee estate passed through the elder son's line.
+country_of_birth: England
+relationships:
+  - type: parent
+    person: sir-edward
+  - type: parent
+    person: sarah
