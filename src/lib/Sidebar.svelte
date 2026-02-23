@@ -431,6 +431,27 @@
 						</div>
 					{/if}
 
+					{#if node.data.name?.middles?.length}
+						<div class="detail-row">
+							<span class="detail-label">Middle names</span>
+							<span class="detail-value">{node.data.name.middles.join(', ')}</span>
+						</div>
+					{/if}
+
+					{#if node.data.name?.surnames?.birth}
+						<div class="detail-row">
+							<span class="detail-label">Surname at birth</span>
+							<span class="detail-value">{node.data.name.surnames.birth}</span>
+						</div>
+					{/if}
+
+					{#if node.data.name?.surnames?.current && node.data.name?.surnames?.birth && node.data.name.surnames.current !== node.data.name.surnames.birth}
+						<div class="detail-row">
+							<span class="detail-label">Current surname</span>
+							<span class="detail-value">{node.data.name.surnames.current}</span>
+						</div>
+					{/if}
+
 					{#if node.data.dob || node.data.dod || node.data.country_of_birth}
 						<div class="dates-line">
 							{#if node.data.dob}b. {node.data.dob}{/if}{#if node.data.country_of_birth}{node.data.dob ? ', ' : ''}{node.data.country_of_birth}{/if}{#if node.data.dod}{(node.data.dob || node.data.country_of_birth) ? ' \u2014 ' : ''}d. {node.data.dod}{/if}
