@@ -1,0 +1,46 @@
+name:
+  given: Ernest
+  preferred: Ernest Thompson Seton
+  given_at_birth: Ernest Evan Thompson
+  surnames:
+    birth: Thompson
+    current: Seton
+gender: male
+dob: '1860-08-14'
+dod: '1946-10-23'
+deceased: true
+profession: Wildlife artist, naturalist, author, co-founder of the Boy Scouts of America
+interesting_facts: 'DISPUTED LINE: Born Ernest Evan Thompson in South Shields, Durham, England. Emigrated to Toronto with family 1866. Legally adopted the surname Seton 1901, claiming descent from the Earls of Winton through his father''s grandmother Ann Seton. Self-trained naturalist, appointed Provincial Naturalist of Manitoba. Award-winning wildlife illustrator — his painting of a sleeping wolf was displayed in the Grand Salon in Paris. Best-selling author of ''Wild Animals I Have Known'' (1898). Founded the Woodcraft Indians youth organization. First and only Chief Scout of the Boy Scouts of America (1910-1915) — his work with Daniel Carter Beard''s Sons of Daniel Boone formed the basis of the BSA. Later founded the Woodcraft League of America. Known as ''Black Wolf'' and ''the Chief''. Became US citizen 1931. His daughter Anya Seton became a best-selling author of historical fiction. Died at Seton Village, New Mexico, 23 Oct 1946 aged 86. Cremated; ashes scattered over Seton Village from a plane on his 100th birthday in 1960. ET Seton Park in Toronto commemorates his legacy in the city where he grew up.'
+country_of_birth: England
+relationships:
+  - type: parent
+    person: joseph-logan
+research:
+  - description: ET Seton's claimed descent from the Earls of Winton was never legally established. His father's 1901 statement provides the family narrative but acknowledges 'I have no legal evidence, at hand, of my descent from Ann Seton.' Monsignor Robert Seton concluded the title was extinct. The connection to George Seton, 3rd Earl of Winton (the documented common ancestor with the Keith/Turnour line) depends on the legitimacy of the 5th Earl's alleged son Charles Seton (b.1711). If the Thompson/Seton genealogy is accurate, then ET Seton and the Turnour family share the 3rd Earl of Winton as a common ancestor — making them distant cousins through the Seton Earls.
+    confidence: 35
+    sources:
+      - 'ET Seton Legacy Project: ernestthompsonseton.com'
+      - 'ET Seton Institute: etsetoninstitute.org'
+      - Ernest Thompson Seton, 'Trail of an Artist-Naturalist' (1940)
+      - Joseph Logan Thompson statement, Toronto, 14 May 1901
+      - Monsignor Robert Seton, 'An Old Family' (1899)
+      - American National Biography
+      - 'Geni.com: Ernest Seton profile'
+stories:
+  - name: From Earls of Winton to ET Seton Park
+    description: Ernest Thompson Seton grew up in Toronto after his father's shipping business failed in South Shields. He became one of the most famous naturalists and wildlife artists of his era, co-founded the Boy Scouts of America, and wrote best-selling animal stories. He legally adopted the name Seton in 1901, claiming descent from George Seton, 5th Earl of Winton — a Jacobite lord convicted of treason after the 1715 Rising. If the family genealogy is correct, ET Seton and the Turnour/Keith family share George Seton, 3rd Earl of Winton (1584-1650) as a common ancestor — one line descending through the 3rd Earl's daughter Elizabeth Seton (who married the 7th Earl Marischal), the other through his grandson the 5th Earl. ET Seton Park in Toronto, where family members of the Keith/Turnour line practise archery, commemorates this connection across four centuries.
+    people:
+      - george-2
+      - elizabeth-3
+      - george-5
+      - joseph-logan
+    places:
+      - South Shields, Durham
+      - Toronto, Ontario
+      - ET Seton Park, Toronto
+      - Seton Village, New Mexico
+    dates:
+      - '1860'
+      - '1866'
+      - '1901'
+      - '1946'

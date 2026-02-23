@@ -1,0 +1,16 @@
+name:
+  given: George
+  surnames:
+    current: Seton
+gender: male
+dob: '1613-05-15'
+dod: '1648-06-04'
+deceased: true
+titles:
+  - value: Lord Seton
+    type: noble
+interesting_facts: Eldest son of George Seton, 3rd Earl of Winton, and Lady Anne Hay. Styled Lord Seton. Joined the Marquess of Montrose's Royalist army 1645. Captured at the disastrous Battle of Philiphaugh (13 Sept 1645) and remained 'long in hazard of his life'. Predeceased his father. Father of George, 4th Earl of Winton. His portrait as a child with his father and brother Alexander, painted by Adam de Colone 1625, hangs in the Scottish National Portrait Gallery.
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: george-2

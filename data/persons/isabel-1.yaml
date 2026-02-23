@@ -16,6 +16,8 @@ relationships:
     person: edward-3
   - type: parent
     person: william
+  - type: parent
+    person: elizabeth-3
 stories:
   - name: The Keith Earls Marischal
     description: The Keiths held the hereditary office of Great Marischal of Scotland — custodians of the royal regalia and protectors of the king's person in parliament — from the 12th century. Isabel's father William, 7th Earl Marischal, was a Covenanter who seized Aberdeen twice (1639-40), then switched to the Royalist cause, entertained Charles II at Dunnottar Castle (1650), and was imprisoned in the Tower of London for a decade. After the Restoration, Charles II appointed him Lord Privy Seal of Scotland. He died at Inverugie in 1671 without surviving male issue. The earldom passed through his brother George to his nephew and then grand-nephew George, 10th Earl Marischal, who forfeited the title by joining the Jacobite Rising of 1715.

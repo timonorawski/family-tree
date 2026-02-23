@@ -1,0 +1,12 @@
+name:
+  given: Mary Ann
+  surnames:
+    birth: Logan
+    current: Thompson
+gender: female
+deceased: true
+interesting_facts: 'DISPUTED LINE: Daughter of Ann Seton (née Logan). Married Joseph Logan Thompson. Mother of Ernest Thompson Seton and nine other sons. Her mother Ann Seton''s last words were addressed to her: ''Now Mary, mind, Joseph''s the heir.'''
+country_of_birth: England
+relationships:
+  - type: parent
+    person: ann-1

@@ -1,0 +1,24 @@
+name:
+  given: George
+  surnames:
+    current: Seton
+gender: male
+dod: '1749-12-19'
+deceased: true
+titles:
+  - value: 5th Earl of Winton (forfeited)
+    type: noble
+interesting_facts: 'Last Earl of Winton. Succeeded his father as 5th Earl 1704. Joined the Jacobite Rising of 1715, was captured, tried by his peers in Westminster Hall, convicted of treason 1716, and sentenced to death. Escaped from the Tower of London before execution. Fled to the continent, living in exile in Rome and elsewhere. Title and estates forfeited. Officially recorded as dying without legitimate issue 19 Dec 1749 in Rome. HOWEVER: the Thompson/Seton family maintained he had a son, Charles Seton (b.1711, Bellingham, Northumberland), through whom the line continued. This claim was supported by family records, rings, and a pedigree chart, but was never legally established. Ernest Thompson Seton''s father Joseph Logan Thompson claimed descent through this disputed line.'
+country_of_birth: Scotland
+relationships:
+  - type: parent
+    person: george-4
+research:
+  - description: The 5th Earl's official record states he died without legitimate issue. The Thompson/Seton family claims he had a son Charles Seton (b.1711). Monsignor Robert Seton researched this in 'An Old Family, or The Setons of Scotland and America' (1899) and concluded the title was extinct. George Seton of Bellingham (described as the 5th Earl's 'only grandson and lawful heir') appeared before the Bailies of Canongate c.1823 and was served with the title, but this was a local recognition, not a full legal restoration. The FamilyTreeDNA Seton project notes that 'it has been reported incorrectly that George Seton, 5th Earl of Winton, had no children, however he did have a son named Charles Seton born in 1711 in Bellingham.' The confidence level on this link varies significantly by source.
+    confidence: 40
+    sources:
+      - 'ET Seton Legacy Project: ernestthompsonseton.com'
+      - Monsignor Robert Seton, 'An Old Family, or The Setons of Scotland and America' (1899)
+      - FamilyTreeDNA Seton Project background
+      - 'Ernest Thompson Seton, ''Trail of an Artist-Naturalist: Autobiography'' (1940)'
+      - Joseph Logan Thompson statement, Toronto, 14 May 1901

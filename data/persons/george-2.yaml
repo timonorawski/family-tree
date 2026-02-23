@@ -1,0 +1,31 @@
+name:
+  given: George
+  surnames:
+    current: Seton
+gender: male
+dob: '1584-12-01'
+dod: '1650-12-17'
+deceased: true
+titles:
+  - value: 3rd Earl of Winton
+    type: noble
+  - value: 8th Lord Seton
+    type: noble
+interesting_facts: Notable Royalist and Cavalier. Second son of Robert Seton, 1st Earl of Winton and 6th Lord Seton. Succeeded his childless elder brother as 3rd Earl 1606. Built Winton House near Pencaitland 1619. Hosted James VI at Seton Palace 1617 and Charles I twice in 1633. Staunch Royalist during the civil wars — Cromwell's army turned Seton Palace into a common inn, plundering his furniture, threatening his life. His eldest son George, Lord Seton, joined Montrose's Royalist army and was captured at the Battle of Philiphaugh 1645. Attended Charles II continuously in Scotland from June-November 1650, went home to Seton to prepare for the Coronation, and died 17 December 1650. Married (1) Lady Anne Hay (26 Apr 1609), daughter of Francis Hay, 9th Earl of Erroll — five sons, three daughters including Elizabeth (who married the 7th Earl Marischal) and Alexander (1st Viscount Kingston). Married (2) Elizabeth Maxwell, daughter of John Maxwell, 6th Lord Herries — six sons, six daughters. Two of his sons by his second wife, Christopher and William, drowned together off the coast of Holland 1648 while travelling abroad. His portrait with his sons George and Alexander, painted by Adam de Colone in 1625, hangs in the Scottish National Portrait Gallery.
+country_of_birth: Scotland
+relationships: []
+stories:
+  - name: The Setons, Scouting, and ET Seton Park
+    description: 'George Seton, 3rd Earl of Winton is the common ancestor connecting two remarkable threads. Through his daughter Elizabeth Seton (who married the 7th Earl Marischal), he is a direct ancestor of the Turnour family. Through his grandson George, 4th Earl, and great-grandson George, 5th Earl of Winton (who was convicted of treason for his role in the 1715 Jacobite Rising and had his title forfeited), the Seton name continued in disputed descent to South Shields, England. Joseph Logan Thompson — whose grandmother Ann Seton insisted on her deathbed that his line were the rightful heirs to the Earldom of Winton — emigrated to Toronto in 1866. His son, Ernest Evan Thompson, legally adopted the name Seton in 1901, becoming Ernest Thompson Seton: wildlife artist, naturalist, co-founder of the Boy Scouts of America, and the man whose legacy is commemorated in ET Seton Park in Toronto, where his descendants-in-claim and descendants-in-blood of the same 3rd Earl unknowingly cross paths.'
+    people:
+      - isabel-1
+      - william
+    places:
+      - Seton Palace, East Lothian
+      - ET Seton Park, Toronto
+    dates:
+      - '1584'
+      - '1650'
+      - '1715'
+      - '1860'
+      - '1901'
