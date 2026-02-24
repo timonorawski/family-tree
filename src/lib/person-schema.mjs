@@ -1,5 +1,18 @@
 import Ajv from 'ajv';
 
+const locationEntrySchema = {
+  type: 'object',
+  additionalProperties: false,
+  properties: {
+    date: { type: 'string' },
+    end_date: { type: 'string' },
+    region: { type: 'string' },
+    place: { type: 'string' },
+    notes: { type: 'string' },
+    tags: { type: 'array', items: { type: 'string' } }
+  }
+};
+
 const personSchema = {
   type: 'object',
   required: ['name', 'gender'],
@@ -28,6 +41,18 @@ const personSchema = {
     dob: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$' },
     dod: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$' },
     country_of_birth: { type: 'string' },
+    locations: {
+      type: 'object',
+      additionalProperties: false,
+      properties: {
+        birth: locationEntrySchema,
+        death: locationEntrySchema,
+        other: {
+          type: 'array',
+          items: locationEntrySchema
+        }
+      }
+    },
     deceased: { type: 'boolean' },
     profession: { type: 'string' },
     interesting_facts: { type: 'string' },
