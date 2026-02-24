@@ -2,9 +2,30 @@ name:
   given: Shirley
   surnames:
     current: Fine
+    birth: Chusid
 gender: female
 dob: '1932-11-12'
 deceased: false
+country_of_birth: Canada
+interesting_facts: Shirley was born November 12, 1932, likely in Toronto, Ontario, to Jewish immigrant parents from the Chusid family. The given name 'Shirley' reached peak popularity in 1935 due to child star Shirley Temple, and was notably popular among Jewish American families in the 1930s as part of cultural assimilation while typically retaining a Hebrew/Yiddish name for religious purposes.
 relationships:
   - type: partner
     person: irving
+research:
+  - description: 'Maiden name confirmed as CHUSID. The Chusid surname is derived from the Hebrew word ''chasid'' (חסיד) meaning ''pious one'' or ''devout''. This is an Ashkenazi Jewish surname, potentially indicating ancestors who were followers of Hasidic Judaism or simply known for their piety. Next research steps: (1) Identify Shirley''s parents (the Chusids); (2) Search Ontario birth records 1932-1933; (3) Search 1931 Canadian Census for Chusid families in Toronto; (4) Research Chusid family immigration to Canada.'
+    confidence: 100
+    sources:
+      - Family confirmation - February 2026
+  - description: 'CHUSID SURNAME RESEARCH (February 2026): Comprehensive research into the Chusid family line. ETYMOLOGY: Derived from Yiddish ''khusid'' meaning ''Hasid'' or from Hebrew ''chasid'' (חסיד) meaning ''pious one/devout''. The surname likely originated when Jews in the Russian Empire were required to adopt surnames (1804 Statute for the Jews). SPELLING VARIATIONS: Chusid, Khusid, Husid, Chusyd, Khuzid, Chasid, Hasid, Hosid, and Chosed are documented variants. Variations arose from transliteration of Hebrew/Yiddish sounds into different languages and local dialects. GEOGRAPHIC ORIGINS: Primarily Eastern European - Ukraine (Odessa documented), Poland, and regions of the former Russian Empire''s Pale of Settlement. Research indicates a Chusid family in Odessa, Ukraine circa 1900 with a rare mitochondrial haplogroup. GLOBAL DISTRIBUTION: ~290 bearers worldwide; 82% in Americas. USA: 257 (NY 28%, CA 13%, NJ 10%); Canada: 22. Also present in Brazil, Argentina, Bulgaria, England, Israel, Ukraine. HASIDIC CONNECTION: The surname directly references the Hasidic movement founded in 18th century Ukraine by Rabbi Israel ben Eliezer (Baal Shem Tov). Bearers may descend from early Hasidic followers or those recognized for piety. By mid-19th century, majority of Ukrainian Jews were Hasidic. IMMIGRATION CONTEXT: Shirley''s parents likely immigrated 1900-1927 during the Great Migration when Jewish population in Canada grew from 17,000 to 125,000. Toronto''s Jewish community centered in ''The Ward'' then Kensington Market. Immigration slowed after 1927 restrictions and halted with 1931 PC 695 order.'
+    confidence: 85
+    sources:
+      - hebrewsurnames.com/CHUSID
+      - forebears.io/surnames/chusid
+      - lastnames.myheritage.com/last-name/chusid
+      - 'Wikipedia: Hasidic Judaism, History of the Jews in Toronto'
+      - Library and Archives Canada - Jewish Canadians research guide
+      - Ontario Jewish Archives
+  - description: 'RESEARCH LEADS FOR CHUSID LINE: (1) Search 1921 and 1931 Canadian Census for Chusid/Khusid/Husid families in Toronto/Ontario; (2) Check Canadian Naturalization Database 1915-1951 at Library and Archives Canada; (3) Search Jewish Immigration Aid Services files 1920-1950 held at LAC; (4) Contact Ontario Jewish Archives for Toronto Chusid records; (5) Search JewishGen.org databases for Chusid in Odessa/Ukraine; (6) If Odessa origin confirmed, search FamilySearch Ukraine collections; (7) Search Ontario vital records for Shirley''s birth certificate to identify parents; (8) Check Baron de Hirsch Institute records 1895-1917 for potential earlier immigration records.'
+    confidence: 100
+    sources:
+      - Research methodology - February 2026

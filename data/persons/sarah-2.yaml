@@ -1,7 +1,26 @@
 name:
   given: Sarah
+  surnames:
+    current: Satov
 gender: female
 dob: '1927-07-14'
+deceased: true
+interesting_facts: Ashkenazi Jewish. Wife of Louis 'Lou' Satov. Maiden name unknown - requires research. Mother of Howie, Mitch, Norry (Norris), and Victor Satov. Likely from a Toronto Jewish family or another Eastern European immigrant family.
 relationships:
   - type: partner
     person: lou
+research:
+  - description: 'MAIDEN NAME UNKNOWN: Sarah''s birth surname has not been identified. Given she was born in 1927 and married Lou Satov (b. 1922), they likely married in the late 1940s or early 1950s (Howie, their eldest known child, was born 1952). Marriage records from Ontario (1945-1955 range) would reveal her maiden name and parents.'
+    confidence: 30
+    sources:
+      - Family tree records
+  - description: 'RESEARCH LEADS: (1) Ontario marriage records 1945-1955 for Lou/Louis Satov; (2) Ontario Jewish Archives synagogue marriage records (Rabbi Graubart''s records if married at a Polish-Jewish congregation); (3) Toronto ketubah (Jewish marriage contract) records; (4) Canadian census 1951 for the Satov household; (5) Family oral history from descendants.'
+    confidence: 50
+    sources:
+      - Ontario Jewish Archives research guide
+      - 'Ancestry.ca: Ontario, Canada, Marriages, 1826-1943 (may not cover timeframe)'
+      - FamilySearch Ontario vital records
+  - description: 'PARENTS UNKNOWN: Sarah''s parents have not been identified. Once her maiden name is discovered, research can proceed on her family line. Given she was born in 1927, her parents were likely born c.1895-1905, either in Canada (second-generation) or Eastern Europe (first-generation immigrants).'
+    confidence: 20
+    sources:
+      - Family oral tradition (unverified)

@@ -1,6 +1,11 @@
 name:
-  given: Norry (Norris)
+  given: Norry
+  preferred: Norry
+  given_at_birth: Norris
+  surnames:
+    current: Satov
 gender: male
+deceased: false
 relationships:
   - type: parent
     person: sarah-2

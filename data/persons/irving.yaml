@@ -1,7 +1,23 @@
 name:
   given: Irving
+  surnames:
+    current: Fine
 gender: male
 dob: '1928-09-17'
+country_of_birth: Canada
+interesting_facts: Irving Fine was born September 17, 1928, likely in Toronto, Ontario, to Jewish immigrant parents. The given name 'Irving' was the most common name among Jewish American men born around 1917 according to MIT research, typically used as an Americanized form of Hebrew names beginning with 'I' such as Israel (Yisroel), Isaac (Yitzchak), or Isaiah. His Hebrew/Yiddish name is unknown but may have been one of these.
 relationships:
   - type: partner
     person: shirley
+research:
+  - description: 'FINE SURNAME ORIGIN: The surname Fine is almost certainly an anglicized spelling of the Ashkenazi Jewish surname ''Fein'' (Yiddish: fayn), derived from the German/Yiddish word meaning ''fine, elegant, refined.'' Common variants include Fein, Fain, Fajn, Feiner, Feinman, and compound surnames like Feinberg, Feinstein. The Fine family likely immigrated to Canada from Eastern Europe (Russian Empire Pale of Settlement, Poland, or Austro-Hungarian Empire) between 1900-1927, before restrictive immigration laws severely curtailed Jewish immigration. Toronto''s Jewish population grew from 3,090 in 1901 to 45,000 by 1931, mostly Polish Jewish immigrants.'
+    confidence: 75
+    sources:
+      - Forebears.io - Fine surname distribution
+      - iGenea.com - Fein surname etymology
+      - Slate.com - Ashkenazi names etymology
+      - Wikipedia - History of the Jews in Toronto
+  - description: 'RESEARCH GAPS - IRVING''S PARENTS UNKNOWN: Key next steps to identify Irving''s parents: (1) Search Ontario birth records 1928-1929 for Irving Fine via Archives of Ontario; (2) Search 1931 Canadian Census for Fine families in Toronto; (3) Check Ontario Jewish Archives for Fine family records and synagogue membership; (4) Search Toronto Jewish City Directories 1924-1931; (5) Contact Jewish Genealogical Society of Toronto for assistance; (6) Search JewishGen databases; (7) Check Library and Archives Canada passenger lists 1865-1935 for Fine/Fein immigration.'
+    confidence: 0
+    sources:
+      - Research planning note - February 2026

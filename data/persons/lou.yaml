@@ -5,7 +5,31 @@ name:
     current: Satov
 gender: male
 dob: '1922-01-15'
-deceased: false
+deceased: true
+interesting_facts: 'Ashkenazi Jewish. The surname ''Satov'' is almost certainly a toponymic surname derived from SATANOV (Sataniv/Satanow), a historic Jewish shtetl in Podolia, Ukraine. By 1900, approximately 3,000 Jews comprised two-thirds of Satanov''s population. Possible surname variations include: Satov, Satow, Satoff, Satovsky, Satowski, Satanow, Satanover. Lou''s parents likely immigrated during the major wave of Eastern European Jewish immigration (1880s-1920s). Toronto''s Jewish population grew from 18,237 in 1911 to 45,305 in 1931; by 1931, 80% lived in/around Kensington Market.'
 relationships:
   - type: partner
     person: sarah-2
+research:
+  - description: 'SURNAME ORIGIN: ''Satov'' is a toponymic surname with the Slavic ''-ov'' suffix meaning ''from/of''. The most probable origin is SATANOV (Ukrainian: Sataniv, Polish: Satanow), a major Jewish shtetl in Podolia, Ukraine, on the border with Galicia. The town had Magdeburg rights from 1444 and Jews settled there from the 16th century. By 1900, ~3,000 Jews made up 2/3 of the population. The 1919-1920 pogroms in Podolia (including two in Satanov itself) and the 1921 Soviet takeover would have been major emigration push factors.'
+    confidence: 70
+    sources:
+      - 'JewishGen KehilaLinks: Satanov history'
+      - Alexander Beider, A Dictionary of Jewish Surnames from the Russian Empire (methodology for toponymic surnames)
+      - 'My Shtetl project: Jewish towns of Ukraine'
+  - description: 'IMMIGRATION TIMING: Lou was born January 15, 1922. If born in Toronto, his parents likely arrived between 1900-1921 during the peak immigration wave. Toronto''s Jewish population nearly doubled from 1911-1921. Many Eastern European Jews entered Canada through Halifax (Pier 21) rather than Ellis Island. Canadian immigration restrictions tightened after 1923.'
+    confidence: 65
+    sources:
+      - 'Library and Archives Canada: Passenger Lists 1865-1935'
+      - History of the Jews in Toronto (Wikipedia)
+      - Canadian Jewish Congress historical records
+  - description: 'RESEARCH LEADS: (1) Library and Archives Canada passenger lists for Satov/Satow/Satovsky arrivals; (2) Ontario Jewish Archives synagogue records; (3) Alex Dworkin Canadian Jewish Archives JIAS case files (from 1920); (4) Rabbi Y.L. Graubart''s marriage records (1920s-1930s) include specific birthplaces of Toronto Jews; (5) Canadian census 1921, 1931 for Satov households.'
+    confidence: 50
+    sources:
+      - Ontario Jewish Archives research guide
+      - Alex Dworkin Canadian Jewish Archives major collections
+      - JewishGen Canada research guide
+  - description: 'PARENTS UNKNOWN: Lou''s parents have not yet been identified. Given his 1922 birth date, they were likely born c.1890-1900 in Eastern Europe (probably Podolia/Galicia region) and immigrated to Canada between 1900-1921. Hebrew/Yiddish given names would need to be determined from synagogue or cemetery records.'
+    confidence: 30
+    sources:
+      - Family oral tradition (unverified)
