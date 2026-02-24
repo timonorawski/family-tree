@@ -5,8 +5,6 @@ name:
   surnames:
     current: McGeary
 gender: male
-dod: '1904-01-01'
-country_of_birth: Canada
 deceased: true
 interesting_facts: Died in 1904 in Grey County, Ontario. Only year of death known. Possibly a son of James McGeary (b. ~1826, Ireland, wagon maker of Bond Head) and Sarah Richardson (b. ~1824, Ireland). Grey County is adjacent to Simcoe County, which would be consistent with a McGeary from the Bondhead area. Further research needed to confirm parentage.
 relationships:
@@ -20,3 +18,8 @@ research:
     sources:
       - 'Ancestry.ca: Ontario death records for James Edward McGeary (d. 1904, Grey, Ontario)'
       - https://www.ancestry.ca/genealogy/death-records/James-McGeary.html
+locations:
+  birth:
+    region: canada
+  death:
+    date: '1904-01-01'

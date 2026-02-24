@@ -6,12 +6,9 @@ name:
     birth: Thompson
     current: Seton
 gender: male
-dob: '1860-08-14'
-dod: '1946-10-23'
 deceased: true
 profession: Wildlife artist, naturalist, author, co-founder of the Boy Scouts of America
 interesting_facts: 'DISPUTED LINE: Born Ernest Evan Thompson in South Shields, Durham, England. Emigrated to Toronto with family 1866. Legally adopted the surname Seton 1901, claiming descent from the Earls of Winton through his father''s grandmother Ann Seton. Self-trained naturalist, appointed Provincial Naturalist of Manitoba. Award-winning wildlife illustrator — his painting of a sleeping wolf was displayed in the Grand Salon in Paris. Best-selling author of ''Wild Animals I Have Known'' (1898). Founded the Woodcraft Indians youth organization. First and only Chief Scout of the Boy Scouts of America (1910-1915) — his work with Daniel Carter Beard''s Sons of Daniel Boone formed the basis of the BSA. Later founded the Woodcraft League of America. Known as ''Black Wolf'' and ''the Chief''. Became US citizen 1931. His daughter Anya Seton became a best-selling author of historical fiction. Died at Seton Village, New Mexico, 23 Oct 1946 aged 86. Cremated; ashes scattered over Seton Village from a plane on his 100th birthday in 1960. ET Seton Park in Toronto commemorates his legacy in the city where he grew up.'
-country_of_birth: England
 relationships:
   - type: parent
     person: joseph-logan
@@ -48,3 +45,9 @@ stories:
       - '1866'
       - '1901'
       - '1946'
+locations:
+  birth:
+    date: '1860-08-14'
+    region: england
+  death:
+    date: '1946-10-23'

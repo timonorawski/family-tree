@@ -5,11 +5,13 @@ name:
   surnames:
     current: Turnour
 gender: female
-dob: '1976-01-01'
 deceased: false
-country_of_birth: Canada
 relationships:
   - type: parent
     person: david
   - type: parent
     person: jill
+locations:
+  birth:
+    date: '1976-01-01'
+    region: canada

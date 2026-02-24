@@ -6,9 +6,6 @@ name:
     birth: Austin
     current: Richardson
 gender: female
-dob: '1807-01-01'
-dod: '1891-01-01'
-country_of_birth: Ireland
 deceased: true
 interesting_facts: Born circa 1807 in Ireland (likely County Armagh, as her father David Austin was from there). Daughter of David Austin and Elizabeth Patterson, both Irish immigrants from County Armagh. Married John Richardson (b. 1781, Armagh, Ireland). They settled in the Penville/Bondhead area, Tecumseth/West Gwillimbury Townships, Simcoe County, Ontario. Buried at Bond Head United Church Cemetery, Bondhead, Ontario. DOB/DOD year only known.
 relationships:
@@ -24,3 +21,9 @@ research:
     sources:
       - Family tree records
       - Bond Head United Church Cemetery records
+locations:
+  birth:
+    date: '1807-01-01'
+    region: ireland
+  death:
+    date: '1891-01-01'

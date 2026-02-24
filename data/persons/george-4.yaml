@@ -3,8 +3,6 @@ name:
   surnames:
     current: Seton
 gender: male
-dob: '1642-05-04'
-dod: '1704-03-06'
 deceased: true
 titles:
   - value: 4th Earl of Winton
@@ -12,7 +10,6 @@ titles:
   - value: 9th Lord Seton
     type: noble
 interesting_facts: Son of George, Lord Seton (d.1648) and grandson of the 3rd Earl. Succeeded his grandfather as 4th Earl 1650. Father of George, 5th Earl of Winton — the Jacobite Earl who was convicted of treason after the 1715 Rising.
-country_of_birth: Scotland
 relationships:
   - type: parent
     person: george-3
@@ -20,3 +17,9 @@ relationships:
     person: mary-4
   - type: partner
     person: christian-1
+locations:
+  birth:
+    date: '1642-05-04'
+    region: scotland
+  death:
+    date: '1704-03-06'

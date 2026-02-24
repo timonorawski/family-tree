@@ -5,12 +5,10 @@ name:
     birth: Montgomerie
     current: Seton
 gender: female
-dob: '1642-01-01'
 deceased: true
 titles:
   - value: Countess of Winton
     type: noble
-country_of_birth: Scotland
 interesting_facts: Eldest daughter of Hugh Montgomerie, 7th Earl of Eglinton, and Lady Mary Leslie. Married George Seton, 4th Earl of Winton on 4 September 1662. Died without surviving male issue. Some sources confuse her death date with that of Christian Hepburn (the 4th Earl's second wife), both recorded as 18 November 1703, but one genealogy gives Mary's death as 1677 which is more consistent with the 4th Earl's second marriage before 1682.
 research:
   - description: Lady Mary Montgomerie was the eldest daughter of Hugh Montgomerie, 7th Earl of Eglinton (1613-1669) and Lady Mary Leslie (1618-aft.1661). She married George Seton, 4th Earl of Winton on 4 September 1662. WikiTree (Montgomerie-87) records her as 'abt.1642-1703'. One source (genealogieonline.nl) suggests she may have died c.1677, which would be more consistent with the 4th Earl's second marriage to Christian Hepburn before 1682. The death date of 18 November 1703 attributed to her by WikiTree may be a confusion with Christian Hepburn, who also died on that date. She died without surviving male issue.
@@ -23,3 +21,7 @@ research:
 relationships:
   - type: partner
     person: george-4
+locations:
+  birth:
+    date: '1642-01-01'
+    region: scotland

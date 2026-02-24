@@ -4,9 +4,7 @@ name:
     birth: Keith
     current: Gray
 gender: female
-dob: '1445-01-01'
 deceased: true
-country_of_birth: Scotland
 interesting_facts: Daughter of Sir Robert Keith (eldest son of William Keith, 1st Earl Marischal) and Janet Seton. Her father Robert predeceased his own father in 1446, so the Marischal earldom passed to Robert's younger brother William (who became 2nd Earl Marischal). First wife of Andrew Gray, 2nd Lord Gray; married c. March 1463/64. Mother of Elizabeth Gray (d. c.1526) and Patrick Gray, 3rd Lord Gray (d. April 1541). This marriage represents the key Keith-Gray connection linking the Marischal and Gray peerage families.
 research:
   - description: 'thepeerage.com (p1966) confirms Janet Keith as daughter of Sir Robert de Keith and Janet Seton, married Andrew Gray 2nd Lord Gray c. March 1463/64. Children: Elizabeth Gray and Patrick Gray 3rd Lord Gray. WikiTree (Gray-2070) gives birth c.1445 at Dunnottar, Kincardineshire.'
@@ -21,3 +19,7 @@ relationships:
     person: andrew-2
   - type: parent
     person: william-6
+locations:
+  birth:
+    date: '1445-01-01'
+    region: scotland

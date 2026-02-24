@@ -5,7 +5,6 @@ name:
     current: Keith
 gender: female
 deceased: true
-country_of_birth: Scotland
 interesting_facts: Daughter of Sir Gilbert de la Hay (or Hay), 5th Baron Erroll and hereditary High Constable of Scotland. Wife of Sir Robert Keith (d.1346), Great Marischal of Scotland, who was killed at the Battle of Neville's Cross. The Hay family held the office of High Constable just as the Keiths held the office of Marischal — this marriage united the two greatest hereditary officers of the Scottish Crown.
 research:
   - description: Margaret Hay is consistently identified as the wife of Sir Robert Keith, Great Marischal (d.1346), and daughter of Sir Gilbert Hay, 5th Baron Erroll and High Constable of Scotland. Wikipedia's article on Robert Keith (d.1346) confirms this, as do Geni.com and the Keith Clan website. Her father Gilbert died in April 1333.
@@ -17,3 +16,6 @@ research:
 relationships:
   - type: partner
     person: robert-5
+locations:
+  birth:
+    region: scotland

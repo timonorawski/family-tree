@@ -3,10 +3,8 @@ name:
   surnames:
     current: Turnor
 gender: male
-dod: '1726-08-01'
 deceased: true
 interesting_facts: Son of Sir Edward Turnor and Lady Isabel Keith. Married Dorothy Fenwick. Lived at Little Parndon, Essex and Shillinglee Park, Sussex. Died without male issue — had two daughters who died without issue. The Turnour name passed to the next generation through his sister Sarah.
-country_of_birth: England
 relationships:
   - type: parent
     person: edward-3
@@ -14,3 +12,8 @@ relationships:
     person: isabel-1
   - type: partner
     person: dorothy
+locations:
+  birth:
+    region: england
+  death:
+    date: '1726-08-01'

@@ -4,10 +4,8 @@ name:
     birth: Gee
     current: Garth
 gender: female
-dod: '1744-09-22'
 deceased: true
 interesting_facts: Only surviving daughter of Francis Gee and Sarah Turnor. Sole heiress to the Turnour estates including Shillinglee Park. Married Joseph Garth. On her death 22 Sept 1744, the Turnour estates passed to her son Edward Garth, who assumed the Turnour name by Royal Licence.
-country_of_birth: England
 relationships:
   - type: parent
     person: francis
@@ -15,3 +13,8 @@ relationships:
     person: sarah-3
   - type: partner
     person: joseph
+locations:
+  birth:
+    region: england
+  death:
+    date: '1744-09-22'

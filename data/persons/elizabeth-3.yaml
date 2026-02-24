@@ -4,11 +4,8 @@ name:
     birth: Seton
     current: Keith
 gender: female
-dob: '1621-01-01'
-dod: '1650-01-01'
 deceased: true
 interesting_facts: Daughter of George Seton, 3rd Earl of Winton, and his first wife Lady Anne Hay (daughter of Francis Hay, 9th Earl of Erroll). Married William Keith, 7th Earl Marischal in 1637. Mother of Lady Isabel Keith (who married Sir Edward Turnor). Died 1650, the same year as her father — both died within months of each other while Charles II was in Scotland. Her brother George, Lord Seton, had been captured at the Battle of Philiphaugh 1645, and her brother Alexander became 1st Viscount Kingston. Through her, the Turnour line descends from the Lords Seton, Premier Barons of Scotland.
-country_of_birth: Scotland
 relationships:
   - type: parent
     person: george-2
@@ -16,3 +13,9 @@ relationships:
     person: william
   - type: parent
     person: anne-3
+locations:
+  birth:
+    date: '1621-01-01'
+    region: scotland
+  death:
+    date: '1650-01-01'

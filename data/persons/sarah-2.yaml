@@ -3,7 +3,6 @@ name:
   surnames:
     current: Satov
 gender: female
-dob: '1927-07-14'
 deceased: true
 interesting_facts: Ashkenazi Jewish. Wife of Louis 'Lou' Satov. Maiden name unknown - requires research. Mother of Howie, Mitch, Norry (Norris), and Victor Satov. Likely from a Toronto Jewish family or another Eastern European immigrant family.
 relationships:
@@ -24,3 +23,6 @@ research:
     confidence: 20
     sources:
       - Family oral tradition (unverified)
+locations:
+  birth:
+    date: '1927-07-14'

@@ -5,13 +5,10 @@ name:
     birth: Hay
     current: Seton
 gender: female
-dob: '1592-01-01'
-dod: '1628-01-01'
 deceased: true
 titles:
   - value: Countess of Winton
     type: noble
-country_of_birth: Scotland
 interesting_facts: Eldest daughter of Francis Hay, 9th Earl of Erroll, and Lady Elizabeth Douglas, Countess of Erroll. Born c.1592. Joined the household of Anne of Denmark, wife of King James VI, at age 11. Married George Seton, 3rd Earl of Winton on 26 April 1609. Mother of five sons and three daughters, including George, Lord Seton (who joined Montrose's army and was captured at Philiphaugh 1645), Elizabeth Seton (who married William Keith, 7th Earl Marischal), and Alexander Seton, 1st Viscount Kingston. Her portrait by Adam de Colone hangs in the National Galleries of Scotland. Died c.1625-1628.
 research:
   - description: Lady Anne Hay (Anna Hay), Countess of Winton, is well-documented. Born c.1592, eldest daughter of Francis Hay, 9th Earl of Erroll and Elizabeth Douglas. Married George Seton, 3rd Earl of Winton on 26 April 1609. Wikipedia, Find a Grave (d.1628), WikiTree (d.1625), and the National Galleries of Scotland all confirm her identity. Her portrait by Adam de Colone at the National Galleries gives the date range 'about 1592-1625/1628'. Through her daughter Elizabeth Seton (who married the 7th Earl Marischal), she is a direct ancestor of the Turnour family.
@@ -25,3 +22,9 @@ research:
 relationships:
   - type: partner
     person: george-2
+locations:
+  birth:
+    date: '1592-01-01'
+    region: scotland
+  death:
+    date: '1628-01-01'

@@ -5,13 +5,11 @@ name:
   surnames:
     current: Turnour
 gender: male
-dob: '1943-01-01'
 deceased: false
 interesting_facts: Succeeded his uncle Robert Chad Turnour (7th Earl) who died without issue in 1991. Current holder of the title. Has only daughters; heir presumptive is his brother Robert Charles.
 titles:
   - value: 8th Earl Winterton
     type: noble
-country_of_birth: Canada
 relationships:
   - type: parent
     person: cecil-1
@@ -19,3 +17,7 @@ relationships:
     person: evelyn
   - type: partner
     person: jill
+locations:
+  birth:
+    date: '1943-01-01'
+    region: canada

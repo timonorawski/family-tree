@@ -1,7 +1,6 @@
 name:
   given: Jake
 gender: male
-dob: '1987-11-23'
 relationships:
   - type: parent
     person: karyn
@@ -9,3 +8,6 @@ relationships:
     person: david-2
   - type: partner
     person: rebecca
+locations:
+  birth:
+    date: '1987-11-23'

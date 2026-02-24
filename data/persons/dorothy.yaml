@@ -5,7 +5,6 @@ name:
     current: Turnor
 gender: female
 deceased: true
-country_of_birth: England
 interesting_facts: 'Daughter of William Fenwick of Bywell, Northumberland (bur. 14 Oct 1719), by his first wife Susanna Bacon (bap. 18 Jan 1681, bur. 1714), daughter of John Bacon of Staward. Married Charles Turnor (d.1726) of Little Parndon, Essex and Shillinglee Park, Sussex. They had two daughters: Sybilla and Dorothy, both of whom died without surviving issue.'
 research:
   - description: Stirnet Fenwick pedigree records Dorothy as daughter of William Fenwick of Bywell (bur. 14.10.1719) and Susanna Bacon (bap. 18.01.1681, bur. 1714), dau. of John Bacon of Staward. Dorothy married Charles Turnour (d.1726), son/heir of Sir Edward Turnour. They had two daughters, Sybilla and Dorothy, both dying without surviving issue. Also referenced in the VCH Essex vol.8 entry for Little Parndon parish.
@@ -15,3 +14,6 @@ research:
 relationships:
   - type: partner
     person: charles-1
+locations:
+  birth:
+    region: england

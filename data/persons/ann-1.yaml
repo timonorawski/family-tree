@@ -6,7 +6,6 @@ name:
 gender: female
 deceased: true
 interesting_facts: 'DISPUTED LINE: Ann Seton, grandmother of Joseph Logan Thompson. Married a Logan. On her deathbed, addressing her daughter Mary Ann, she said: ''Now Mary, mind, Joseph''s the heir'' — meaning Joseph was heir to the Barony of Seton Winton. ''These are the last words she uttered.'' Her nephew was George Seton of Bellingham, who had his claim acknowledged by the Bailies of Canongate. After George''s death without issue, Ann asserted that her grandson Joseph was the heir.'
-country_of_birth: England
 relationships:
   - type: parent
     person: charles-3
@@ -17,3 +16,6 @@ research:
     confidence: 45
     sources:
       - Joseph Logan Thompson statement, Toronto, 14 May 1901
+locations:
+  birth:
+    region: england

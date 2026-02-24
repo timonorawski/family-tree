@@ -3,10 +3,8 @@ name:
   surnames:
     current: Seton
 gender: male
-dob: '1711-01-01'
 deceased: true
 interesting_facts: 'DISPUTED: Alleged son of George Seton, 5th Earl of Winton. Said to have been born in Bellingham, Northumberland, England in 1711. His existence and parentage are the key disputed link in the chain connecting the Earls of Winton to Ernest Thompson Seton. Official peerage records state the 5th Earl died without legitimate issue; the Thompson/Seton family maintained Charles was his son. Charles''s descendants reportedly kept records, rings, and a pedigree chart to prove their lineage.'
-country_of_birth: England
 relationships:
   - type: parent
     person: george-5
@@ -21,3 +19,7 @@ research:
       - 'FamilyTreeDNA Seton Project: ''he did have a son named Charles Seton born in 1711 in Bellingham'''
       - ET Seton Legacy Project
       - Seton Earls of Winton Volume 1 of 3 (Google Books)
+locations:
+  birth:
+    date: '1711-01-01'
+    region: england

@@ -4,9 +4,7 @@ name:
     birth: Hay
     current: Gray
 gender: female
-dob: '1450-01-01'
 deceased: true
-country_of_birth: Scotland
 titles:
   - value: Lady
     type: noble
@@ -20,3 +18,7 @@ research:
 relationships:
   - type: partner
     person: andrew-2
+locations:
+  birth:
+    date: '1450-01-01'
+    region: scotland

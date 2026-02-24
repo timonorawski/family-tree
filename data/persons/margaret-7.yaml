@@ -5,7 +5,6 @@ name:
     current: Gray
 gender: female
 deceased: true
-country_of_birth: Scotland
 interesting_facts: Daughter of Sir Malcolm Fleming of Biggar and Cumbernauld and Elizabeth Stewart (daughter of Robert Stewart, Duke of Albany, Governor of Scotland). First wife of Patrick Gray, Master of Gray; married before 7 February 1439/40, as appears from an obligation for her marriage portion of 600 merks dated that day. No issue from this marriage.
 research:
   - description: WikiTree profile (Gray-1566) for Patrick Gray confirms Margaret Fleming as daughter of Sir Malcolm Fleming of Biggar and Elizabeth Stewart, married c.1435-1440, no issue. Geni profile (Margaret-Fleming/6000000002187788451) gives birth c.1418.
@@ -15,3 +14,6 @@ research:
 relationships:
   - type: partner
     person: patrick
+locations:
+  birth:
+    region: scotland

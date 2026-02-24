@@ -6,11 +6,8 @@ name:
     birth: Moses
     current: Seton
 gender: female
-dob: '1889-01-01'
-dod: '1975-01-01'
 deceased: true
 profession: Author, editor, lecturer, educator
-country_of_birth: United States
 interesting_facts: Born Julia Moses in New York City. Attended Hunter College, graduating with a bachelor's degree in classical languages and a master's degree in music and drama. First married Edward Grindle (Ted) Buttree in 1913; divorced 1934 but remained friends. Known variously as Julia Moss Buttree, Julia Moss Seton, Julia M. Seton, and 'Julie'. First encountered Ernest Thompson Seton at a lecture in 1918 and was introduced to him afterwards, beginning a lifelong friendship and collaboration. Married Ernest in 1935 in El Paso, Texas, following his divorce from Grace Gallatin. Worked alongside Seton on lecture tours, books, and other activities. Served as editor of The Totem Board magazine (Woodcraft League). Co-founded the Seton College of Indian Wisdom (later the Seton Institute of Indian Lore) with Ernest. In 1938 they adopted a daughter, later Dee Seton Barber. After Ernest's death in 1946, Julia maintained Seton Castle in Santa Fe as a monument to his memory, hosting many guests. In 1967 she donated most of Seton's library, art, animal specimens, and other artifacts to the Boy Scouts of America. Died in Santa Fe in 1975.
 research:
   - description: Julia Moss Seton (nee Moses, previously Buttree) is documented by the Ernest Thompson Seton Institute, Yale Archives (Seton papers), and multiple biographical sources. Born Julia Moses in New York City, 1889. Graduated Hunter College. First married Ted Buttree 1913, divorced 1934. Married Ernest Thompson Seton 1935 in El Paso, Texas. They adopted a daughter Dee (later Dee Seton Barber) in 1938. Julia maintained Seton Castle after Ernest's death in 1946 and donated his collection to the BSA in 1967. Died Santa Fe, 1975.
@@ -24,3 +21,9 @@ research:
 relationships:
   - type: partner
     person: ernest
+locations:
+  birth:
+    date: '1889-01-01'
+    region: united-states
+  death:
+    date: '1975-01-01'

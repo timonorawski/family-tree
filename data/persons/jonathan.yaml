@@ -6,12 +6,14 @@ name:
   surnames:
     current: Turnour
 gender: male
-dob: '1985-01-01'
 deceased: false
 interesting_facts: Heir apparent to the Earldom of Winterton through his father Dr. Murray John Turnour.
-country_of_birth: Canada
 relationships:
   - type: parent
     person: murray
   - type: parent
     person: brenda
+locations:
+  birth:
+    date: '1985-01-01'
+    region: canada

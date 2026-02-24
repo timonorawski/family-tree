@@ -3,15 +3,12 @@ name:
   surnames:
     current: Garth-Turnour
 gender: male
-dob: '1734-01-01'
-dod: '1788-08-10'
 deceased: true
 profession: MP for Bramber, Fellow of the Royal Society
 titles:
   - value: 1st Earl Winterton
     type: noble
 interesting_facts: Born Edward Garth, only son of Joseph Garth and Sarah Gee. Great-great-grandson of Sir Edward Turnor the Speaker through a double female-line descent (Sarah Turnor → Sarah Gee). On his mother's death 22 Sept 1744, inherited the Turnour estates including Shillinglee Park and assumed by Royal Licence the surname Turnour. Educated Trinity College, Oxford (1752). Created Baron Winterton 1761, Viscount Turnour and Earl Winterton 1766 (all Irish peerage). Elected Fellow of the Royal Society 1767. MP for Bramber 1761-69. Married (1) 13 Mar 1756 Anne Archer (d. 20 June 1775), daughter of Thomas 1st Lord Archer — 6 sons, 8 daughters. Married (2) 18 Feb 1778 Elizabeth Armstrong of Godalming — 2 sons, 2 daughters. Died 10 Aug 1788.
-country_of_birth: England
 relationships:
   - type: partner
     person: anne
@@ -58,3 +55,9 @@ research:
       - Wikipedia
       - Burke's Peerage 2003, vol. 3, pp. 4225-4226
       - Dictionary of National Biography (Turnor, Edward)
+locations:
+  birth:
+    date: '1734-01-01'
+    region: england
+  death:
+    date: '1788-08-10'

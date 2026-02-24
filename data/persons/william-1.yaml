@@ -3,15 +3,12 @@ name:
   surnames:
     current: Keith
 gender: male
-dob: '1585-01-01'
-dod: '1635-10-28'
 deceased: true
 profession: Commander of the King's Navy in Scotland
 titles:
   - value: 6th Earl Marischal
     type: noble
 interesting_facts: Succeeded his father 1623. Educated on the continent — Paris, Orléans, Tours, and Saumur (lodged with the Huguenot leader Philippe de Mornay). Made a baronet of Nova Scotia 1625. Member of the Scottish Privy Council 1626. Commander of the King's Navy in Scotland 1631. Received Charles I on his entry into Edinburgh after his coronation 1633. Fitted out a fleet to assist Władysław IV of Poland 1634. Married Lady Mary Erskine, daughter of John Erskine, Earl of Mar, contracted 12 Oct 1609. Died at Dunnottar Castle 28 Oct 1635.
-country_of_birth: Scotland
 relationships:
   - type: parent
     person: george-1
@@ -19,3 +16,9 @@ relationships:
     person: margaret-4
   - type: partner
     person: mary-2
+locations:
+  birth:
+    date: '1585-01-01'
+    region: scotland
+  death:
+    date: '1635-10-28'

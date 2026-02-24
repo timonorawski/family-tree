@@ -4,11 +4,8 @@ name:
     birth: Seton
     current: Thompson
 gender: male
-dob: '1708-01-01'
-dod: '1750-01-01'
 deceased: true
 interesting_facts: 'DISPUTED LINE / FAMILY TRADITION: Known variously as Alan or Evan Seton. Said to be a cousin or half-brother of the main Seton line. According to ET Seton family tradition, he fought with the Jacobite army at the Battle of Culloden (16 April 1746). After the defeat, fled to South Shields, England, and assumed the name ''Thompson'' to avoid capture — a price was reportedly on his head. According to Ernest, Evan was a wolf hunter. Ernest''s original middle name ''Evan'' honoured this ancestor. The Thompson surname used by ET Seton''s family originates with this name change. Evan''s son was Alan; his grandson was Evan; his great-grandson was Enoch; his great-great-grandson was Joseph Logan Thompson (ET Seton''s father).'
-country_of_birth: Scotland
 relationships: []
 research:
   - description: The Culloden story comes from ET Seton family tradition as recorded in his autobiography and the ET Seton Legacy Project. There is some confusion in the family accounts between this Evan/Alan figure and 'Alan Cameron, a brother or a cousin of the Cameron of Lochiel' — ET Seton's autobiography conflates or connects Cameron and Seton ancestry. The exact relationship of Evan to the Earls of Winton line is unclear. This is deep family legend territory.
@@ -17,3 +14,9 @@ research:
       - Ernest Thompson Seton, 'Trail of an Artist-Naturalist' (1940)
       - 'ET Seton Legacy Project: ''Seton at the Battle of Langside Part I'''
       - 'Kawartha Lakes Writers: Ernest Thompson Seton biography'
+locations:
+  birth:
+    date: '1708-01-01'
+    region: scotland
+  death:
+    date: '1750-01-01'

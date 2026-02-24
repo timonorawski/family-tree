@@ -5,8 +5,6 @@ name:
   surnames:
     current: Turnour
 gender: male
-dob: '1789-01-01'
-dod: '1857-01-01'
 deceased: true
 profession: Rector of Tatterset, Vicar of Beesthorpe, Norfolk
 interesting_facts: Younger son of the 2nd Earl Winterton. Cadet branch through which the earldom eventually passed to the Canadian line and from which the McGeary family descends.
@@ -15,7 +13,6 @@ titles:
     type: religious
   - value: Hon.
     type: civic
-country_of_birth: England
 relationships:
   - type: partner
     person: jessie
@@ -23,3 +20,9 @@ relationships:
     person: edward-1
   - type: parent
     person: jane-1
+locations:
+  birth:
+    date: '1789-01-01'
+    region: england
+  death:
+    date: '1857-01-01'

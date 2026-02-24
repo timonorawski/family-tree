@@ -3,11 +3,14 @@ name:
   surnames:
     current: Orawski
 gender: male
-dob: '1943-06-19'
-dod: '2017-11-30'
 deceased: true
 relationships:
   - type: parent
     person: eugene
   - type: parent
     person: genevieve
+locations:
+  birth:
+    date: '1943-06-19'
+  death:
+    date: '2017-11-30'

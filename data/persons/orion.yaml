@@ -1,10 +1,12 @@
 name:
   given: Orion
 gender: male
-dob: '2016-06-08'
-country_of_birth: Canada
 relationships:
   - type: parent
     person: timon
   - type: parent
     person: sonia
+locations:
+  birth:
+    date: '2016-06-08'
+    region: canada

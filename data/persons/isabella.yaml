@@ -4,9 +4,7 @@ name:
     birth: de Synton
     current: Keith
 gender: female
-dob: '1285-01-01'
 deceased: true
-country_of_birth: Scotland
 interesting_facts: Daughter and heiress of Alexander de Synton. First wife of Sir Edward Keith (d.1351), Great Marischal of Scotland, married before July 1305. Through Isabella, Edward inherited the hereditary sheriffdom of Selkirk. Her brother Andrew de Synton was captured at the Battle of Dunbar (1296) and died a prisoner at Fotheringhay Castle. Mother of Sir William Keith, Great Marischal (d.1410), John Keith (who married Mariota de Cheyne), and Catherine Keith (who married Alexander Barclay, ancestor of the Barclays of Ury).
 research:
   - description: Isabella de Synton is well-attested as the first wife of Sir Edward Keith and daughter of Alexander de Synton. WikiTree (Synton-1) records her birth c.1285. Geni.com dates the marriage to before July 1305. Through her, Edward Keith inherited the sheriffdom of Selkirk. Her brother Andrew de Synton died a prisoner at Fotheringhay after capture at the Battle of Dunbar 1296.
@@ -18,3 +16,7 @@ research:
 relationships:
   - type: partner
     person: edward-4
+locations:
+  birth:
+    date: '1285-01-01'
+    region: scotland

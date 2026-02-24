@@ -5,10 +5,12 @@ name:
   surnames:
     current: Orawski
 gender: female
-dob: '1986-07-09'
 deceased: false
 relationships:
   - type: parent
     person: wendy
   - type: parent
     person: walter
+locations:
+  birth:
+    date: '1986-07-09'

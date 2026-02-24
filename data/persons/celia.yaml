@@ -3,7 +3,6 @@ name:
   surnames:
     current: Satov
 gender: female
-dob: '1988-10-14'
 deceased: false
 relationships:
   - type: parent
@@ -12,3 +11,6 @@ relationships:
     person: howie
   - type: partner
     person: claire
+locations:
+  birth:
+    date: '1988-10-14'

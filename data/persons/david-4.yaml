@@ -3,9 +3,6 @@ name:
   surnames:
     current: Austin
 gender: male
-dob: '1779-01-01'
-dod: '1861-01-01'
-country_of_birth: Ireland
 deceased: true
 profession: Farmer
 interesting_facts: Born circa 1779 in County Armagh, Ireland (Ulster). Emigrated to Upper Canada (Ontario), settling in Tecumseth Township, Simcoe County. Married Elizabeth Patterson (also from Ireland). Their daughter Mary Ann Austin married John Richardson of Armagh. Died before 1861. Buried in Tecumseth, Simcoe County, Ontario, Canada. DOB only year accurate. The Austin family was part of the wave of Irish Protestant settlers from Ulster who came to Simcoe County in the early 1800s.
@@ -19,3 +16,9 @@ research:
       - Family tree records
       - 'irishtocanada.com: How and why the Irish came to Ontario'
       - 'FamilySearch: Simcoe County, Ontario, Canada Genealogy'
+locations:
+  birth:
+    date: '1779-01-01'
+    region: ireland
+  death:
+    date: '1861-01-01'

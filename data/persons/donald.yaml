@@ -5,8 +5,6 @@ name:
   surnames:
     current: McGeary
 gender: male
-dob: '1916-01-04'
-country_of_birth: Canada
 deceased: true
 profession: Chief Meteorologist, Royal Canadian Navy
 interesting_facts: Born in Regina, Saskatchewan (confirmed by father's 1939 naturalization declaration). Mother was Bertha Elizabeth Selby Thorpe (believed to have died in childbirth). As of 1939, still residing in Regina while father had emigrated to the US. Married Margaret Ethel Turnour in 1939. Served as Chief Meteorologist on HMCS Bonaventure, Canada's aircraft carrier (1957-1970). His meteorological observations and orchestration of pilot observation gathering were reportedly instrumental in convincing the Germans that Canada had operational radar capability during WWII.
@@ -35,3 +33,7 @@ relationships:
     person: berta
   - type: partner
     person: margaret-2
+locations:
+  birth:
+    date: '1916-01-04'
+    region: canada

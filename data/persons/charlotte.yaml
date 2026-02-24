@@ -3,10 +3,12 @@ name:
   surnames:
     current: Mahoney
 gender: female
-dob: '2016-04-11'
 deceased: false
 relationships:
   - type: parent
     person: nadia
   - type: parent
     person: stephen
+locations:
+  birth:
+    date: '2016-04-11'

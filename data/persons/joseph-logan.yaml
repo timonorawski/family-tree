@@ -3,11 +3,14 @@ name:
   surnames:
     current: Thompson
 gender: male
-dob: '1821-01-01'
-dod: '1902-01-01'
 deceased: true
 interesting_facts: 'DISPUTED LINE: Born South Shields, Durham, England. Shipping businessman. Believed himself the rightful heir to the Barony of Seton Winton through his grandmother Ann Seton. Emigrated with his family (wife and ten sons) to Canada in 1866 after the family shipping business failed. Settled in Toronto. Provided a written statement 14 May 1901 at his son Ernest''s request, documenting the family''s Seton descent. ''Natural indolence'' (per ET Seton) prevented him from ever pursuing the peerage claim. His grandmother Ann Seton''s deathbed words: ''Now Mary, mind, Joseph''s the heir.'' Married Mary Ann Logan. Father of ten sons including Ernest (the youngest surviving) and George Seton Thompson.'
-country_of_birth: England
 relationships:
   - type: parent
     person: mary-ann
+locations:
+  birth:
+    date: '1821-01-01'
+    region: england
+  death:
+    date: '1902-01-01'

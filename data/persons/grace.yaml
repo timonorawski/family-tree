@@ -5,11 +5,8 @@ name:
     birth: Gallatin
     current: Seton
 gender: female
-dob: '1872-01-28'
-dod: '1959-03-19'
 deceased: true
 profession: Author, suffragist, traveller, women's rights activist
-country_of_birth: United States
 interesting_facts: Born Grace Gallatin on 28 January 1872 in Sacramento, California. Daughter of Albert Gallatin (a wealthy merchant and financier — president of the largest hardware, steel, and iron business in California) and Clemenzie Rhodes Gallatin. Graduated from Packer Collegiate Institute, Brooklyn, 1892. Met Ernest Thompson Seton during a trip to Europe in 1894; married him in 1896. Their daughter Ann (Anya) Seton became a best-selling author of historical fiction. Grace contributed editorial and design assistance to Ernest's books. Published 'A Woman Tenderfoot' (1900) about her horseback travels in the Rocky Mountains. Pioneer traveller, founder of a women's writers' club, first-rank suffragette, and leading fundraiser for War Bonds in WWI. Separated from Ernest by the late 1920s; divorced 1935. Died in Palm Beach, Florida, 19 March 1959.
 research:
   - description: Grace Gallatin Seton Thompson (28 January 1872 - 19 March 1959) is well-documented. Born in Sacramento, California, daughter of Albert Gallatin and Clemenzie Rhodes Gallatin. Married Ernest Thompson Seton in 1896, divorced 1935. Mother of Anya Seton (the novelist). Wikipedia, Encyclopedia.com, Smith College Finding Aids (Grace Gallatin Seton-Thompson papers), and Harvard's Schlesinger Library all hold archival collections documenting her life. She was a notable author and suffragist in her own right.
@@ -23,3 +20,9 @@ research:
 relationships:
   - type: partner
     person: ernest
+locations:
+  birth:
+    date: '1872-01-28'
+    region: united-states
+  death:
+    date: '1959-03-19'

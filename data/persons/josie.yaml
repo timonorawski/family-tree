@@ -1,9 +1,11 @@
 name:
   given: Josie
 gender: female
-dob: '2025-06-30'
 relationships:
   - type: parent
     person: jake
   - type: parent
     person: rebecca
+locations:
+  birth:
+    date: '2025-06-30'

@@ -4,9 +4,7 @@ name:
     birth: Houston
     current: Gray
 gender: female
-dob: '1455-01-01'
 deceased: true
-country_of_birth: Scotland
 interesting_facts: Third wife of Andrew Gray, 2nd Lord Gray; married after 1497. Previously married to Robert Lyle, 2nd Lord Lyle (marriage before 1468), so she was a widow when she married Lord Gray. No children recorded from this marriage to Lord Gray.
 research:
   - description: thepeerage.com (p1966) lists Margaret Houston as third wife of Andrew Gray 2nd Lord Gray, married after 1497. WikiTree (Gray-2070) gives birth c.1455 at Houston, Renfrewshire. Geni profile confirms previous marriage to Robert Lyle, 2nd Lord Lyle.
@@ -16,3 +14,7 @@ research:
 relationships:
   - type: partner
     person: andrew-2
+locations:
+  birth:
+    date: '1455-01-01'
+    region: scotland

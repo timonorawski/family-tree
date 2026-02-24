@@ -3,9 +3,6 @@ name:
   surnames:
     current: Thorpe
 gender: male
-dob: '1801-01-01'
-dod: '1871-01-01'
-country_of_birth: Ireland
 deceased: true
 profession: Farmer
 interesting_facts: Born circa 1801 in Mayo or Leitrim, Ireland (western Ireland / Connacht province). Emigrated to Upper Canada (Ontario) and settled in the Gwillimbury area, Simcoe County. Married Margaret Selby (b. ~1814). John Thorpe and George Thorpe were noted as early settlers who took up lots in the ninth concession of Gwillimbury. Their son Robert James Thorpe married Jane 'Jennie' Adelaide Rennie. Only years of birth and death known.
@@ -19,3 +16,9 @@ research:
       - Family tree records
       - freepages.rootsweb.com/~bobevans/genealogy/simcoe.html (History of Simcoe County)
       - 'ogs.on.ca: Selby Burying Ground and Weddel Family Plot, East Gwillimbury'
+locations:
+  birth:
+    date: '1801-01-01'
+    region: ireland
+  death:
+    date: '1871-01-01'

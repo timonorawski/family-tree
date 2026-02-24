@@ -5,7 +5,6 @@ name:
   surnames:
     birth: McMillan
 gender: female
-dod: '1956-01-01'
 deceased: true
 relationships:
   - type: parent
@@ -14,3 +13,6 @@ relationships:
     person: margaret-1
   - type: partner
     person: cecil
+locations:
+  death:
+    date: '1956-01-01'

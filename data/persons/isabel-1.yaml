@@ -4,13 +4,11 @@ name:
     birth: Keith
     current: Turnor
 gender: female
-dod: '1690-01-01'
 deceased: true
 interesting_facts: Daughter of William Keith, 7th Earl Marischal (1614-1671) and his first wife Elizabeth Seton (1621-1650), daughter of George Seton, 3rd Earl of Winton. Married Sir Edward Turnor 27 June 1667. Her father was the hereditary custodian of the Scottish Crown Jewels (Honours of Scotland) at Dunnottar Castle — during his imprisonment in the Tower of London (1651-1660), the Honours were famously smuggled out of Dunnottar during Cromwell's siege. Her father's nephew George Keith, 10th Earl Marischal, was a leading Jacobite who fought at Sheriffmuir in 1715 and had the title forfeited — making her children first cousins once removed of the Jacobite Earl.
 titles:
   - value: Lady
     type: noble
-country_of_birth: Scotland
 relationships:
   - type: partner
     person: edward-3
@@ -49,3 +47,8 @@ research:
       - Oxford Dictionary of National Biography
       - Scots Peerage v.6 pp. 57-60
       - Burke's Peerage 2003, vol. 3, p. 4225
+locations:
+  birth:
+    region: scotland
+  death:
+    date: '1690-01-01'

@@ -7,8 +7,6 @@ name:
     current: McGeary
 gender: male
 deceased: true
-dob: '1885-06-30'
-country_of_birth: Canada
 profession: Shoe Merchant
 interesting_facts: 'Born in Bondhead, Ontario. Identified as Scotch race, British nationality on 1939 US naturalization declaration. First wife: Bertha Elizabeth Selby Thorpe (married c.1915, Bertha believed to have died in childbirth c.1916). Second wife: Harriet Laurence of Strathlorne, Nova Scotia (married Aug 7, 1923). Emigrated from Regina, Saskatchewan to the US via Ranier, Minnesota on Jan 6, 1929. Resided at 815 Webster St., Needham, Norfolk, Mass. Physical description (1939): 5ft 4.5in, 135 lbs, medium complexion, brown eyes, black/gray hair.'
 research:
@@ -26,3 +24,7 @@ relationships:
     person: james-2
   - type: parent
     person: isabel
+locations:
+  birth:
+    date: '1885-06-30'
+    region: canada

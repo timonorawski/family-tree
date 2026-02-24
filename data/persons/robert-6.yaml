@@ -3,7 +3,6 @@ name:
   surnames:
     current: Keith
 gender: male
-dod: '1332-08-11'
 deceased: true
 titles:
   - value: Sir
@@ -11,7 +10,6 @@ titles:
   - value: Great Marischal of Scotland
     type: noble
 interesting_facts: Hereditary Great Marischal of Scotland. Son of William de Keith (d. c.1293) and Barbara Seton. First described as Marischal in a charter of John Balliol 1294. Initially served the English — appointed warden of Selkirk Forest 1299, captured 1300, submitted to Edward I 1303, served with the Prince of Wales, appointed Sheriff of Aberdeen 1304. Changed allegiance to Robert the Bruce at Christmas 1308. COMMANDED THE SCOTTISH CAVALRY AT THE BATTLE OF BANNOCKBURN, 24 June 1314 — his charge against the English bowmen in flank was decisive in routing them and securing Bruce's victory. Signatory of the DECLARATION OF ARBROATH 1320, asserting Scottish independence. Granted lands forfeited by the Comyns. Appointed Justiciar of Scotland from the Forth to the Orkneys. Part of diplomatic missions to the papal court at Avignon and the French court to negotiate the Treaty of Corbeil 1325-26. Confirmed in the office of Great Marischal by Robert the Bruce c.1324. Died 11 August 1332.
-country_of_birth: Scotland
 relationships:
   - type: parent
     person: william-8
@@ -30,3 +28,8 @@ stories:
       - Arbroath Abbey
     dates:
       - '1320-04-06'
+locations:
+  birth:
+    region: scotland
+  death:
+    date: '1332-08-11'

@@ -5,11 +5,13 @@ name:
   surnames:
     current: McGeary
 gender: female
-dob: '1926-06-02'
-country_of_birth: Canada
 interesting_facts: Born in Saskatoon, Saskatchewan. Half-sister of Donald S. McGeary (different mothers). As of 1939, living at 815 Webster St., Needham, Massachusetts.
 relationships:
   - type: parent
     person: donald-1
   - type: parent
     person: harriet
+locations:
+  birth:
+    date: '1926-06-02'
+    region: canada

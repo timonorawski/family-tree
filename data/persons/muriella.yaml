@@ -5,9 +5,7 @@ name:
     birth: Erskine
     current: Keith
 gender: female
-dod: '1482-01-01'
 deceased: true
-country_of_birth: Scotland
 titles:
   - value: Countess of Marischal
     type: noble
@@ -22,3 +20,8 @@ research:
 relationships:
   - type: partner
     person: william-5
+locations:
+  birth:
+    region: scotland
+  death:
+    date: '1482-01-01'

@@ -4,10 +4,7 @@ name:
     birth: Wemyss
     current: Gray
 gender: female
-dob: '1397-01-01'
-dod: '1470-01-01'
 deceased: true
-country_of_birth: Scotland
 interesting_facts: Eldest daughter of Sir John Wemyss of Wemyss and Reres (Lord of Keres) and Isabel Erskine. Wife of Andrew Gray, 1st Lord Gray; marriage contract dated 31 August 1418. The marriage contract stipulated that Andrew should receive a £30 land in Strathardle, Perthshire as dowry, though this condition was not observed and later gave rise to litigation. Mother of two sons (Patrick, Master of Gray, and Andrew) and two daughters (Margaret and Christian). Survived her husband; living after 15 May 1470.
 research:
   - description: WikiTree profile (Wemyss-30) gives birth 1397, death c.1470, parents John Wemyss Lord of Keres and Isabel Erskine, marriage after 31 Aug 1418 in Perthshire, Scotland.
@@ -19,3 +16,9 @@ research:
 relationships:
   - type: partner
     person: andrew-1
+locations:
+  birth:
+    date: '1397-01-01'
+    region: scotland
+  death:
+    date: '1470-01-01'

@@ -3,14 +3,11 @@ name:
   surnames:
     current: Gray
 gender: male
-dob: '1390-01-01'
-dod: '1469-01-01'
 deceased: true
 titles:
   - value: 1st Lord Gray
     type: noble
 interesting_facts: Created 1st Lord Gray by James II, 1 July 1445 — one of the earliest Scottish peerage creations of its kind. Only son of Sir Andrew Gray of Fowlis by his first wife Janet Mortimer. Hostage for ransom of James I of Scotland 1424 — held at Pontefract Castle and the Tower of London until exchanged 1427. Accompanied Princess Margaret of Scotland to France for her marriage to the Dauphin 1436. Parliamentary committee member, ambassador to England, warden of the marches, master of the household to James II 1452. Married Elizabeth Wemyss (contract 31 Aug 1418), eldest daughter of Sir John Wemyss of Wemyss and Reres. Two sons (Patrick, Andrew) and two daughters (Margaret, Christian). Patrick, his elder son, predeceased him.
-country_of_birth: Scotland
 relationships:
   - type: parent
     person: andrew
@@ -18,3 +15,9 @@ relationships:
     person: janet-1
   - type: partner
     person: elizabeth-5
+locations:
+  birth:
+    date: '1390-01-01'
+    region: scotland
+  death:
+    date: '1469-01-01'

@@ -6,7 +6,9 @@ name:
     birth: Esplen
 gender: female
 deceased: false
-country_of_birth: Canada
 relationships:
   - type: partner
     person: david
+locations:
+  birth:
+    region: canada

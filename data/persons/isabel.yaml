@@ -4,7 +4,6 @@ name:
     birth: McKay
     current: McGeary
 gender: female
-country_of_birth: Canada
 deceased: true
 interesting_facts: Married James Thomas McGeary (b. 1857, Bondhead, Ontario). They resided at 37 Sheldrake Boulevard, Toronto, Ontario. The McKay surname is of Scottish/Highland origin (Mac Aoidh, 'son of fire'), common in both Scotland and Ontario. No birth or death dates currently known. Further research needed -- Ontario marriage records (1826-1943) on Ancestry.ca and FamilySearch may yield the marriage record and her parents' names.
 relationships:
@@ -16,3 +15,6 @@ research:
     sources:
       - Family tree records
       - 'ancestry.ca: Ontario, Canada, Marriages, 1826-1943'
+locations:
+  birth:
+    region: canada

@@ -6,7 +6,9 @@ name:
 gender: female
 deceased: true
 interesting_facts: Daughter of George Hay, 7th Earl of Erroll. Wife of William Keith, Master of Marischal. Mother of George Keith, 5th Earl Marischal.
-country_of_birth: Scotland
 relationships:
   - type: partner
     person: william-2
+locations:
+  birth:
+    region: scotland

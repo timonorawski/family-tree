@@ -3,9 +3,11 @@ name:
   surnames:
     birth: Archer
 gender: female
-dod: '1775-01-01'
 deceased: true
 interesting_facts: Daughter of Thomas Archer, 1st Baron Archer. Through her mother Catharine Tipping, connected the family to the Russells (Earls of Bedford and Earls of Orford).
 relationships:
   - type: partner
     person: edward
+locations:
+  death:
+    date: '1775-01-01'

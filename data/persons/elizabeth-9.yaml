@@ -4,10 +4,7 @@ name:
     birth: Douglas
     current: Keith
 gender: female
-dob: '1488-01-01'
-dod: '1527-05-02'
 deceased: true
-country_of_birth: Scotland
 titles:
   - value: Lady
     type: noble
@@ -22,3 +19,9 @@ research:
 relationships:
   - type: partner
     person: robert-1
+locations:
+  birth:
+    date: '1488-01-01'
+    region: scotland
+  death:
+    date: '1527-05-02'

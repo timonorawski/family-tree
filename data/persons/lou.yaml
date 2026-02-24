@@ -4,7 +4,6 @@ name:
   surnames:
     current: Satov
 gender: male
-dob: '1922-01-15'
 deceased: true
 interesting_facts: 'Ashkenazi Jewish. The surname ''Satov'' is almost certainly a toponymic surname derived from SATANOV (Sataniv/Satanow), a historic Jewish shtetl in Podolia, Ukraine. By 1900, approximately 3,000 Jews comprised two-thirds of Satanov''s population. Possible surname variations include: Satov, Satow, Satoff, Satovsky, Satowski, Satanow, Satanover. Lou''s parents likely immigrated during the major wave of Eastern European Jewish immigration (1880s-1920s). Toronto''s Jewish population grew from 18,237 in 1911 to 45,305 in 1931; by 1931, 80% lived in/around Kensington Market.'
 relationships:
@@ -33,3 +32,6 @@ research:
     confidence: 30
     sources:
       - Family oral tradition (unverified)
+locations:
+  birth:
+    date: '1922-01-15'

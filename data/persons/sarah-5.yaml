@@ -4,9 +4,6 @@ name:
     birth: Richardson
     current: McGeary
 gender: female
-dob: '1824-01-01'
-dod: '1913-01-01'
-country_of_birth: Ireland
 deceased: true
 interesting_facts: Born circa 1824 in Ireland, likely County Armagh (her father John Richardson was from Armagh). Daughter of John Richardson and Mary Ann Austin. Married James McGeary and settled in the Bondhead area, West Gwillimbury Township, Simcoe County, Ontario. Buried at Bond Head United Church Cemetery (also known as First Canada Presbyterian Church Cemetery), Bond Head, Simcoe County, Ontario. DOB and DOD years only known.
 relationships:
@@ -22,3 +19,9 @@ research:
     sources:
       - Family tree records
       - Bond Head United Church Cemetery records
+locations:
+  birth:
+    date: '1824-01-01'
+    region: ireland
+  death:
+    date: '1913-01-01'

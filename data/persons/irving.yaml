@@ -3,8 +3,6 @@ name:
   surnames:
     current: Fine
 gender: male
-dob: '1928-09-17'
-country_of_birth: Canada
 interesting_facts: Irving Fine was born September 17, 1928, likely in Toronto, Ontario, to Jewish immigrant parents. The given name 'Irving' was the most common name among Jewish American men born around 1917 according to MIT research, typically used as an Americanized form of Hebrew names beginning with 'I' such as Israel (Yisroel), Isaac (Yitzchak), or Isaiah. His Hebrew/Yiddish name is unknown but may have been one of these.
 relationships:
   - type: partner
@@ -21,3 +19,7 @@ research:
     confidence: 0
     sources:
       - Research planning note - February 2026
+locations:
+  birth:
+    date: '1928-09-17'
+    region: canada

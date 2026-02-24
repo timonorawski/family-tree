@@ -4,8 +4,6 @@ name:
     birth: Keith
     current: Campbell
 gender: female
-dob: '1540-01-01'
-dod: '1588-07-16'
 deceased: true
 titles:
   - value: Countess of Moray
@@ -13,9 +11,14 @@ titles:
   - value: Countess of Argyll
     type: noble
 interesting_facts: Eldest daughter of William Keith, 4th Earl Marischal and Margaret Keith of Inverugie. Born at Dunnottar Castle. Married (1) James Stewart, 1st Earl of Moray (Regent of Scotland and illegitimate half-brother of Mary Queen of Scots) in 1562 — making Agnes sister-in-law to the Queen. As wife of the Regent, she was the most powerful woman in Scotland 1567-1570 until Moray's assassination. Entrusted with Mary Queen of Scots' jewels, which she refused to hand over to the Scottish Government, sparking a feud. Married (2) Colin Campbell, 6th Earl of Argyll — described as being 'much advised by his wife'; a document noted that Sir Colin was 'overmuch ledd by his wyf'. Called an 'intelligent and frightening politician'. Excommunicated by the Church 1573 for 'non-adherence' to her husband. Mother of Archibald Campbell, 7th Earl of Argyll (whose son became the 1st Marquess of Argyll, the great Covenanter leader). Died 16 July 1588 at Edinburgh.
-country_of_birth: Scotland
 relationships:
   - type: parent
     person: william-3
   - type: parent
     person: margaret-5
+locations:
+  birth:
+    date: '1540-01-01'
+    region: scotland
+  death:
+    date: '1588-07-16'

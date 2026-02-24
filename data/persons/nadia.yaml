@@ -5,7 +5,6 @@ name:
   surnames:
     current: Orawski
 gender: female
-dob: '1978-11-29'
 deceased: false
 relationships:
   - type: parent
@@ -14,3 +13,6 @@ relationships:
     person: walter
   - type: partner
     person: stephen
+locations:
+  birth:
+    date: '1978-11-29'

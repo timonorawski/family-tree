@@ -7,8 +7,6 @@ name:
   surnames:
     current: Thorpe
 gender: female
-dob: '1883-01-21'
-dod: '1916-01-14'
 deceased: true
 interesting_facts: Birth Year Estimated
 relationships:
@@ -23,3 +21,8 @@ research:
     confidence: 90
   - description: birth date confirmed from death certificate (found on familysearch.org)
     confidence: 100
+locations:
+  birth:
+    date: '1883-01-21'
+  death:
+    date: '1916-01-14'

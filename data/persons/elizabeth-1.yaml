@@ -4,9 +4,6 @@ name:
     birth: Patterson
     current: Austin
 gender: female
-dob: '1781-01-01'
-dod: '1869-01-01'
-country_of_birth: Ireland
 deceased: true
 interesting_facts: Born circa 1781 in Ireland (county unknown, possibly also County Armagh like her husband David Austin). The Patterson surname is common across Ulster, particularly in Counties Down and Armagh. Married David Austin (b. ~1779, County Armagh). Their daughter Mary Ann Austin married John Richardson. Buried in Tottenham, Ontario (a village in Tecumseth Township, Simcoe County). DOB and DOD year only accurate.
 relationships:
@@ -19,3 +16,9 @@ research:
       - Family tree records
       - wikitree.com/wiki/Patterson-23867 (Thomas Patterson of Tecumseth)
       - 'FamilySearch: Simcoe County, Ontario, Canada Genealogy'
+locations:
+  birth:
+    date: '1781-01-01'
+    region: ireland
+  death:
+    date: '1869-01-01'

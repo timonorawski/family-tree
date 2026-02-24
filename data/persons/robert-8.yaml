@@ -5,7 +5,6 @@ name:
   surnames:
     current: Thorpe
 gender: male
-country_of_birth: Canada
 deceased: true
 profession: Farmer
 interesting_facts: Born in the Gwillimbury area, Simcoe County, Ontario. Son of George Thorpe (b. ~1801, Mayo/Leitrim, Ireland) and Margaret Selby (b. ~1814, East Gwillimbury, Ontario). Married Jane 'Jennie' Adelaide Rennie. They resided in the Gwillimbury area of Simcoe County. Their daughter Berta 'Bertie' Elizabeth Selby Thorpe married Donald James Melville McGeary, connecting the Thorpe and McGeary families.
@@ -22,3 +21,6 @@ research:
     sources:
       - Family tree records
       - 'FamilySearch: marriage record for Berta Elizabeth Selby Thorpe, 21 Aug 1912, Midland, Simcoe, Ontario'
+locations:
+  birth:
+    region: canada

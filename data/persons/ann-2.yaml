@@ -4,10 +4,7 @@ name:
     birth: Dodd
     current: Seton
 gender: female
-dob: '1717-01-01'
-dod: '1799-01-01'
 deceased: true
-country_of_birth: England
 interesting_facts: 'DISPUTED LINE: Wife of Charles Seton (b.1711, Bellingham, Northumberland), the disputed son of George Seton, 5th Earl of Winton. Married Charles Seton in 1740 in Bellingham, Northumberland. Mother of seven children: George Seton (1742-1805), Grace Seton (1744-1821), Margaret Seton (1748-1821), Thomas Seton (1753-1812), Charles Seaton (1755-1823), Michael Seton (1761-1823), and Ann Seton (1763-1840). Ann Seton, their youngest daughter, married into the Logan family and was the grandmother of Joseph Logan Thompson (ET Seton''s father). Through Ann Dodd, the disputed Seton line continued in Bellingham for generations.'
 research:
   - description: Ann Dodd is documented on WeRelate.org (Person:Charles_Seton_(3)) as the wife of Charles Seton (1711-1781), married 1740 in Bellingham, Northumberland. Born 1717, died 1799. Mother of seven children. The WeRelate genealogy provides detailed dates for all children and confirms the Bellingham connection. The marriage and family are part of the disputed Thompson/Seton line — the claim that the 5th Earl of Winton had a legitimate son Charles, through whom the Seton lineage continued to Ernest Thompson Seton.
@@ -19,3 +16,9 @@ research:
 relationships:
   - type: partner
     person: charles-3
+locations:
+  birth:
+    date: '1717-01-01'
+    region: england
+  death:
+    date: '1799-01-01'

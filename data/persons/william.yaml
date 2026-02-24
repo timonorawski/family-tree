@@ -3,15 +3,12 @@ name:
   surnames:
     current: Keith
 gender: male
-dob: '1614-01-01'
-dod: '1671-03-01'
 deceased: true
 profession: Lord Privy Seal of Scotland
 titles:
   - value: 7th Earl Marischal
     type: noble
 interesting_facts: Hereditary Great Marischal of Scotland, custodian of the Scottish Crown Jewels. Covenanter who seized Aberdeen twice (1639-40), then switched to the Royalist cause. Entertained Charles II at Dunnottar Castle (1650). Captured after the Battle of Preston (1648) and imprisoned in the Tower of London for a decade (1651-1660). During his imprisonment, Cromwell besieged Dunnottar to seize the Honours of Scotland — they were smuggled out and hidden under Kinneff Church floor. After the Restoration, appointed Lord Privy Seal of Scotland by Charles II. Married (1) Elizabeth Seton (1621-1650), daughter of George Seton, 3rd Earl of Winton — had one son William (d. young) and daughters including Isabel. Married (2) Lady Anne Douglas, daughter of Robert Douglas, 8th Earl of Morton — no issue. Died at Inverugie March 1671 without surviving male issue; earldom passed to his brother George.
-country_of_birth: Scotland
 relationships:
   - type: parent
     person: william-1
@@ -19,3 +16,9 @@ relationships:
     person: mary-2
   - type: partner
     person: elizabeth-3
+locations:
+  birth:
+    date: '1614-01-01'
+    region: scotland
+  death:
+    date: '1671-03-01'

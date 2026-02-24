@@ -3,13 +3,16 @@ name:
   surnames:
     current: de Keith
 gender: male
-dod: '1293-01-01'
 deceased: true
 titles:
   - value: Marischal of Scotland
     type: noble
 interesting_facts: Hereditary Marischal of Scotland. Son of John de Keith (d. c.1270). Married Barbara Seton (or de Seaton), daughter of Seher (or Adam) de Seton. Father of Sir Robert Keith (d.1332), the Bannockburn cavalry commander, and Sir Edward Keith (d.1351), through whom all subsequent Earls Marischal descend. The Marischalcy had been hereditary in the Keith family since Hervey de Keith held the office under Malcolm IV in the 1150s.
-country_of_birth: Scotland
 relationships:
   - type: partner
     person: barbara
+locations:
+  birth:
+    region: scotland
+  death:
+    date: '1293-01-01'

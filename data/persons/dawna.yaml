@@ -4,7 +4,6 @@ name:
     current: Satov
     birth: Fine
 gender: female
-dob: '1954-04-29'
 deceased: false
 relationships:
   - type: parent
@@ -13,3 +12,6 @@ relationships:
     person: irving
   - type: partner
     person: howie
+locations:
+  birth:
+    date: '1954-04-29'

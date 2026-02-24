@@ -5,7 +5,6 @@ name:
     current: Gray
 gender: female
 deceased: true
-country_of_birth: Scotland
 interesting_facts: Daughter of Sir Walter Buchanan, Knight (11th Chief of Clan Buchanan). Second wife of Sir Andrew Gray of Fowlis; married c.1428. Mother of at least five children including four sons and one daughter (Margaret Gray, who married William Murray of Tullibardine).
 research:
   - description: Geni profile and WikiTree (Gray-5342) confirm Elizabeth Buchanan as daughter of Sir Walter Buchanan and second wife of Sir Andrew Gray, married c.1428, with at least five children.
@@ -15,3 +14,6 @@ research:
 relationships:
   - type: partner
     person: andrew
+locations:
+  birth:
+    region: scotland

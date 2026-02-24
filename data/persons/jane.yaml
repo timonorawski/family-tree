@@ -7,7 +7,6 @@ name:
     birth: Rennie
     current: Thorpe
 gender: female
-country_of_birth: Canada
 deceased: true
 interesting_facts: Born in Ontario, Canada. Married Robert James Thorpe. They had at least one daughter, Berta 'Bertie' Elizabeth Selby Thorpe (b. 21 Jan 1883, d. 14 Jan 1916). The Rennie family was established in the Simcoe County area. Jane was also known as Jennie. The Grice-Rennie family (Elizabeth Grice Rennie, 1813-1878) is documented in the Gwillimbury area on Geni.com -- Jane may belong to this family.
 relationships:
@@ -20,3 +19,6 @@ research:
       - Family tree records
       - 'geni.com: Elizabeth Grice Rennie (1813-1878)'
       - 'FamilySearch: Simcoe County, Ontario, Canada Genealogy'
+locations:
+  birth:
+    region: canada

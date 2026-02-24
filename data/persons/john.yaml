@@ -3,9 +3,6 @@ name:
   surnames:
     current: Richardson
 gender: male
-dob: '1781-05-22'
-dod: '1877-02-22'
-country_of_birth: Ireland
 deceased: true
 interesting_facts: 'Born 22 May 1781 in Armagh, Ireland (County Armagh, Ulster). Emigrated to Upper Canada (Ontario) in the early 1800s, settling in the Penville area, Tecumseth Township, Simcoe County. Married Mary Ann Austin (daughter of David Austin and Elizabeth Patterson, also from County Armagh). Buried in Penville, Simcoe, Ontario, Canada. Note: A Hugh Richardson (1776-1863) from County Wicklow also farmed near Penville in the same period -- likely a neighbor but from a different Irish county.'
 relationships:
@@ -18,3 +15,9 @@ research:
       - Family tree records
       - findagrave.com memorial 97417237 (Hugh Richardson of Penville)
       - 'FamilySearch: Simcoe County, Ontario, Canada Genealogy'
+locations:
+  birth:
+    date: '1781-05-22'
+    region: ireland
+  death:
+    date: '1877-02-22'

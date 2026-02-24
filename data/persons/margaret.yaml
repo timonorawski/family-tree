@@ -4,9 +4,6 @@ name:
     birth: Selby
     current: Thorpe
 gender: female
-dob: '1814-01-01'
-dod: '1899-01-01'
-country_of_birth: Canada
 deceased: true
 interesting_facts: Born circa 1814 in Upper Canada (Ontario), likely in the East Gwillimbury/Sharon area of York County (now part of Regional Municipality of York). The Selby family was among the earliest settlers in East Gwillimbury -- the Selby Burying Ground in Sharon was established as early as 1809 when John Weddel donated the land. Married George Thorpe (b. ~1801, Mayo/Leitrim, Ireland). Their son Robert James Thorpe married Jane 'Jennie' Adelaide Rennie. Only years of birth and death known. Previous death date of '0899' was likely a data entry error for 1899.
 relationships:
@@ -19,3 +16,9 @@ research:
       - 'ogs.on.ca: Selby Burying Ground and Weddel Family Plot, East Gwillimbury'
       - 'ancestry.com: Henrietta Victoria Selby 1844-1930'
       - Family tree records
+locations:
+  birth:
+    date: '1814-01-01'
+    region: canada
+  death:
+    date: '1899-01-01'

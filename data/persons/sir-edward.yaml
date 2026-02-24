@@ -3,15 +3,12 @@ name:
   surnames:
     current: Turnor
 gender: male
-dob: '1617-01-01'
-dod: '1676-01-01'
 deceased: true
 profession: Speaker of the House of Commons, Lord Chief Baron of the Exchequer
 titles:
   - value: Sir
     type: civic
 interesting_facts: Speaker of the House of Commons 1661-1671. Lord Chief Baron of the Exchequer 1671-1676. Knighted 1660. Attorney-General to the Duke of York. Served as judge under the Fire of London Disputes Act 1666. Died on circuit in Bedford.
-country_of_birth: England
 relationships:
   - type: partner
     person: sarah
@@ -36,3 +33,9 @@ research:
     sources:
       - historyofparliamentonline.org
       - Wikipedia
+locations:
+  birth:
+    date: '1617-01-01'
+    region: england
+  death:
+    date: '1676-01-01'

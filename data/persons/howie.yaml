@@ -3,7 +3,6 @@ name:
   surnames:
     current: Satov
 gender: male
-dob: '1952-12-05'
 deceased: false
 interesting_facts: Eldest child of Lou and Sarah Satov. Ashkenazi Jewish family with probable origins in Satanov, Podolia (now Ukraine).
 relationships:
@@ -13,3 +12,6 @@ relationships:
     person: lou
   - type: partner
     person: dawna
+locations:
+  birth:
+    date: '1952-12-05'

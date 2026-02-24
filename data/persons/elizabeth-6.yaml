@@ -4,10 +4,7 @@ name:
     birth: Gordon
     current: Keith
 gender: female
-dob: '1462-01-01'
-dod: '1525-04-22'
 deceased: true
-country_of_birth: Scotland
 titles:
   - value: Lady
     type: noble
@@ -24,3 +21,9 @@ research:
 relationships:
   - type: partner
     person: william-4
+locations:
+  birth:
+    date: '1462-01-01'
+    region: scotland
+  death:
+    date: '1525-04-22'

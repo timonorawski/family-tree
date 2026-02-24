@@ -3,15 +3,12 @@ name:
   surnames:
     current: Keith
 gender: male
-dob: '1510-01-01'
-dod: '1581-10-07'
 deceased: true
 profession: Extraordinary Lord of Session, Privy Councillor to Queen Mary
 titles:
   - value: 4th Earl Marischal
     type: noble
 interesting_facts: 'Succeeded his grandfather the 3rd Earl c.1530 (his father having been killed at Flodden 1513). Accompanied James V to France for his marriage to Madeleine of Valois at Notre Dame, Paris, 1 Jan 1537. Fought at the Battle of Pinkie 1547 (English victory in the War of the Rough Wooing). Member of Queen Mary''s Privy Council 1561. Adherent of the Reformation while avoiding extreme partisanship. Known locally as ''William of the Tower'' after retiring to Dunnottar Castle. Married Margaret Keith of Inverugie (daughter of William Keith, Younger of Inverugie, and Janet Gray, daughter of Andrew Gray, 2nd Lord Gray). The marriage nearly doubled the Marischal estates across seven shires — he was reputed to be the wealthiest man in Scotland and could travel from Berwick to John o'' Groats sleeping every night on his own land. Thirteen children including Agnes Keith (who married the Regent Moray, half-brother of Mary Queen of Scots). Chief residence: Dunnottar Castle, Aberdeenshire.'
-country_of_birth: Scotland
 relationships:
   - type: parent
     person: robert-1
@@ -33,3 +30,9 @@ stories:
       - '1567'
       - '1570'
       - '1581'
+locations:
+  birth:
+    date: '1510-01-01'
+    region: scotland
+  death:
+    date: '1581-10-07'

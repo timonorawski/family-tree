@@ -5,10 +5,7 @@ name:
   surnames:
     current: Turnour
 gender: male
-dob: '1815-01-01'
-dod: '1878-01-01'
 deceased: true
-country_of_birth: England
 relationships:
   - type: parent
     person: adolphus
@@ -16,3 +13,9 @@ relationships:
     person: jessie
   - type: partner
     person: frances
+locations:
+  birth:
+    date: '1815-01-01'
+    region: england
+  death:
+    date: '1878-01-01'

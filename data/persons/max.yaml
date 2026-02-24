@@ -1,7 +1,6 @@
 name:
   given: Max
 gender: male
-dob: '1989-05-24'
 relationships:
   - type: parent
     person: karyn
@@ -9,3 +8,6 @@ relationships:
     person: david-2
   - type: partner
     person: sara
+locations:
+  birth:
+    date: '1989-05-24'

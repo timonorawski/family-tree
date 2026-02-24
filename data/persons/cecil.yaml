@@ -3,10 +3,7 @@ name:
   surnames:
     current: Turnour
 gender: male
-dob: '1880-01-01'
-dod: '1953-01-01'
 deceased: true
-country_of_birth: Canada
 interesting_facts: Of London, Ontario, Canada.
 relationships:
   - type: parent
@@ -15,3 +12,9 @@ relationships:
     person: elizabeth
   - type: partner
     person: effie
+locations:
+  birth:
+    date: '1880-01-01'
+    region: canada
+  death:
+    date: '1953-01-01'

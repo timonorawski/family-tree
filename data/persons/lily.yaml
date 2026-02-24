@@ -1,9 +1,11 @@
 name:
   given: Lily
 gender: female
-dob: '1997-11-17'
 relationships:
   - type: parent
     person: david-1
   - type: parent
     person: alison
+locations:
+  birth:
+    date: '1997-11-17'

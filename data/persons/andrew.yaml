@@ -3,7 +3,6 @@ name:
   surnames:
     current: Gray
 gender: male
-dod: '1441-01-01'
 deceased: true
 titles:
   - value: Sir
@@ -11,9 +10,13 @@ titles:
   - value: Lord of Fowlis
     type: noble
 interesting_facts: Son of Patrick Gray of Broxmouth and Margaret (surname unknown). Married (1) Janet Mortimer, daughter of Sir Roger de Mortimer and Margaret Menteith — Sir Roger resigned the lands of Foulis in Perthshire in favour of his daughter, her husband, and their heirs (charter confirmed by Robert II, 20 June 1377). Married (2) Elizabeth Buchanan, daughter of Sir Walter Buchanan. At least ten children from first marriage, five from second. Father of Andrew Gray, 1st Lord Gray. Died before 17 July 1445 (without peerage — the 1st Lord Gray was his son Andrew, not him, despite earlier confusion).
-country_of_birth: Scotland
 relationships:
   - type: partner
     person: janet-1
   - type: partner
     person: elizabeth-4
+locations:
+  birth:
+    region: scotland
+  death:
+    date: '1441-01-01'

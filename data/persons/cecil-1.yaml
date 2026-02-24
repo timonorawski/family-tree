@@ -5,8 +5,6 @@ name:
   surnames:
     current: Turnour
 gender: male
-dob: '1919-01-01'
-dod: '1987-01-01'
 deceased: true
 profession: RCAF
 interesting_facts: Father of the 8th Earl Winterton.
@@ -21,7 +19,6 @@ titles:
     type: military
 aliases:
   - Cecil Noel
-country_of_birth: Canada
 relationships:
   - type: parent
     person: cecil
@@ -29,3 +26,9 @@ relationships:
     person: effie
   - type: partner
     person: evelyn
+locations:
+  birth:
+    date: '1919-01-01'
+    region: canada
+  death:
+    date: '1987-01-01'

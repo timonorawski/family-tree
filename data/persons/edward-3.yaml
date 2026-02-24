@@ -3,15 +3,12 @@ name:
   surnames:
     current: Turnor
 gender: male
-dob: '1643-01-01'
-dod: '1721-12-03'
 deceased: true
 profession: MP for Orford, Gentleman of the Privy Chamber
 titles:
   - value: Sir
     type: civic
 interesting_facts: Elder son of Sir Edward Turnor the Speaker. Knighted 6 Feb 1664. MP for Orford throughout the reign of Queen Anne. Gentleman of the Privy Chamber 1680-85. His will designated his unmarried daughter Mary as sole heir, describing her as one 'who has never disobeyed me nor in any material matter disobliged me' — implying his other daughter Sarah had done exactly that. Possible Jacobite sympathizer (named on a list submitted to the Pretender in 1721). Died 3 Dec 1721.
-country_of_birth: England
 relationships:
   - type: parent
     person: sir-edward
@@ -19,3 +16,9 @@ relationships:
     person: sarah
   - type: partner
     person: isabel-1
+locations:
+  birth:
+    date: '1643-01-01'
+    region: england
+  death:
+    date: '1721-12-03'

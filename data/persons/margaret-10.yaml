@@ -5,7 +5,6 @@ name:
     current: Seton
 gender: female
 deceased: true
-country_of_birth: Scotland
 interesting_facts: 'DISPUTED: Eldest daughter of George McLair (McKlear), a physician and Portioner in Preston, and Isobel Seton (eldest daughter of Robert Seton, Baillie of Tranent, a cousin of the Earl of Winton). Married George Seton, 5th Earl of Winton in 1710 in Edinburgh — though the marriage is disputed and the 5th Earl is officially recorded as dying unmarried. Mother of Charles Seton (b.11 June 1711, Bellingham, Northumberland), born when she was travelling to Dilston (seat of the Earl of Derwentwater) and went into premature labour from fatigue. After the 5th Earl''s arrest for treason in 1715, Margaret may have remarried — subsequent married names include Corsby (from 1716, possibly to James Corsby) and Jolly (from 1723). Her sister Magdalon McKlear (wife of Nicoll Corsbie) kept correspondence from Charles Seton that was passed down to the Seton-Hancock family. Some sources give her death as 8 August 1714, but this is unverified.'
 research:
   - description: Margaret McKlear (also M'Klear, McLair) is documented on WeRelate.org as the eldest daughter of George McLair, physician and Portioner in Preston, and Isobel Seton (a cousin of the Earl of Winton). Married George Seton, 5th Earl of Winton in 1710 in Edinburgh — though this is marked as 'Disputed'. Mother of Charles Seton (b.11 June 1711 at Bearridge, Bellingham). The Countess was travelling to Dilston when she went into premature labour at Bellingham. After the Earl's arrest and conviction for treason (1715-1716), Margaret may have remarried to Corsby (1716) and Jolly (1723). FamilyTreeDNA Seton Project and the ET Seton Legacy Project confirm the connection. Correspondence between Charles Seton and his maternal aunt Magdalon McKlear (wife of Nicoll Corsbie) was passed down through the Seton-Hancock family. Official peerage records state the 5th Earl died unmarried — the marriage to Margaret McKlear is part of the disputed Thompson/Seton genealogy.
@@ -19,3 +18,6 @@ research:
 relationships:
   - type: partner
     person: george-5
+locations:
+  birth:
+    region: scotland

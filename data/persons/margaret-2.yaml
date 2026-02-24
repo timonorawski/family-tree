@@ -6,7 +6,6 @@ name:
     current: McGeary
     birth: Turnour
 gender: female
-dob: '1917-01-01'
 deceased: false
 relationships:
   - type: parent
@@ -21,3 +20,6 @@ research:
     sources:
       - turnour_family_tree.docx
       - Family accounts
+locations:
+  birth:
+    date: '1917-01-01'

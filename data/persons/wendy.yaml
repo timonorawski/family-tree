@@ -5,7 +5,6 @@ name:
   surnames:
     current: McGeary
 gender: female
-dob: '1948-12-12'
 deceased: false
 relationships:
   - type: parent
@@ -14,3 +13,6 @@ relationships:
     person: donald
   - type: partner
     person: walter
+locations:
+  birth:
+    date: '1948-12-12'

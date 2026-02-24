@@ -3,14 +3,11 @@ name:
   surnames:
     current: Turnour
 gender: male
-dob: '1758-01-01'
-dod: '1831-01-01'
 deceased: true
 titles:
   - value: 2nd Earl Winterton
     type: noble
 interesting_facts: Eldest son of the 1st Earl by his first wife Anne Archer. Married (1) Jane Chapman (d.1792), by whom he had three sons and three daughters. Married (2) Harriet Bodicote (c.1754-1831), no further issue.
-country_of_birth: England
 relationships:
   - type: parent
     person: edward
@@ -20,3 +17,9 @@ relationships:
     person: jane-1
   - type: partner
     person: harriet-1
+locations:
+  birth:
+    date: '1758-01-01'
+    region: england
+  death:
+    date: '1831-01-01'

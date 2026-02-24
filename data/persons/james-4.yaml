@@ -3,9 +3,6 @@ name:
   surnames:
     current: McGeary
 gender: male
-dob: '1826-01-01'
-dod: '1891-02-28'
-country_of_birth: Ireland
 deceased: true
 profession: Wagon Maker
 interesting_facts: Born circa 1826 in Ireland, likely County Tyrone or County Armagh (Ulster). The McGeary surname derives from the Gaelic 'Mac Gadhra' meaning 'son of the hound/mastiff', originating in Ulster. Emigrated to Upper Canada (Ontario) likely in the 1840s-1850s during or shortly after the Great Famine. Settled in the Bondhead area, West Gwillimbury Township, Simcoe County, Ontario. Listed as a wagon maker in Bond Head in the 1872-73 Ontario directory. Buried at Bond Head United Church Cemetery (also known as First Canada Presbyterian Church Cemetery / West Gwillimbury Cemetery), Bond Head, Simcoe County, Ontario.
@@ -43,3 +40,9 @@ research:
       - igenea.com/en/surnames/m/mcgeary
       - johngrenham.com/findasurname.php?surname=McGeary
       - houseofnames.com/mcgeary-family-crest
+locations:
+  birth:
+    date: '1826-01-01'
+    region: ireland
+  death:
+    date: '1891-02-28'

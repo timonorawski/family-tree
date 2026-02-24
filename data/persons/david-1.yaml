@@ -3,8 +3,6 @@ name:
   surnames:
     current: Fine
 gender: male
-dob: '1960-09-13'
-country_of_birth: Canada
 relationships:
   - type: parent
     person: shirley
@@ -12,3 +10,7 @@ relationships:
     person: irving
   - type: partner
     person: alison
+locations:
+  birth:
+    date: '1960-09-13'
+    region: canada

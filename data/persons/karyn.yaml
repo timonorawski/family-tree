@@ -3,8 +3,6 @@ name:
   surnames:
     birth: Fine
 gender: female
-dob: '1953-04-03'
-country_of_birth: Canada
 relationships:
   - type: parent
     person: shirley
@@ -12,3 +10,7 @@ relationships:
     person: irving
   - type: partner
     person: david-2
+locations:
+  birth:
+    date: '1953-04-03'
+    region: canada

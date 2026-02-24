@@ -4,13 +4,10 @@ name:
     birth: Hepburn
     current: Seton
 gender: female
-dob: '1662-01-01'
-dod: '1703-11-18'
 deceased: true
 titles:
   - value: Countess of Winton
     type: noble
-country_of_birth: Scotland
 interesting_facts: Daughter and heiress of George Hepburn of Addinstoun (Adinstoun), East Lothian. Second wife of George Seton, 4th Earl of Winton, married before 6 March 1682. Mother of George Seton, 5th Earl of Winton (b. c.1678-1680), the Jacobite Earl who was convicted of treason after the 1715 Rising. Also mother of Christopher Seton (b.1684). The 4th Earl had lived with Christian before their formal marriage, which was later challenged by Archibald, 2nd Viscount Kingston (the next heir to the Winton honours), but without success. Died 18 November 1703 and was buried at Seton Church. A noted book collector — her library is documented in the Book Owners Online database.
 research:
   - description: Christian Hepburn is documented as daughter of George Hepburn of Addinstoun and second wife of George Seton, 4th Earl of Winton. WikiTree (Hepburn-396) records her as 'abt.1662-1703', born in Lothian, Scotland. She married the 4th Earl before 6 March 1682. Their son George (the future 5th Earl) was born c.1678-1680 before the formal marriage, and was later legitimised. She died 18 November 1703 at Lothian and was buried at Seton Church. Book Owners Online (Christian Seton ca.1647-1703) documents her book-collecting activities. The legitimacy of her marriage was challenged by the 2nd Viscount Kingston but upheld.
@@ -24,3 +21,9 @@ research:
 relationships:
   - type: partner
     person: george-4
+locations:
+  birth:
+    date: '1662-01-01'
+    region: scotland
+  death:
+    date: '1703-11-18'

@@ -3,9 +3,11 @@ name:
   surnames:
     birth: Laurence
 gender: female
-dob: '1895-07-15'
-country_of_birth: Canada
 interesting_facts: Born in Strathlorne, Nova Scotia (Cape Breton). Second wife of Donald James Melville McGeary, married August 7, 1923 at Strathlorne. Mother of Margaret Laurence McGeary (b.1926) and Ann McGeary (b.1931).
 relationships:
   - type: partner
     person: donald-1
+locations:
+  birth:
+    date: '1895-07-15'
+    region: canada

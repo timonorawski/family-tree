@@ -6,7 +6,9 @@ name:
     birth: Oulton
 gender: female
 deceased: true
-country_of_birth: Canada
 relationships:
   - type: partner
     person: cecil-1
+locations:
+  birth:
+    region: canada

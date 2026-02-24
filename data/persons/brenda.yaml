@@ -6,7 +6,9 @@ name:
     birth: Behan
 gender: female
 deceased: false
-country_of_birth: Canada
 relationships:
   - type: partner
     person: murray
+locations:
+  birth:
+    region: canada
