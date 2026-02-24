@@ -38,9 +38,6 @@ const personSchema = {
       }
     },
     gender: { type: 'string', enum: ['male', 'female'] },
-    dob: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$' },
-    dod: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$' },
-    country_of_birth: { type: 'string' },
     locations: {
       type: 'object',
       additionalProperties: false,
