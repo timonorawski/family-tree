@@ -69,7 +69,7 @@ export function toFamilyChartData(persons) {
 				'first name': displayName(name, p.titles),
 				name,
 				relationships: relationships || [],
-				birthday: p.dob || '',
+				birthday: p.locations?.birth?.date || '',
 				...extra
 			},
 			rels: {

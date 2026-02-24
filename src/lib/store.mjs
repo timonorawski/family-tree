@@ -221,7 +221,8 @@ export function search(query) {
         slug, given,
         p.name?.given_at_birth, p.name?.preferred,
         p.name?.surnames?.current, p.name?.surnames?.birth,
-        p.profession, p.interesting_facts, p.country_of_birth
+        p.profession, p.interesting_facts,
+        p.locations?.birth?.region, p.locations?.birth?.place
       ].filter(Boolean).join(' ').toLowerCase();
       return searchable.includes(q);
     })
