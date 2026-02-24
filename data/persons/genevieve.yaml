@@ -1,5 +1,6 @@
 name:
   given: Genevieve
+  given_at_birth: Genowefa
   surnames:
     current: Orawski
     birth: Duda
@@ -8,7 +9,11 @@ dob: '1913-03-12'
 dod: '1998-03-09'
 country_of_birth: Poland
 deceased: true
-interesting_facts: Born Podwilk, Pl
+interesting_facts: |+
+  Born Podwilk, Pl
+
+  17 Carrick Ave, Hamilton, ON
+
 relationships:
   - type: parent
     person: jozefina

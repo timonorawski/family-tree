@@ -1,5 +1,7 @@
 name:
   given: Nadia
+  middles:
+    - Katherine
   surnames:
     current: Orawski
 gender: female
