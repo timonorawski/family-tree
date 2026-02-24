@@ -12,6 +12,7 @@
 
 	// In encrypted mode, persons starts as null until decrypted
 	let persons = $state(isEncrypted ? null : data.persons);
+	let regions = $state(data.regions || {});
 	let chartData = $derived(persons ? toFamilyChartData(persons) : null);
 	let selectedPerson = $state('');
 	let chart = null;
@@ -69,6 +70,14 @@
 		f3Card.setOnCardUpdate(function (d) {
 			const card = this.querySelector('.card');
 			if (!card) return;
+
+			// Region accent
+			const birthRegion = d.data.data.locations?.birth?.region;
+			if (birthRegion && regions[birthRegion]) {
+				card.style.borderLeft = `4px solid ${regions[birthRegion].color}`;
+			} else {
+				card.style.borderLeft = '';
+			}
 
 			const prev = card.querySelector('.hidden-rels-badge');
 			if (prev) prev.remove();
@@ -131,6 +140,14 @@
 {:else}
 	<div class="layout">
 		<div id="FamilyChart" class="f3"></div>
+		<div class="region-legend">
+			{#each Object.entries(regions) as [slug, region]}
+				<div class="legend-item">
+					<span class="legend-swatch" style="background: {region.color}"></span>
+					<span class="legend-label">{region.name}</span>
+				</div>
+			{/each}
+		</div>
 		<Sidebar
 			person={selectedPerson}
 			{persons}
@@ -138,6 +155,7 @@
 			onNavigate={navigateTo}
 			onSaved={reloadPersons}
 			readonly={isStatic || isEncrypted}
+			{regions}
 		/>
 	</div>
 {/if}
@@ -145,6 +163,7 @@
 <style>
 	.layout {
 		display: flex;
+		position: relative;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -174,5 +193,34 @@
 
 	:global(.hidden-rels-badge:hover) {
 		opacity: 1;
+	}
+
+	:global(.region-legend) {
+		position: absolute;
+		bottom: 16px;
+		left: 16px;
+		background: rgba(26, 26, 46, 0.9);
+		border: 1px solid #444;
+		border-radius: 6px;
+		padding: 8px 12px;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		z-index: 10;
+		font-size: 11px;
+		color: #ccc;
+	}
+
+	:global(.legend-item) {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+	}
+
+	:global(.legend-swatch) {
+		width: 12px;
+		height: 12px;
+		border-radius: 2px;
+		flex-shrink: 0;
 	}
 </style>
