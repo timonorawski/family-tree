@@ -1,6 +1,7 @@
-import { loadPersons } from '$lib/load-tree.js';
+import { loadPersons, loadRegions } from '$lib/load-tree.js';
 
 export function load() {
 	const persons = loadPersons();
-	return { persons };
+	const regions = loadRegions();
+	return { persons, regions };
 }

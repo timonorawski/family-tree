@@ -1,0 +1,22 @@
+scotland:
+  name: Scotland
+  color: "#0065BF"
+ireland:
+  name: Ireland
+  color: "#169B62"
+england:
+  name: England
+  color: "#C8102E"
+canada:
+  name: Canada
+  color: "#FF0000"
+poland:
+  name: Poland
+  color: "#DC143C"
+hungary:
+  name: Kingdom of Hungary
+  color: "#477050"
+  historical: true
+united-states:
+  name: United States
+  color: "#3C3B6E"

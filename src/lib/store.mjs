@@ -4,8 +4,14 @@ import yaml from 'js-yaml';
 import { validate } from './person-schema.mjs';
 
 const PERSONS_DIR = path.resolve('data/persons');
+const REGIONS_FILE = path.resolve('data/regions.yaml');
 
 export { PERSONS_DIR };
+
+export function loadRegions() {
+  if (!fs.existsSync(REGIONS_FILE)) return {};
+  return yaml.load(fs.readFileSync(REGIONS_FILE, 'utf-8')) || {};
+}
 
 export function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
