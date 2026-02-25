@@ -11,6 +11,23 @@ COPY --from=build-static /app/build /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 
+# --- Encrypted static build ---
+FROM node:22-alpine AS build-encrypted
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+ARG STATIC_CRYPT_SECRET
+ARG STATIC_CRYPT_TIERS=family
+ENV STATIC_CRYPT_SECRET=${STATIC_CRYPT_SECRET}
+ENV STATIC_CRYPT_TIERS=${STATIC_CRYPT_TIERS}
+RUN npm run build:encrypted
+
+FROM nginx:alpine AS encrypted
+COPY --from=build-encrypted /app/build /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+
 # --- Editable Node server build ---
 FROM node:22-alpine AS build-node
 WORKDIR /app

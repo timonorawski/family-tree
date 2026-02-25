@@ -16,6 +16,30 @@ services:
     depends_on:
       - web
 
+  # Encrypted static site (enable with --profile encrypted)
+  web-encrypted:
+    build:
+      context: .
+      target: encrypted
+      args:
+        STATIC_CRYPT_SECRET: ${STATIC_CRYPT_SECRET}
+        STATIC_CRYPT_TIERS: ${STATIC_CRYPT_TIERS:-family}
+    restart: unless-stopped
+    profiles:
+      - encrypted
+
+  # Tunnel for encrypted site (enable with --profile encrypted)
+  tunnel-encrypted:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      - web-encrypted
+    profiles:
+      - encrypted
+
   # Editable Node server (optional, enable with --profile edit)
   edit:
     build:
