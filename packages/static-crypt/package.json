@@ -1,0 +1,16 @@
+{
+  "name": "static-crypt",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./browser": "./src/browser.mjs"
+  },
+  "bin": {
+    "static-crypt": "./bin/static-crypt.mjs"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.3"
+  }
+}
