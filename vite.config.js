@@ -56,5 +56,10 @@ function encryptedDevPlugin() {
 }
 
 export default defineConfig({
-	plugins: [encryptedDevPlugin(), sveltekit()].filter(Boolean)
+	plugins: [encryptedDevPlugin(), sveltekit()].filter(Boolean),
+	server: {
+		fs: {
+			allow: ['packages']
+		}
+	}
 });
