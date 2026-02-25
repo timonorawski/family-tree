@@ -3,15 +3,28 @@
 	import { page } from '$app/state';
 	import { toFamilyChartData } from '$lib/graph.js';
 	import Sidebar from '$lib/Sidebar.svelte';
+	import EncryptedLoader from '$lib/EncryptedLoader.svelte';
 	import 'family-chart/styles/family-chart.css';
 
 	const isStatic = import.meta.env.VITE_STATIC === 'true';
+	const isEncrypted = import.meta.env.VITE_ENCRYPTED === 'true';
 	const { data } = $props();
 
-	let persons = $state(data.persons);
-	let chartData = $derived(toFamilyChartData(persons));
+	// In encrypted mode, persons starts as null until decrypted
+	let persons = $state(isEncrypted ? null : data.persons);
+	let chartData = $derived(persons ? toFamilyChartData(persons) : null);
 	let selectedPerson = $state('');
 	let chart = null;
+	let ready = $state(!isEncrypted); // Ready immediately if not encrypted
+
+	function handleEncryptedLoad(decryptedPersons) {
+		persons = decryptedPersons;
+		ready = true;
+	}
+
+	function handleEncryptedError(error) {
+		console.error('Encrypted load error:', error);
+	}
 
 	function navigateTo(slug) {
 		selectedPerson = slug;
@@ -31,7 +44,9 @@
 		}
 	}
 
-	onMount(async () => {
+	async function initChart() {
+		if (!chartData) return;
+
 		const f3 = await import('family-chart');
 
 		chart = f3.createChart('#FamilyChart', chartData)
@@ -39,7 +54,7 @@
 			.setCardXSpacing(250)
 			.setCardYSpacing(150)
 			.setShowSiblingsOfMain(true)
-			.setSingleParentEmptyCard(!isStatic);
+			.setSingleParentEmptyCard(!isStatic && !isEncrypted);
 
 		const f3Card = chart
 			.setCardHtml()
@@ -94,20 +109,38 @@
 		if (initialPerson !== 'timon') {
 			selectedPerson = initialPerson;
 		}
+	}
+
+	// Initialize chart when ready (either immediately or after encrypted load)
+	$effect(() => {
+		if (ready && chartData && !chart) {
+			initChart();
+		}
+	});
+
+	// For non-encrypted mode, also initialize on mount
+	onMount(() => {
+		if (!isEncrypted) {
+			initChart();
+		}
 	});
 </script>
 
-<div class="layout">
-	<div id="FamilyChart" class="f3"></div>
-	<Sidebar
-		person={selectedPerson}
-		{persons}
-		{chartData}
-		onNavigate={navigateTo}
-		onSaved={reloadPersons}
-		readonly={isStatic}
-	/>
-</div>
+{#if isEncrypted && !ready}
+	<EncryptedLoader onLoad={handleEncryptedLoad} onError={handleEncryptedError} />
+{:else}
+	<div class="layout">
+		<div id="FamilyChart" class="f3"></div>
+		<Sidebar
+			person={selectedPerson}
+			{persons}
+			{chartData}
+			onNavigate={navigateTo}
+			onSaved={reloadPersons}
+			readonly={isStatic || isEncrypted}
+		/>
+	</div>
+{/if}
 
 <style>
 	.layout {
