@@ -11,7 +11,11 @@ function pickAdapter() {
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: pickAdapter()
+		adapter: pickAdapter(),
+		prerender: {
+			// Don't prerender in encrypted mode - we load data client-side
+			entries: process.env.VITE_ENCRYPTED === 'true' ? ['*'] : ['*']
+		}
 	}
 };
 

@@ -12,7 +12,7 @@
 		"build:static": "VITE_STATIC=true vite build",
 		"build:node": "NODE_ADAPTER=true vite build",
 		"build:encrypt": "node scripts/build-encrypted.mjs",
-		"build:encrypted": "npm run build:static && npm run build:encrypt",
+		"build:encrypted": "VITE_STATIC=true VITE_ENCRYPTED=true vite build && npm run build:encrypt",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''"
 	},
