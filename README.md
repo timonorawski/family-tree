@@ -166,14 +166,20 @@ docker compose --profile edit up
 
 ## CLI reference
 
-The `static-crypt` CLI is available for encryption and QR code generation:
+The `static-crypt` CLI is available for encryption, URL generation, and QR codes. It automatically reads from `.env` if present.
 
 ```bash
 # Encrypt a file for multiple tiers
 npx static-crypt encrypt data.json --tiers family,extended --out ./encrypted/
 
+# Output access URL for a tier
+npx static-crypt url family
+
+# Output access URLs for all tiers
+npx static-crypt url --all
+
 # Generate QR code for a tier
-npx static-crypt qr family --base-url https://example.com/ --out ./qrcodes/
+npx static-crypt qr family --out ./qrcodes/
 
 # Generate QR codes for all tiers
 npx static-crypt qr --all --out ./qrcodes/
@@ -182,7 +188,7 @@ npx static-crypt qr --all --out ./qrcodes/
 npx static-crypt --help
 ```
 
-Environment variables:
+Environment variables (also reads from `.env`):
 - `STATIC_CRYPT_SECRET` - Master secret (64-char hex)
 - `STATIC_CRYPT_TIERS` - Default tier list (comma-separated)
-- `STATIC_CRYPT_BASE_URL` - Base URL for QR codes
+- `STATIC_CRYPT_BASE_URL` - Base URL for URLs/QR codes
