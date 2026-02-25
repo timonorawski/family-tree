@@ -2,9 +2,10 @@
 FROM node:22-alpine AS build-static
 WORKDIR /app
 COPY package.json package-lock.json ./
+COPY packages/ ./packages/
 RUN npm ci
 COPY . .
-RUN VITE_STATIC=true npm run build
+RUN npm run prepare && VITE_STATIC=true npm run build
 
 FROM nginx:alpine AS static
 COPY --from=build-static /app/build /usr/share/nginx/html
@@ -15,13 +16,14 @@ EXPOSE 80
 FROM node:22-alpine AS build-encrypted
 WORKDIR /app
 COPY package.json package-lock.json ./
+COPY packages/ ./packages/
 RUN npm ci
 COPY . .
 ARG STATIC_CRYPT_SECRET
 ARG STATIC_CRYPT_TIERS=family
 ENV STATIC_CRYPT_SECRET=${STATIC_CRYPT_SECRET}
 ENV STATIC_CRYPT_TIERS=${STATIC_CRYPT_TIERS}
-RUN npm run build:encrypted
+RUN npm run prepare && npm run build:encrypted
 
 FROM nginx:alpine AS encrypted
 COPY --from=build-encrypted /app/build /usr/share/nginx/html
@@ -32,9 +34,10 @@ EXPOSE 80
 FROM node:22-alpine AS build-node
 WORKDIR /app
 COPY package.json package-lock.json ./
+COPY packages/ ./packages/
 RUN npm ci
 COPY . .
-RUN NODE_ADAPTER=true npm run build
+RUN npm run prepare && NODE_ADAPTER=true npm run build
 RUN npm prune --production
 
 FROM node:22-alpine AS editable
