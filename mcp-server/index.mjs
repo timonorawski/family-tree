@@ -136,7 +136,7 @@ server.tool(
 // 7. search_persons — params: { query }
 server.tool(
   "search_persons",
-  "Search persons by query string. Matches against name (given, preferred, given_at_birth, surnames), profession, interesting_facts, country_of_birth.",
+  "Search persons by query string. Matches against name (given, preferred, given_at_birth, surnames), profession, interesting_facts, birth region, and birth place.",
   { query: z.string().describe("Search query string") },
   async ({ query }) => {
     try {

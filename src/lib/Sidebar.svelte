@@ -505,16 +505,17 @@
 						</div>
 					{/if}
 
-					{@const birth = node.data.locations?.birth}
-					{@const death = node.data.locations?.death}
-
-					{#if birth?.date || birth?.region || birth?.place || death?.date}
-						<div class="dates-line">
-							{#if birth?.date}b. {birth.date}{/if}
-							{#if birth?.place}{birth.date ? ', ' : ''}{birth.place}{/if}
-							{#if birth?.region && regions[birth.region]}{(birth.date || birth.place) ? ', ' : ''}{regions[birth.region].name}{/if}
-							{#if death?.date}{(birth?.date || birth?.place || birth?.region) ? ' \u2014 ' : ''}d. {death.date}{/if}
-						</div>
+					{#if node.data.locations}
+						{@const birth = node.data.locations.birth}
+						{@const death = node.data.locations.death}
+						{#if birth?.date || birth?.region || birth?.place || death?.date}
+							<div class="dates-line">
+								{#if birth?.date}b. {birth.date}{/if}
+								{#if birth?.place}{birth.date ? ", " : ""}{birth.place}{/if}
+								{#if birth?.region && regions[birth.region]}{(birth.date || birth.place) ? ", " : ""}{regions[birth.region].name}{/if}
+								{#if death?.date}{(birth?.date || birth?.place || birth?.region) ? " — " : ""}d. {death.date}{/if}
+							</div>
+						{/if}
 					{/if}
 
 					{#if node.data.locations?.other?.length}

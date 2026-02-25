@@ -22,7 +22,7 @@ export function displayName(name, titles) {
 /**
  * Convert our YAML person map into family-chart's data format.
  *
- * Input:  { [slug]: { name: { given, middles?, surnames? }, gender, relationships?: [{type, person}], dob?, ... } }
+ * Input:  { [slug]: { name: { given, middles?, surnames? }, gender, relationships?: [{type, person}], locations?, ... } }
  * Output: [{ id, data: { gender, first_name, ... }, rels: { parents, spouses, children } }]
  */
 export function toFamilyChartData(persons) {

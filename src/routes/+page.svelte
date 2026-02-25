@@ -141,7 +141,7 @@
 	<div class="layout">
 		<div id="FamilyChart" class="f3"></div>
 		<div class="region-legend">
-			{#each Object.entries(regions) as [slug, region]}
+			{#each Object.entries(regions).filter(([slug]) => Object.values(persons).some(p => p.locations?.birth?.region === slug)) as [slug, region]}
 				<div class="legend-item">
 					<span class="legend-swatch" style="background: {region.color}"></span>
 					<span class="legend-label">{region.name}</span>

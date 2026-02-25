@@ -113,20 +113,20 @@ export function getStatistics() {
   const total = slugs.length;
   const male = slugs.filter(s => all[s].gender === 'male').length;
   const female = slugs.filter(s => all[s].gender === 'female').length;
-  const withDob = slugs.filter(s => all[s].dob).length;
-  const withDod = slugs.filter(s => all[s].dod).length;
+  const withDob = slugs.filter(s => all[s].locations?.birth?.date).length;
+  const withDod = slugs.filter(s => all[s].locations?.death?.date).length;
   const withProfession = slugs.filter(s => all[s].profession).length;
   const withResearch = slugs.filter(s => all[s].research?.length).length;
   const withStories = slugs.filter(s => all[s].stories?.length).length;
   const withRelationships = slugs.filter(s => all[s].relationships?.length).length;
-  const dobs = slugs.map(s => all[s].dob).filter(Boolean).sort();
+  const dobs = slugs.map(s => all[s].locations?.birth?.date).filter(Boolean).sort();
 
   return {
     total, male, female,
     dob_range: dobs.length ? { earliest: dobs[0], latest: dobs[dobs.length - 1] } : null,
     coverage: {
-      dob: `${withDob}/${total}`,
-      dod: `${withDod}/${total}`,
+      birth_date: `${withDob}/${total}`,
+      death_date: `${withDod}/${total}`,
       profession: `${withProfession}/${total}`,
       relationships: `${withRelationships}/${total}`,
       research: `${withResearch}/${total}`,
