@@ -96,3 +96,51 @@
 - Genevieve Duda: birth record (1913) should exist in Hungarian civil registration for Arva county -- check Slovak State Archives in Bytca or ANK Nowy Targ.
 - Where did Podwilk parish registers go after 1945? Check Spis diocesan archive directly.
 - Canadian immigration record for Genevieve Duda/Orawski: check LAC passenger lists and IRCC post-1935 records.
+
+## Fine Family Line (Toronto Jewish)
+- **Research doc:** `/research/fine-family-toronto.md`
+- **Irving Fine** (slug: irving): b. 1928-09-17, likely Toronto. Parents UNKNOWN.
+- **Shirley Fine** (slug: shirley): b. 1932-11-12, likely Toronto. Maiden name UNKNOWN. Parents UNKNOWN.
+- **Children**: David Fine (slug: david-1, b. 1960), Dawna Fine/Satov (slug: dawna, b. 1954), Karyn Fine (slug: karyn, b. 1953)
+- **Key finding**: Fine is anglicized from Ashkenazi "Fein" (Yiddish fayn = fine/elegant). Variants: Fein, Fain, Fajn, Feiner, Feinberg, Feinstein.
+- **Immigration estimate**: Family likely arrived 1900-1927 from Russian Empire Pale of Settlement (Poland/Lithuania/Belarus/Ukraine) or Austro-Hungary (Galicia). After 1927, Jewish immigration to Canada nearly halted due to restrictive laws.
+- **Toronto context**: Jewish population grew from 3,090 (1901) to 45,000 (1931), mostly Polish Jews. Settlement areas: The Ward (1880s-1920s), then Kensington Market (1920s-1930s).
+
+## Key Surname Origins (Fine family)
+- Fine/Fein: German/Yiddish "fine, elegant" - common Ashkenazi surname adopted during 1787-1844 surname mandates
+- Forebears.io: Fine ranks 20,311th globally, 71% in North America, predominantly Jewish
+
+## Given Name Patterns (Jewish)
+- "Irving" was #1 Jewish American male name ~1917 (MIT study) - anglicized from Israel/Isaac/Isaiah
+- "Shirley" peaked 1935 (Shirley Temple) - popular Jewish assimilation name; Jews typically kept Hebrew/Yiddish names for religious use
+- Ashkenazi naming: children named for recently deceased relatives, never for living ones
+
+## Chusid Family Line (Shirley's Maiden Name)
+- **Research doc:** `/research/chusid-family-line.md`
+- **Shirley Chusid** (slug: shirley): b. 1932-11-12, Toronto. Married Irving Fine. Maiden name CONFIRMED as Chusid.
+- **Etymology**: Hebrew "chasid" (חסיד) = pious one. Yiddish "khusid" = Hasid. Connected to Hasidic movement.
+- **Spelling variants**: Chusid, Khusid, Husid, Chusyd, Khuzid, Chasid, Hasid, Hosid, Chosed
+- **Geographic origin**: Eastern Europe - Ukraine (Odessa documented ~1900), Poland, Pale of Settlement
+- **Global distribution**: ~290 bearers. USA 257 (NY 28%, CA 13%, NJ 10%), Canada 22
+- **Odessa connection**: Research indicates Chusid family in Odessa c.1900 with rare mitochondrial haplogroup
+- **Hasidic movement**: Founded 1730s-40s in Podolia (western Ukraine) by Baal Shem Tov. By mid-19th c., majority of Ukrainian Jews were Hasidic.
+- **Immigration window**: Parents likely arrived 1900-1927 (Great Migration). After 1927 restrictions tightened; 1931 PC 695 halted immigration.
+
+## Key Surname Origins (Chusid)
+- Chusid: Hebrew/Yiddish "pious one" - either Hasidic movement follower or person known for piety
+- Surname likely adopted under 1804 Russian Empire statute requiring fixed surnames
+
+## Open Research Questions (Chusid family)
+- Shirley's parents: Need 1932 Ontario birth certificate, 1931 census for Chusid/Khusid in Toronto
+- Specific European origin: Odessa probable but unconfirmed for this branch
+- Canadian naturalization records 1915-1939 for Chusid variants
+- JewishGen Odessa databases: search for Chusid/Khusid
+- Ontario Jewish Archives: Toronto Chusid community records
+- Geni.com: 147 Chusid profiles - contact other researchers
+
+## Open Research Questions (Fine family)
+- Irving Fine's parents: Need Ontario birth records 1928-1929, 1931 census
+- Immigration records: Search LAC passenger lists for Fine/Fein variants 1900-1927
+- Synagogue membership: Check Ontario Jewish Archives
+- Original surname spelling: Fein? Feinberg? Feinstein? Other compound?
+- European origin: Which shtetl in Pale of Settlement?

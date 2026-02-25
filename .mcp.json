@@ -3,6 +3,9 @@
     "family-tree": {
       "command": "bash",
       "args": ["mcp-server/run-mcp.sh"]
+    },
+    "lua": {
+      "command": "/app/data/worktrees/wt_97c00fb56e22/run.sh"
     }
   }
 }
