@@ -69,15 +69,26 @@ async function cmdEncrypt() {
   }
 }
 
+function getBaseUrl(args) {
+  const baseUrl = args.values['base-url'] || process.env.STATIC_CRYPT_BASE_URL;
+  if (!baseUrl) {
+    throw new Error('No base URL provided. Use --base-url or STATIC_CRYPT_BASE_URL env var');
+  }
+  return baseUrl;
+}
+
 async function cmdQr() {
   const [tier] = positional;
   const secret = await getSecret(args);
-  const baseUrl = args.values['base-url'];
   const outDir = args.values.out || '.';
 
-  if (!baseUrl) {
+  let baseUrl;
+  try {
+    baseUrl = getBaseUrl(args);
+  } catch (e) {
     console.error('Usage: static-crypt qr <tier> --base-url <url> --out <dir>');
     console.error('   or: static-crypt qr --all --base-url <url> --out <dir>');
+    console.error('\nOr set STATIC_CRYPT_BASE_URL environment variable');
     process.exit(1);
   }
 
@@ -115,8 +126,9 @@ Options:
   --all, -a        Generate QR codes for all tiers
 
 Environment:
-  STATIC_CRYPT_SECRET   Master secret (hex)
-  STATIC_CRYPT_TIERS    Default tier list
+  STATIC_CRYPT_SECRET     Master secret (hex)
+  STATIC_CRYPT_TIERS      Default tier list
+  STATIC_CRYPT_BASE_URL   Base URL for QR codes
 
 Examples:
   static-crypt encrypt data.json --tiers family,extended --out ./build/data/
