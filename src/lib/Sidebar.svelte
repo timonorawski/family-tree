@@ -1,8 +1,8 @@
 <script>
 	/**
-	 * @type {{ person: any, persons: Record<string, any>, chartData: any[], onNavigate: (slug: string) => void, onSaved: () => void, readonly?: boolean }}
+	 * @type {{ person: any, persons: Record<string, any>, chartData: any[], onNavigate: (slug: string) => void, onSaved: () => void, readonly?: boolean, regions?: Record<string, any> }}
 	 */
-	let { person, persons, chartData, onNavigate, onSaved, readonly = false } = $props();
+	let { person, persons, chartData, onNavigate, onSaved, readonly = false, regions = {} } = $props();
 
 	let form = $state({});
 	let saving = $state(false);
@@ -22,9 +22,28 @@
 				surname_current: n.surnames?.current || '',
 				surname_birth: n.surnames?.birth || '',
 				gender: node.data.gender === 'F' ? 'female' : 'male',
-				dob: node.data.dob || '',
-				dod: node.data.dod || '',
-				country_of_birth: node.data.country_of_birth || '',
+				locations: {
+					birth: {
+						date: node.data.locations?.birth?.date || '',
+						region: node.data.locations?.birth?.region || '',
+						place: node.data.locations?.birth?.place || '',
+						notes: node.data.locations?.birth?.notes || '',
+					},
+					death: {
+						date: node.data.locations?.death?.date || '',
+						region: node.data.locations?.death?.region || '',
+						place: node.data.locations?.death?.place || '',
+						notes: node.data.locations?.death?.notes || '',
+					},
+					other: (node.data.locations?.other || []).map(loc => ({
+						date: loc.date || '',
+						end_date: loc.end_date || '',
+						region: loc.region || '',
+						place: loc.place || '',
+						notes: loc.notes || '',
+						tags: loc.tags ? [...loc.tags] : [],
+					})),
+				},
 				deceased: node.data.deceased || false,
 				profession: node.data.profession || '',
 				interesting_facts: node.data.interesting_facts || '',
@@ -127,7 +146,7 @@
 	}
 
 	function buildPayload() {
-		const { given, given_at_birth, preferred, middles, surname_current, surname_birth, research, stories, titles, aliases, relationships: formRels, ...rest } = form;
+		const { given, given_at_birth, preferred, middles, surname_current, surname_birth, research, stories, titles, aliases, relationships: formRels, locations: formLocations, ...rest } = form;
 		const name = { given };
 		if (given_at_birth) name.given_at_birth = given_at_birth;
 		if (preferred) name.preferred = preferred;
@@ -150,6 +169,40 @@
 			return rel;
 		});
 		if (relsArr.length) payload.relationships = relsArr;
+
+		// Build locations
+		const locations = {};
+		const birthLoc = formLocations?.birth;
+		if (birthLoc?.date || birthLoc?.region || birthLoc?.place || birthLoc?.notes) {
+			locations.birth = {};
+			if (birthLoc.date) locations.birth.date = birthLoc.date;
+			if (birthLoc.region) locations.birth.region = birthLoc.region;
+			if (birthLoc.place) locations.birth.place = birthLoc.place;
+			if (birthLoc.notes) locations.birth.notes = birthLoc.notes;
+		}
+		const deathLoc = formLocations?.death;
+		if (deathLoc?.date || deathLoc?.region || deathLoc?.place || deathLoc?.notes) {
+			locations.death = {};
+			if (deathLoc.date) locations.death.date = deathLoc.date;
+			if (deathLoc.region) locations.death.region = deathLoc.region;
+			if (deathLoc.place) locations.death.place = deathLoc.place;
+			if (deathLoc.notes) locations.death.notes = deathLoc.notes;
+		}
+		const otherLocs = (formLocations?.other || [])
+			.map(loc => {
+				const entry = {};
+				if (loc.date) entry.date = loc.date;
+				if (loc.end_date) entry.end_date = loc.end_date;
+				if (loc.region) entry.region = loc.region;
+				if (loc.place) entry.place = loc.place;
+				if (loc.notes) entry.notes = loc.notes;
+				const tags = (loc.tags || []).filter(Boolean);
+				if (tags.length) entry.tags = tags;
+				return entry;
+			})
+			.filter(e => Object.keys(e).length > 0);
+		if (otherLocs.length) locations.other = otherLocs;
+		if (Object.keys(locations).length) payload.locations = locations;
 
 		// Build research array, filtering out empty entries
 		const researchArr = (research || [])
@@ -452,9 +505,33 @@
 						</div>
 					{/if}
 
-					{#if node.data.dob || node.data.dod || node.data.country_of_birth}
+					{@const birth = node.data.locations?.birth}
+					{@const death = node.data.locations?.death}
+
+					{#if birth?.date || birth?.region || birth?.place || death?.date}
 						<div class="dates-line">
-							{#if node.data.dob}b. {node.data.dob}{/if}{#if node.data.country_of_birth}{node.data.dob ? ', ' : ''}{node.data.country_of_birth}{/if}{#if node.data.dod}{(node.data.dob || node.data.country_of_birth) ? ' \u2014 ' : ''}d. {node.data.dod}{/if}
+							{#if birth?.date}b. {birth.date}{/if}
+							{#if birth?.place}{birth.date ? ', ' : ''}{birth.place}{/if}
+							{#if birth?.region && regions[birth.region]}{(birth.date || birth.place) ? ', ' : ''}{regions[birth.region].name}{/if}
+							{#if death?.date}{(birth?.date || birth?.place || birth?.region) ? ' \u2014 ' : ''}d. {death.date}{/if}
+						</div>
+					{/if}
+
+					{#if node.data.locations?.other?.length}
+						<div class="detail-row">
+							<span class="detail-label">Locations</span>
+							{#each node.data.locations.other as loc}
+								<div class="view-card">
+									{#if loc.place}<span>{loc.place}</span>{/if}
+									{#if loc.region && regions[loc.region]}<span class="rel-meta"> {regions[loc.region].name}</span>{/if}
+									{#if loc.date || loc.end_date}
+										<span class="rel-meta">
+											{loc.date || ''}{loc.end_date ? ` \u2013 ${loc.end_date}` : ''}
+										</span>
+									{/if}
+									{#if loc.notes}<p class="detail-text">{loc.notes}</p>{/if}
+								</div>
+							{/each}
 						</div>
 					{/if}
 
@@ -579,24 +656,59 @@
 						</select>
 					</label>
 
-					<label>
-						Date of birth
-						<input type="date" bind:value={form.dob} />
-					</label>
+					<fieldset class="research-section">
+						<legend>Birth</legend>
+						<label>
+							Date
+							<input type="date" bind:value={form.locations.birth.date} />
+						</label>
+						<label>
+							Region
+							<select bind:value={form.locations.birth.region}>
+								<option value="">— none —</option>
+								{#each Object.entries(regions) as [slug, r]}
+									<option value={slug}>{r.name}</option>
+								{/each}
+							</select>
+						</label>
+						<label>
+							Place
+							<input type="text" bind:value={form.locations.birth.place} placeholder="Village, county, etc." />
+						</label>
+						<label>
+							Notes
+							<input type="text" bind:value={form.locations.birth.notes} />
+						</label>
+					</fieldset>
 
-					<label>
-						Country of birth
-						<input type="text" bind:value={form.country_of_birth} />
-					</label>
+					<fieldset class="research-section">
+						<legend>Death</legend>
+						<label>
+							Date
+							<input type="date" bind:value={form.locations.death.date} />
+						</label>
+						<label>
+							Region
+							<select bind:value={form.locations.death.region}>
+								<option value="">— none —</option>
+								{#each Object.entries(regions) as [slug, r]}
+									<option value={slug}>{r.name}</option>
+								{/each}
+							</select>
+						</label>
+						<label>
+							Place
+							<input type="text" bind:value={form.locations.death.place} />
+						</label>
+						<label>
+							Notes
+							<input type="text" bind:value={form.locations.death.notes} />
+						</label>
+					</fieldset>
 
 					<label>
 						Profession
 						<input type="text" bind:value={form.profession} />
-					</label>
-
-					<label>
-						Date of death
-						<input type="date" bind:value={form.dod} />
 					</label>
 
 					<label class="checkbox-label">
