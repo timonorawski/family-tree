@@ -11,6 +11,6 @@
     "static-crypt": "./bin/static-crypt.mjs"
   },
   "dependencies": {
-    "qrcode": "^1.5.3"
+    "qrcode": "^1.5.4"
   }
 }
